@@ -108,18 +108,6 @@
 
       <input type="text" id="keywordFilter" placeholder="Palabras clave" />
       <p id="noEntry" style="display:none;">No se han encontrado escritos.</p>
-
-      <script>
-        const authorSelect = document.getElementById('authorFilter');
-
-        const options = Array.from(authorSelect.options)
-          .slice(1) // excluye "Autor"
-          .sort((a, b) => a.text.localeCompare(b.text, 'es'));
-
-        authorSelect.length = 1; // conserva la primera opción
-
-        options.forEach(option => authorSelect.add(option));
-      </script>
     </div>
 
     <!-- Lista de escritos -->
@@ -148,7 +136,16 @@
 
           li.dataset.month = entry.month || '';
           li.dataset.author = entry.analysis?.poet || '';
-          li.dataset.keywords = (entry.keywords || []).join(' ').toLowerCase();
+          li._keywords = (entry.keywords || []).map(k => ({
+            word: normalize(k.word),
+            weight: k.weight || 1
+          }));
+
+          const poet = entry.analysis?.poet || '';
+          const poemTitle = entry.analysis?.poem_title || '';
+          const bookTitle = entry.analysis?.book_title || '';
+
+          li._searchText = normalize([poet, poemTitle, bookTitle].filter(Boolean).join(' '));
 
           const a = document.createElement('a');
           a.className = 'entry';
@@ -216,7 +213,7 @@
     function filterEntries() {
       const month = monthFilter.value;
       const author = authorFilter.value;
-      const keyword = keywordFilter.value.trim().toLowerCase();
+      const keyword = normalize(keywordFilter.value.trim());
       let visibleCount = 0;
 
       entries.forEach(entry => {
@@ -226,69 +223,51 @@
           entry.dataset.month === month;
 
         const matchAuthor = !author || entry.dataset.author === author;
-        const matchKeyword = !keyword || entry.dataset.keywords.includes(keyword);
+        const terms = keyword.split(/\s+/).filter(Boolean);
+        const score = terms.length === 0 ? 1 : keywordScore(entry, terms);
+        const matchKeyword = score > 0;
+        entry._score = score;
+
+
 
         const visible = matchMonth && matchAuthor && matchKeyword;
         entry.style.display = visible ? 'block' : 'none';
         if (visible) visibleCount++;
       });
 
-      noResultsFound.style.display = visibleCount === 0 ? 'block' : 'none';
-    }
-
-    monthFilter.addEventListener('change', filterEntries);
-    authorFilter.addEventListener('change', filterEntries);
-    keywordFilter.addEventListener('input', filterEntries);
-  </script>
-
-
-  <script>
-    const monthFilter = document.getElementById('monthFilter'); //o sea mes o un mes en particular
-    const authorFilter = document.getElementById('authorFilter'); //
-    const keywordFilter = document.getElementById('keywordFilter');
-    let entries = [];
-    const noResultsFound = document.getElementById("noEntry");
-
-    function initFiltering() {
-      entries = document.querySelectorAll('#entries li[data-month]');
-      filterEntries();
-    }
-
-    function getCurrentMonth() {
-      const now = new Date();
-      const year = now.getFullYear();
-      const month = String(now.getMonth() + 1).padStart(2, '0');
-      return `${year}-${month}`;
-    }
-
-    // Estado inicial: solo mes actual
-    const currentMonth = getCurrentMonth();
-
-    function filterEntries() {
-      const month = monthFilter.value;
-      const author = authorFilter.value;
-      const keyword = keywordFilter.value.toLowerCase();
-      let visibleCount = 0;
-
-      entries.forEach(entry => {
-        const matchMonth =
-          month === "todo" ||
-          (!month && entry.dataset.month === currentMonth) ||
-          entry.dataset.month === month;
-
-        const matchAuthor = !author || entry.dataset.author === author;
-        const matchKeyword = !keyword || entry.dataset.keywords.includes(keyword);
-
-        const visible = matchMonth && matchAuthor && matchKeyword;
-        entry.style.display = visible ? 'block' : 'none';
-
-        if (visible) visibleCount++;
-      });
+      [...entries]
+        .sort((a, b) => (b._score || 0) - (a._score || 0))
+        .forEach(li => entriesList.appendChild(li));
 
       noResultsFound.style.display = visibleCount === 0 ? 'block' : 'none';
     }
 
-    filterEntries(); //para cuando la página se carga
+    //to normalize, avoid accents etc...
+    function normalize(s) {
+      return (s || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function keywordScore(entry, terms) {
+      let score = 0;
+
+      if (entry._keywords) {
+        for (const t of terms) {
+          const match = entry._keywords.find(k => k.word === t);
+          if (match) score += match.weight;
+        }
+      }
+
+      // bonus pequeño si aparece en autor o título
+      for (const t of terms) {
+        if (entry._searchText?.includes(t)) score += 0.5;
+      }
+
+      return score;
+    }
+
     monthFilter.addEventListener('change', filterEntries);
     authorFilter.addEventListener('change', filterEntries);
     keywordFilter.addEventListener('input', filterEntries);

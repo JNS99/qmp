@@ -8,8 +8,41 @@
       "poem_title": "la suerte del que come",
       "book_title": "La carne se corta"
       },
-    "keywords": ["pozo", "ayer", "cubo","seco","temo","temer","solo","Soledad","Castresana",
-      "Carne","se corta","cortarse"]
+      "keywords": [
+        { "word": "follar", "weight": 3 },
+        { "word": "condón", "weight": 3 },
+        { "word": "pelota", "weight": 3 },
+        { "word": "lanzo", "weight": 3 },
+
+        { "word": "jerarquia", "weight": 3 },
+        { "word": "poder", "weight": 3 },
+        { "word": "suerte", "weight": 3 },
+        { "word": "ignorancia", "weight": 3 },
+        { "word": "destino", "weight": 3 },
+
+        { "word": "muerte", "weight": 2 },
+        { "word": "violencia", "weight": 2 },
+        { "word": "subordinacion", "weight": 2 },
+        { "word": "control", "weight": 2 },
+        { "word": "dependencia", "weight": 2 },
+        { "word": "resistencia", "weight": 2 },
+        { "word": "opresion", "weight": 2 },
+        { "word": "azar", "weight": 2 },
+        { "word": "pesimismo", "weight": 2 },
+
+        { "word": "animal", "weight": 1 },
+        { "word": "pollo", "weight": 1 },
+        { "word": "perro", "weight": 1 },
+        { "word": "amo", "weight": 1 },
+        { "word": "comida", "weight": 1 },
+        { "word": "instinto", "weight": 1 },
+        { "word": "supervivencia", "weight": 1 },
+        { "word": "cuerpo", "weight": 1 },
+        { "word": "jerarquia social", "weight": 1 },
+        { "word": "arrogancia", "weight": 1 },
+        { "word": "condicion", "weight": 1 },
+        { "word": "sumision", "weight": 1 }
+      ]
   },
   {
     "date": "2025-12-16",
@@ -20,8 +53,39 @@
       "poem_title": "un entierro",
       "book_title": "La carne se corta"
       },
-    "keywords": ["pozo", "ayer", "cubo","seco","temo","temer","solo","Soledad","Castresana",
-      "Carne","se corta","cortarse"]
+      "keywords": [
+        { "word": "vaso", "weight": 3 },
+        { "word": "cae", "weight": 3 },
+        { "word": "garganta", "weight": 3 },
+        { "word": "boca", "weight": 3 },
+
+        { "word": "muerte", "weight": 3 },
+        { "word": "duelo", "weight": 3 },
+        { "word": "juego", "weight": 3 },
+        { "word": "normalizacion", "weight": 3 },
+        { "word": "olvido", "weight": 3 },
+
+        { "word": "infancia", "weight": 2 },
+        { "word": "comunidad", "weight": 2 },
+        { "word": "violencia", "weight": 2 },
+        { "word": "ritual", "weight": 2 },
+        { "word": "entierro", "weight": 2 },
+        { "word": "responsabilidad", "weight": 2 },
+        { "word": "pobreza", "weight": 2 },
+        { "word": "frontera", "weight": 2 },
+        { "word": "indiferencia", "weight": 2 },
+
+        { "word": "animal", "weight": 1 },
+        { "word": "aves", "weight": 1 },
+        { "word": "gallinero", "weight": 1 },
+        { "word": "capilla", "weight": 1 },
+        { "word": "cruces", "weight": 1 },
+        { "word": "juego simbolico", "weight": 1 },
+        { "word": "cuerpo", "weight": 1 },
+        { "word": "memoria", "weight": 1 },
+        { "word": "aprendizaje", "weight": 1 },
+        { "word": "humanidad", "weight": 1 }
+      ]
   },
   {
     "date": "2025-12-15",
@@ -32,8 +96,45 @@
       "poem_title": "trampa para cazar caballos",
       "book_title": "La carne se corta"
       },
-    "keywords": ["pozo", "ayer", "cubo","seco","temo","temer","solo","Soledad","Castresana",
-      "Carne","se corta","cortarse"]
+    "keywords": [
+      { "word": "bosque", "weight": 3 },
+      { "word": "peso", "weight": 3 },
+      { "word": "agua", "weight": 3 },
+      { "word": "blanc", "weight": 3 },
+      { "word": "azul", "weight": 3 },
+      { "word": "lluvia", "weight": 3 },
+      { "word": "esconderse", "weight": 3 },
+      { "word": "curva", "weight": 3 },
+
+      { "word": "muerte", "weight": 3 },
+      { "word": "indiferencia", "weight": 3 },
+      { "word": "violencia", "weight": 3 },
+      { "word": "deshumanizacion", "weight": 3 },
+      { "word": "vida sin sentido", "weight": 3 },
+
+      { "word": "animal", "weight": 2 },
+      { "word": "caballo", "weight": 2 },
+      { "word": "comunidad", "weight": 2 },
+      { "word": "distanciamiento", "weight": 2 },
+      { "word": "crueldad", "weight": 2 },
+      { "word": "utilidad", "weight": 2 },
+      { "word": "trampa", "weight": 2 },
+      { "word": "veneno", "weight": 2 },
+      { "word": "enfermedad", "weight": 2 },
+
+      { "word": "campo", "weight": 1 },
+      { "word": "bosque", "weight": 1 },
+      { "word": "lluvia", "weight": 1 },
+      { "word": "fuego", "weight": 1 },
+      { "word": "contagio", "weight": 1 },
+      { "word": "cuerpo", "weight": 1 },
+      { "word": "grotesco", "weight": 1 },
+      { "word": "ironía", "weight": 1 },
+      { "word": "pensar", "weight": 1 },
+      { "word": "sentir", "weight": 1 },
+      { "word": "explotacion", "weight": 1 }
+    ]
+
   },
   {
     "date": "2025-12-14",
@@ -44,7 +145,39 @@
       "poem_title": "charco en calma",
       "book_title": "La carne se corta"
       },
-    "keywords": ["pozo", "ayer", "cubo","seco","temo","temer","solo","Soledad","Castresana",
-      "Carne","se corta","cortarse"]
+      "keywords": [
+        { "word": "pozo", "weight": 3 },
+        { "word": "cubo", "weight": 3 },
+        { "word": "seco", "weight": 3 },
+        { "word": "temer", "weight": 3 },
+
+        { "word": "dominacion", "weight": 3 },
+        { "word": "violencia", "weight": 3 },
+        { "word": "deshumanizacion", "weight": 3 },
+        { "word": "resistencia", "weight": 3 },
+        { "word": "indiferencia", "weight": 3 },
+
+        { "word": "naturaleza", "weight": 2 },
+        { "word": "cuerpo", "weight": 2 },
+        { "word": "sexualidad", "weight": 2 },
+        { "word": "agresion", "weight": 2 },
+        { "word": "miedo", "weight": 2 },
+        { "word": "poder", "weight": 2 },
+        { "word": "objetificacion", "weight": 2 },
+        { "word": "violencia simbolica", "weight": 2 },
+        { "word": "confusion", "weight": 2 },
+
+        { "word": "animal", "weight": 1 },
+        { "word": "mujer", "weight": 1 },
+        { "word": "yegua", "weight": 1 },
+        { "word": "barro", "weight": 1 },
+        { "word": "charco", "weight": 1 },
+        { "word": "rebenque", "weight": 1 },
+        { "word": "bosque", "weight": 1 },
+        { "word": "violencia rural", "weight": 1 },
+        { "word": "frontera", "weight": 1 },
+        { "word": "cosificacion", "weight": 1 }
+      ]
+
   }  
 ]
