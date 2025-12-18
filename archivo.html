@@ -128,39 +128,9 @@
 
     <!-- Lista de escritos -->
 
-    <!--
-    <ul id="entries">
-      <li data-month="2025-12" data-author="Soledad Castresana" data-keywords="luz silencio">
-        <a class="entry" href="2025-12-15.html">15 de deciembre de 2025</a>
-      </li>
-      <li data-month="2025-12" data-author="Raúl Gómez Jattin" data-keywords="noche ciudad">
-        <a class="entry" href="2025-12-14.html">14 de deciembre de 2025</a>
-      </li>
-      <li data-month="2026-01" data-author="César Vallego" data-keywords="invierno memoria">
-        <a class="entry" href="2026-01-31.html">01 de enero de 2026</a>
-      </li>
-    </ul>
-    <p id="noEntry" style="display:none;">
-      No se han encontrado escritos.
-    </p>
-    -->
     <ul id="entries"></ul>
 
   </main>
-
-  <!--
-  <script>
-    fetch('archivo.json')
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        
-    // filtras por mes
-    // construyes los <li>
-    // los insertas en <ul id="entries">
-    });
-  </script>
-  -->
 
   <script>
     const entriesList = document.getElementById('entries');
@@ -172,12 +142,12 @@
           const li = document.createElement('li');
 
           li.dataset.month = entry.month;
-          li.dataset.author = entry.analysis.poem_author;
+          li.dataset.author = entry.analysis.poet;
           li.dataset.keywords = entry.keywords.join(' ');
 
           const a = document.createElement('a');
           a.className = 'entry';
-          a.href = `${entry.date}.html`;
+          a.href = `passe.html?date=${entry.date}`;
           a.textContent = formatDate(entry.date);
 
           li.appendChild(a);
@@ -203,8 +173,13 @@
     const monthFilter = document.getElementById('monthFilter'); //o sea mes o un mes en particular
     const authorFilter = document.getElementById('authorFilter'); //
     const keywordFilter = document.getElementById('keywordFilter');
-    const entries = document.querySelectorAll('#entries li[data-month]');
+    let entries = [];
     const noResultsFound = document.getElementById("noEntry");
+
+    function initFiltering() {
+      entries = document.querySelectorAll('#entries li[data-month]');
+      filterEntries();
+    }
 
     function getCurrentMonth() {
       const now = new Date();

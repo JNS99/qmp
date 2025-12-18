@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!-- =========================
+  index.html – Página de inicio
+========================= -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poema du jour</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      max-width: 900px;
+      margin: 40px auto 0 auto;
+      padding: 0 20px;
+    }
+    nav {
+      display: flex;
+      gap: 24px;
+      font-size: 0.9rem;
+    }
+    nav a {
+      cursor: pointer;
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    nav a.active,
+    nav a:hover {
+      border-bottom: 1px solid #222;
+    }
+
+    .subnav {
+      display: flex;
+      gap: 24px;
+      align-items: baseline;
+      margin-top: 24px;
+      font-size: 0.9rem;
+    }
+    .subnav a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .subnav a.active, .subnav a:hover {
+      border-bottom: 1px solid #222;
+    }
+    .subnav .date {
+      margin-left: auto;
+      color: #555;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
+    .content {
+      max-width: 650px; /* no centrado absoluto */
+    }
+    .poem {
+      white-space: pre-line;
+      line-height: 1.6;
+      font-size: 1rem;
+      padding-left: 28px;
+    }
+
+    .poem pre {
+      font-family: inherit;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      white-space: pre-wrap;
+      margin: 0;
+    }
+
+    .analysis {
+      display: none;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+    .analysis h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-bottom: 4px;
+    }
+
+    .analysis-meta {
+      font-size: 0.85rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .analysis-poem {
+      padding-left: 22px;
+    }
+
+    .analysis-poem pre{
+      font-family: inherit;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      margin: 0 0 36px 0;
+      color: #555;
+    }
+
+    .analysis-text {
+      max-width: 600px;
+      padding-left: 16px;
+    }
+
+    /* Estilo normal de párrafo del análisis */
+    .analysis-text p {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin: 0 0 18px 0;
+      color: #222;
+    }
+
+    /* Lead: apertura clara */
+    .analysis-text p.analysis-lead {
+      font-size: 1.08rem;      /* salto real */
+      line-height: 1.6;
+      margin-bottom: 44px;     /* pausa visible */
+      color: #111;
+    }
+
+
+    .analysis-text blockquote {
+      margin: 24px 0;
+      padding-left: 16px;
+      border-left: 1px solid #ccc;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Poema du jour</a>
+      <a href="index.html?a=1">Análisis du jour</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="https://instagram.com/quemalpoema" target="_blank">Instagram</a>
+    </nav>
+    <div class="subnav">
+      <a id="past-poem" class="active" href="#" onclick="showPoem(); return false;">Poema du passé</a>
+      <a id="past-analysis" href="#" onclick="showAnalysis(); return false;">Análisis du passé</a>
+      <span class="date" id="pageDate"></span>
+    </div>
+  </header>
+
+
+
+  <main>
+    <div class="content">
+      <h1 id="poemHeader">Poema du passé</h1>
+
+      <div class="poem" id="poem">  
+      </div>
+
+      <h1 id="analysisHeader">Análisis passé</h1>
+        <div class="analysis" id="analysis">
+          <div class="analysis-context">
+            <h2 class="analysis-title">
+            </h2>
+
+            <p class="analysis-meta">  
+            </p>
+
+            <pre class="analysis-poem">
+            </pre>
+
+          </div>
+
+          <div class="analysis-text">
+          </div>
+
+        </div>
+    </div>
+  </main>
+
+
+  <script>
+    // --- utilidades ---
+
+    //para que puedo leer el poema de dia de hoy
+    function getTodayISO() {
+      const d = new Date();
+      const yyyy = d.getFullYear();
+      const mm = String(d.getMonth() + 1).padStart(2, '0');
+      const dd = String(d.getDate()).padStart(2, '0');
+      return `${yyyy}-${mm}-${dd}`;
+    }
+
+    function escapeHtml(s) {
+      return s
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;');
+    }
+
+    function textToPre(text) {
+      return `<pre>${escapeHtml(text.trim())}</pre>`;
+    }
+
+    function textToParagraphs(text) {
+      const paragraphs = text
+        .trim()
+        .split(/\n\s*\n/)
+        .map(p => p.trim());
+
+      return paragraphs
+        .map((p, i) =>
+          i === 0
+            ? `<p class="analysis-lead">${escapeHtml(p)}</p>`
+            : `<p>${escapeHtml(p)}</p>`
+        )
+        .join('');
+    }
+
+    // Parser que SOLO reconoce encabezados de sección exactos
+    function parseEntry(text) {
+      const allowed = new Set(['POEMA', 'ANALISIS', 'POEMA_CITADO', 'TEXTO']);
+      const sections = {};
+      let current = null;
+
+      text.split('\n').forEach(line => {
+        const m = line.match(/^#\s+(.+)\s*$/);
+        if (m) {
+          const name = m[1].trim();
+          if (allowed.has(name)) {
+            current = name;
+            sections[current] = [];
+          } else if (current) {
+            // Es contenido (ej. "# Soledad Castresana · ...") dentro de una sección
+            sections[current].push(line.replace(/^#\s+/, ''));
+          }
+          return;
+        }
+        if (current) sections[current].push(line);
+      });
+
+      return {
+        poem: (sections['POEMA'] || []).join('\n').trim(),
+        citedPoem: (sections['POEMA_CITADO'] || []).join('\n').trim(),
+        analysisText: (sections['TEXTO'] || []).join('\n').trim()
+      };
+    }
+
+    function renderPoemWithOptionalTitle(text) {
+      const lines = text.split('\n');
+
+      // Si la primera línea no está vacía y la segunda sí → asumimos título
+      if (lines.length > 1 && lines[0].trim() && lines[1].trim() === '') {
+        const title = lines[0].trim();
+        const body = lines.slice(2).join('\n').trim();
+
+        return `
+          <div class="poem-title">${title}</div>
+          <pre>${body}</pre>
+        `;
+      }
+
+      // Si no, todo es poema
+      return `<pre>${text.trim()}</pre>`;
+    }
+
+    function buildCitedMeta(chosen) {
+      const a = chosen?.analysis || {};
+      const parts = [];
+
+      if (a.poet) parts.push(a.poet);
+      if (a.poem_title) parts.push(`“${a.poem_title}”`);
+      if (a.book_title) parts.push(a.book_title);
+
+      return parts.join(' · ');
+    }
+
+    function formatDate(dateStr) {
+      const [y, m, d] = dateStr.split('-');
+      const months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+      return `${parseInt(d, 10)} de ${months[parseInt(m, 10) - 1]} de ${y}`;
+    }
+
+    async function loadPastEntry() {
+      const params = new URLSearchParams(window.location.search);
+      const date = params.get('date');
+
+      if (!date) {
+        document.getElementById('poem').innerHTML = '<pre>Falta el parámetro ?date=YYYY-MM-DD</pre>';
+        return;
+      }
+
+      document.getElementById('pageDate').textContent = formatDate(date);
+
+      const index = await fetch('archivo.json').then(r => r.json());
+      const chosen = index.find(e => e.date === date);
+
+      if (!chosen) {
+        document.getElementById('poem').innerHTML = `<pre>No encontré la entrada para ${date}.</pre>`;
+        return;
+      }
+
+      const raw = await fetch(chosen.file).then(r => r.text());
+      const parsed = parseEntry(raw);
+
+      document.getElementById('poem').innerHTML = renderPoemWithOptionalTitle(parsed.poem);
+      document.querySelector('.analysis-poem').textContent = parsed.citedPoem;
+      document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
+
+      const meta = buildCitedMeta(chosen);
+      const metaEl = document.querySelector('.analysis-meta');
+      if (meta) {
+        metaEl.textContent = meta;
+        metaEl.style.display = 'block';
+      } else {
+        metaEl.textContent = '';
+        metaEl.style.display = 'none';
+      }
+    }
+
+
+
+      // Y si no quieres que esa línea aparezca duplicada dentro del poema citado:
+      // puedes quitarla del <pre> así:
+      // document.querySelector('.analysis-poem').textContent = lines.slice(1).join('\n');
+
+    function showPoem() {
+      document.getElementById('poemHeader').style.display = 'block';
+      document.getElementById('poem').style.display = 'block';
+      document.getElementById('analysisHeader').style.display = 'none';
+      document.getElementById('analysis').style.display = 'none';
+      document.getElementById('past-poem').classList.add('active');
+      document.getElementById('past-analysis').classList.remove('active');
+    }
+
+    function showAnalysis() {
+      document.getElementById('poemHeader').style.display = 'none';
+      document.getElementById('poem').style.display = 'none';
+      document.getElementById('analysisHeader').style.display = 'block';
+      document.getElementById('analysis').style.display = 'block';
+      document.getElementById('past-analysis').classList.add('active');
+      document.getElementById('past-poem').classList.remove('active');
+    }
+
+
+    // --- UI: mantener tu lógica de pestañas ---
+    const urlParams = new URLSearchParams(window.location.search);
+    const analysisFlag = urlParams.get('a');
+    if (analysisFlag) showAnalysis(); else showPoem();
+
+    // Cargar contenido del día
+    loadPastEntry().catch(err => {
+      console.error(err);
+      document.getElementById('poem').innerHTML = '<pre>Error cargando el texto.</pre>';
+    });
+
+  </script>
+</body>
+</html>
