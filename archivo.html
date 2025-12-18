@@ -96,20 +96,18 @@
 
     <!-- Filtros -->
     <div class="filters">
+
       <select id="monthFilter">
         <option value="">Mes actual</option>
         <option value="todo">De todos los tiempos</option>
-        <option value="2026-01">Enero 2026</option>
-        <option value="2025-12">Diciembre 2025</option>
       </select>
 
       <select id="authorFilter">
         <option value="">Todos los autores</option>
-        <option value="Soledad Castresana">Soledad Castresana</option>
-        <option value="Raúl Gómez Jattin">Raúl Gómez Jattin</option>
-        <option value="César Vallego">César Vallego</option>
-        <option value="Porfirio Barba-Jacob">Porfirio Barba-Jacob</option>
       </select>
+
+      <input type="text" id="keywordFilter" placeholder="Palabras clave" />
+      <p id="noEntry" style="display:none;">No se han encontrado escritos.</p>
 
       <script>
         const authorSelect = document.getElementById('authorFilter');
@@ -122,8 +120,6 @@
 
         options.forEach(option => authorSelect.add(option));
       </script>
-
-      <input type="text" id="keywordFilter" placeholder="Palabras clave" />
     </div>
 
     <!-- Lista de escritos -->
@@ -133,17 +129,26 @@
   </main>
 
   <script>
+
     const entriesList = document.getElementById('entries');
+    const monthFilter = document.getElementById('monthFilter');
+    const authorFilter = document.getElementById('authorFilter');
+    const keywordFilter = document.getElementById('keywordFilter');
+    const noResultsFound = document.getElementById('noEntry');
+
+    let entries = [];
+    const currentMonth = getCurrentMonth();
 
     fetch('archivo.json')
       .then(res => res.json())
       .then(data => {
+        // 1) Crear lista de escritos
         data.forEach(entry => {
           const li = document.createElement('li');
 
-          li.dataset.month = entry.month;
-          li.dataset.author = entry.analysis.poet;
-          li.dataset.keywords = entry.keywords.join(' ');
+          li.dataset.month = entry.month || '';
+          li.dataset.author = entry.analysis?.poet || '';
+          li.dataset.keywords = (entry.keywords || []).join(' ').toLowerCase();
 
           const a = document.createElement('a');
           a.className = 'entry';
@@ -154,18 +159,86 @@
           entriesList.appendChild(li);
         });
 
-        // IMPORTANTÍSIMO:
-        initFiltering();
+        // 2) Poblar filtros (meses y autores) desde JSON
+        populateMonthOptions(data);
+        populateAuthorOptions(data);
+
+        // 3) Activar filtrado
+        entries = document.querySelectorAll('#entries li[data-month]');
+        filterEntries();
       });
+
+    function getCurrentMonth() {
+      const now = new Date();
+      const y = now.getFullYear();
+      const m = String(now.getMonth() + 1).padStart(2, '0');
+      return `${y}-${m}`;
+    }
+
+    function populateMonthOptions(data) {
+      const months = Array.from(new Set(data.map(e => e.month).filter(Boolean)))
+        .sort()
+        .reverse(); // más reciente primero
+
+      months.forEach(ym => {
+        const opt = document.createElement('option');
+        opt.value = ym;
+        opt.textContent = monthLabel(ym);
+        monthFilter.appendChild(opt);
+      });
+    }
+
+    function populateAuthorOptions(data) {
+      const authors = Array.from(new Set(
+        data.map(e => e.analysis?.poet).filter(Boolean)
+      )).sort((a, b) => a.localeCompare(b, 'es'));
+
+      authors.forEach(name => {
+        const opt = document.createElement('option');
+        opt.value = name;
+        opt.textContent = name;
+        authorFilter.appendChild(opt);
+      });
+    }
+
+    function monthLabel(ym) {
+      const [y, m] = ym.split('-');
+      const months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+      return `${months[parseInt(m, 10) - 1]} ${y}`;
+    }
 
     function formatDate(dateStr) {
       const [y, m, d] = dateStr.split('-');
-      const months = [
-        'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
-        'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
-      ];
-      return `${parseInt(d)} de ${months[parseInt(m) - 1]} de ${y}`;
+      const months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+      return `${parseInt(d, 10)} de ${months[parseInt(m, 10) - 1]} de ${y}`;
     }
+
+    function filterEntries() {
+      const month = monthFilter.value;
+      const author = authorFilter.value;
+      const keyword = keywordFilter.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      entries.forEach(entry => {
+        const matchMonth =
+          month === 'todo' ||
+          (!month && entry.dataset.month === currentMonth) ||
+          entry.dataset.month === month;
+
+        const matchAuthor = !author || entry.dataset.author === author;
+        const matchKeyword = !keyword || entry.dataset.keywords.includes(keyword);
+
+        const visible = matchMonth && matchAuthor && matchKeyword;
+        entry.style.display = visible ? 'block' : 'none';
+        if (visible) visibleCount++;
+      });
+
+      noResultsFound.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    monthFilter.addEventListener('change', filterEntries);
+    authorFilter.addEventListener('change', filterEntries);
+    keywordFilter.addEventListener('input', filterEntries);
   </script>
 
 
