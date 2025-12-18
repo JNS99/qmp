@@ -52,18 +52,13 @@
       white-space: pre-line;
       line-height: 1.6;
       font-size: 1rem;
-    }
-
-    .poem h2 {
-      font-size: 1.2rem;
-      font-weight: normal;
-      margin-bottom: 4px;
+      padding-left: 28px;
     }
 
     .poem pre {
       font-family: inherit;
-      font-size: 1rem;
-      line-height: 1.6;
+      font-size: 1.05rem;
+      line-height: 1.75;
       white-space: pre-wrap;
       margin: 0;
     }
@@ -86,8 +81,12 @@
     }
 
     .analysis-poem {
+      padding-left: 22px;
+    }
+
+    .analysis-poem pre{
       font-family: inherit;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       line-height: 1.6;
       white-space: pre-wrap;
       margin: 0 0 36px 0;
@@ -96,14 +95,25 @@
 
     .analysis-text {
       max-width: 600px;
+      padding-left: 16px;
     }
 
+    /* Estilo normal de párrafo del análisis */
     .analysis-text p {
       font-size: 0.95rem;
       line-height: 1.65;
-      margin-bottom: 18px;
+      margin: 0 0 18px 0;
       color: #222;
     }
+
+    /* Lead: apertura clara */
+    .analysis-text p.analysis-lead {
+      font-size: 1.08rem;      /* salto real */
+      line-height: 1.6;
+      margin-bottom: 44px;     /* pausa visible */
+      color: #111;
+    }
+
 
     .analysis-text blockquote {
       margin: 24px 0;
@@ -111,13 +121,6 @@
       border-left: 1px solid #ccc;
       font-size: 0.95rem;
       color: #444;
-    }
-
-    .analysis-lead {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 36px;
-      color: #333;
     }
 
   </style>
@@ -136,91 +139,169 @@
     <div class="content">
       <h1 id="poemHeader">Poema du jour</h1>
 
-        <h2 class="poem-title">
-          qué hay para ver en el bosque?
-        </h2>
-
-      <div class="poem" id="poem">
-        <pre>
-al escucharlas caer
-por el peso del agua
-tu bolígrafo susurra
-que las hojas blancas
-con nervios azules
-gozan cuando
-la lluvia negra
-las elija 
-
-pero en mi bosque 
-la lluvia se esconde
-
-luego
-tu mano supera la curva
-
-y la lluvia se libera
-        </pre>
+      <div class="poem" id="poem">  
       </div>
 
       <h1 id="analysisHeader">Análisis du jour</h1>
         <div class="analysis" id="analysis">
           <div class="analysis-context">
             <h2 class="analysis-title">
-              trampa para cazar caballos
             </h2>
 
-            <p class="analysis-meta">
-              Soledad Castresana·La carne se corta
+            <p class="analysis-meta">  
             </p>
 
             <pre class="analysis-poem">
-en el suelo
-una costra de maíz azul
-sobre los granos
-cae un potrillo
-
-una espuma violeta
-le corona el belfo
-la hinchazón anestesia los ojos
-atraviesa el barbijo
-
-hay que quemar el aire
-para evitar el contagio
-
-la noche se ilumina
-de relinchos
-y no hay música
-para acompañar el fuego
-
-los caballos saben
-cuando van a morir
-
-pero no conocen el color del veneno
-
-
             </pre>
+
           </div>
 
           <div class="analysis-text">
-            <p class="analysis-lead">
-Estamos en el campo y, en un momento dado, un caballo muere. El narrador, en lugar de emocionarse, mira la escena con distanciamiento: la muerte es algo común y práctico para él y para la comunidad. Así es el mundo de trampa para cazar caballos. Yo propongo que el poema muestra que, cuando la vida de un caballo ya no tiene significación, la vida de un humano se despoja de significado también.
-            </p>
-            <p>
-La reacción y el lenguaje del narrador me llaman la atención, tanto por lo que dice como por lo que no se dice. Consideremos las tres primeras estrofas, donde el caballo muere y el narrador afirma que hay que quemar el aire para protegerse de una enfermedad. Las palabras son descriptivas (“cae un potrillo”) primeramente y luego grotescas (“una espuma violeta”, “la hinchazón”). Ante esa escena trágica, el narrador mira con el distanciamiento de alguien que está acostumbrado a tales experiencias. No intenta ayudar; no experimenta duelo; no simpatiza con la pena. Más bien, dice que la espuma “corona el belfo”, lo que interpreto como una ironía absurda: acá, una muerte dolorosa y fea merece una palabra regia, coronar, como si no existiera una diferencia entre lo noble y lo grotesco; el narrador difumina la línea entre el respeto y la tragedia.
-
-            </p>
-La comunidad reacciona con la misma indiferencia: la muerte del caballo, para ellos, representa nada más que una comida; no hay una celebración, un ritual, una ceremonia (“no hay música”), aunque lo que hicieron afecta a los caballos (“la noche se ilumina de relinchos”). La pena y la solidaridad no les importan; hay una devaluación de la vida del caballo a algo práctico y físico: la comida.
-            <p>  
-Vemos el contraste entre los caballos y los humanos claramente en las dos últimas estrofas: el caballo siente pero no piensa; el humano piensa pero no siente. El caballo puede percibir su propia muerte y la muerte de otro caballo, pero no es capaz de evitarla por una falta de conocimiento. El humano tiene la inteligencia para tender trampas a los caballos, pero no es capaz de apreciar la vida del caballo ni la vida en general.
-            </p>
-            <p>
-La vida aquí aparece con lo físico separado de lo sentimental. El narrador ve el mundo con una precisión fría (las tres primeras estrofas) y, aunque vemos una escena social, no hay conexión entre los miembros de la comunidad (no hay un festival, una celebración, una ceremonia). La misma indiferencia que tienen hacia la vida del caballo se transfiere a su propia vida.
-            </p>
           </div>
+
         </div>
     </div>
   </main>
 
+
   <script>
+    // --- utilidades ---
+
+    //para que puedo leer el poema de dia de hoy
+    function getTodayISO() {
+      const d = new Date();
+      const yyyy = d.getFullYear();
+      const mm = String(d.getMonth() + 1).padStart(2, '0');
+      const dd = String(d.getDate()).padStart(2, '0');
+      return `${yyyy}-${mm}-${dd}`;
+    }
+
+    function escapeHtml(s) {
+      return s
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;');
+    }
+
+    function textToPre(text) {
+      return `<pre>${escapeHtml(text.trim())}</pre>`;
+    }
+
+    function textToParagraphs(text) {
+      const paragraphs = text
+        .trim()
+        .split(/\n\s*\n/)
+        .map(p => p.trim());
+
+      return paragraphs
+        .map((p, i) =>
+          i === 0
+            ? `<p class="analysis-lead">${escapeHtml(p)}</p>`
+            : `<p>${escapeHtml(p)}</p>`
+        )
+        .join('');
+    }
+
+    // Parser que SOLO reconoce encabezados de sección exactos
+    function parseEntry(text) {
+      const allowed = new Set(['POEMA', 'ANALISIS', 'POEMA_CITADO', 'TEXTO']);
+      const sections = {};
+      let current = null;
+
+      text.split('\n').forEach(line => {
+        const m = line.match(/^#\s+(.+)\s*$/);
+        if (m) {
+          const name = m[1].trim();
+          if (allowed.has(name)) {
+            current = name;
+            sections[current] = [];
+          } else if (current) {
+            // Es contenido (ej. "# Soledad Castresana · ...") dentro de una sección
+            sections[current].push(line.replace(/^#\s+/, ''));
+          }
+          return;
+        }
+        if (current) sections[current].push(line);
+      });
+
+      return {
+        poem: (sections['POEMA'] || []).join('\n').trim(),
+        citedPoem: (sections['POEMA_CITADO'] || []).join('\n').trim(),
+        analysisText: (sections['TEXTO'] || []).join('\n').trim()
+      };
+    }
+
+    function renderPoemWithOptionalTitle(text) {
+      const lines = text.split('\n');
+
+      // Si la primera línea no está vacía y la segunda sí → asumimos título
+      if (lines.length > 1 && lines[0].trim() && lines[1].trim() === '') {
+        const title = lines[0].trim();
+        const body = lines.slice(2).join('\n').trim();
+
+        return `
+          <div class="poem-title">${title}</div>
+          <pre>${body}</pre>
+        `;
+      }
+
+      // Si no, todo es poema
+      return `<pre>${text.trim()}</pre>`;
+    }
+
+    function buildCitedMeta(chosen) {
+      const a = chosen?.analysis || {};
+      const parts = [];
+
+      if (a.poet) parts.push(a.poet);
+      if (a.poem_title) parts.push(`“${a.poem_title}”`);
+      if (a.book_title) parts.push(a.book_title);
+
+      return parts.join(' · ');
+    }
+
+    async function loadTodayEntry() {
+      // 1) Cargar índice
+      const index = await fetch('archivo.json').then(r => r.json());
+
+      // 2) Elegir qué día cargar (hoy si existe, si no el más reciente)
+      const today = getTodayISO();
+      const byDateAsc = [...index].sort((a, b) => a.date.localeCompare(b.date));
+      const chosen = index.find(e => e.date === today) || byDateAsc.at(-1);
+
+      if (!chosen) {
+        document.getElementById('poem').innerHTML = '<pre>No hay entradas todavía.</pre>';
+        return;
+      }
+
+      // 3) Cargar el archivo diario y parsearlo
+      const raw = await fetch(chosen.file).then(r => r.text());
+      const parsed = parseEntry(raw);
+
+      // 4) Render: Poema du jour (tuyo) + título opcional en negrita
+      document.getElementById('poem').innerHTML = renderPoemWithOptionalTitle(parsed.poem);
+
+      // 5) Render: Análisis du jour (poema citado + tu texto)
+      document.querySelector('.analysis-poem').textContent = parsed.citedPoem;
+      document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
+
+      // Meta del poema citado desde JSON (autor · “título” · poemario), si existe
+      const meta = buildCitedMeta(chosen);
+      const metaEl = document.querySelector('.analysis-meta');
+      if (meta) {
+        metaEl.textContent = meta;
+        metaEl.style.display = 'block';
+      } else {
+        metaEl.textContent = '';
+        metaEl.style.display = 'none';
+      }
+    }
+
+
+      // Y si no quieres que esa línea aparezca duplicada dentro del poema citado:
+      // puedes quitarla del <pre> así:
+      // document.querySelector('.analysis-poem').textContent = lines.slice(1).join('\n');
+
     function showPoem() {
       document.getElementById('poemHeader').style.display = 'block';
       document.getElementById('poem').style.display = 'block';
@@ -239,15 +320,17 @@ La vida aquí aparece con lo físico separado de lo sentimental. El narrador ve 
       document.getElementById('nav-poem').classList.remove('active');
     }
 
-    //if we go from the archive to the analysis, we want
-    //to see that and not the poem
+    // --- UI: mantener tu lógica de pestañas ---
     const urlParams = new URLSearchParams(window.location.search);
     const analysisFlag = urlParams.get('a');
-    if (analysisFlag) {
-        showAnalysis();
-    } else {
-      showPoem(); 
-    }
+    if (analysisFlag) showAnalysis(); else showPoem();
+
+    // Cargar contenido del día
+    loadTodayEntry().catch(err => {
+      console.error(err);
+      document.getElementById('poem').innerHTML = '<pre>Error cargando el texto.</pre>';
+    });
+
   </script>
 </body>
 </html>

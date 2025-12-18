@@ -1,44 +1,50 @@
 [
   {
+    "date": "2025-12-17",
+    "month": "2025-12",
+    "file": "textos/2025-12-17.txt",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "la suerte del que come",
+      "book_title": "La carne se corta"
+      },
+    "keywords": ["pozo", "ayer", "cubo","seco","temo","temer","solo","Soledad","Castresana",
+      "Carne","se corta","cortarse"]
+  },
+  {
+    "date": "2025-12-16",
+    "month": "2025-12",
+    "file": "textos/2025-12-16.txt",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "un entierro",
+      "book_title": "La carne se corta"
+      },
+    "keywords": ["pozo", "ayer", "cubo","seco","temo","temer","solo","Soledad","Castresana",
+      "Carne","se corta","cortarse"]
+  },
+  {
+    "date": "2025-12-15",
+    "month": "2025-12",
+    "file": "textos/2025-12-15.txt",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "trampa para cazar caballos",
+      "book_title": "La carne se corta"
+      },
+    "keywords": ["pozo", "ayer", "cubo","seco","temo","temer","solo","Soledad","Castresana",
+      "Carne","se corta","cortarse"]
+  },
+  {
     "date": "2025-12-14",
     "month": "2025-12",
-    "keywords": ["pozo", "ayer", "cubo","seco","temo","temer","solo","Soledad","Castresana",
-      "Carne","se corta","cortarse"],
-
-    "poem": {
-      "html": "ayer te di el agua del pozo\no sé de dónde ha venido\nhoy, el cubo más seco, pero\nya no le temo a estar solo"
-    },
-
+    "file": "textos/2025-12-14.txt",
     "analysis": {
-      "poem_title": "Poema sin título",
-      "poem_author": "Raúl Gómez Jattin",
-      "source": "Libro X, 1984",
-      "poem_html": "            <pre class="analysis-poem">
-              arde la lluvia
-              si roza las rodillas
-              la huella de las chalas
-              la marca de la hoja
-
-              empecinadas las ortigas
-              se niegan al peso del agua
-              sus aguijones inquietan
-              el ritmo hostil de la cintura
-
-              el rebenque
-              lastima la calma del charco
-
-              sudor de mujer y de yegua
-              confunden el cuero
-
-              la hembra
-              de cara en el barro
-              busca el sentido del tacto
-
-              cerdos y gallinas
-              deshacen los restos
-
-            </pre>",
-      "text_html": "<p>Primer párrafo del análisis.</p><p>Segundo párrafo.</p>"
-    }
-  }
+      "poet": "Soledad Castresana",
+      "poem_title": "charco en calma",
+      "book_title": "La carne se corta"
+      },
+    "keywords": ["pozo", "ayer", "cubo","seco","temo","temer","solo","Soledad","Castresana",
+      "Carne","se corta","cortarse"]
+  }  
 ]

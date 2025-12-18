@@ -127,6 +127,8 @@
     </div>
 
     <!-- Lista de escritos -->
+
+    <!--
     <ul id="entries">
       <li data-month="2025-12" data-author="Soledad Castresana" data-keywords="luz silencio">
         <a class="entry" href="2025-12-15.html">15 de deciembre de 2025</a>
@@ -141,7 +143,61 @@
     <p id="noEntry" style="display:none;">
       No se han encontrado escritos.
     </p>
+    -->
+    <ul id="entries"></ul>
+
   </main>
+
+  <!--
+  <script>
+    fetch('archivo.json')
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        
+    // filtras por mes
+    // construyes los <li>
+    // los insertas en <ul id="entries">
+    });
+  </script>
+  -->
+
+  <script>
+    const entriesList = document.getElementById('entries');
+
+    fetch('archivo.json')
+      .then(res => res.json())
+      .then(data => {
+        data.forEach(entry => {
+          const li = document.createElement('li');
+
+          li.dataset.month = entry.month;
+          li.dataset.author = entry.analysis.poem_author;
+          li.dataset.keywords = entry.keywords.join(' ');
+
+          const a = document.createElement('a');
+          a.className = 'entry';
+          a.href = `${entry.date}.html`;
+          a.textContent = formatDate(entry.date);
+
+          li.appendChild(a);
+          entriesList.appendChild(li);
+        });
+
+        // IMPORTANTÍSIMO:
+        initFiltering();
+      });
+
+    function formatDate(dateStr) {
+      const [y, m, d] = dateStr.split('-');
+      const months = [
+        'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+        'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
+      ];
+      return `${parseInt(d)} de ${months[parseInt(m) - 1]} de ${y}`;
+    }
+  </script>
+
 
   <script>
     const monthFilter = document.getElementById('monthFilter'); //o sea mes o un mes en particular

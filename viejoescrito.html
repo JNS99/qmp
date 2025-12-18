@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- =========================
+  index.html – Página de inicio
+========================= -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poema du jour</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      max-width: 900px;
+      margin: 40px auto 0 auto;
+      padding: 0 20px;
+    }
+    nav {
+      display: flex;
+      gap: 24px;
+      font-size: 0.9rem;
+    }
+    nav a {
+      cursor: pointer;
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    nav a.active,
+    nav a:hover {
+      border-bottom: 1px solid #222;
+    }
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
+    .content {
+      max-width: 650px; /* no centrado absoluto */
+    }
+    .poem {
+      white-space: pre-line;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    .poem h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-bottom: 4px;
+    }
+
+    .poem pre {
+      font-family: inherit;
+      font-size: 1rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      margin: 0;
+    }
+
+    .analysis {
+      display: none;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+    .analysis h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-bottom: 4px;
+    }
+
+    .analysis-meta {
+      font-size: 0.85rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .analysis-poem {
+      font-family: inherit;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      margin: 0 0 36px 0;
+      color: #555;
+    }
+
+    .analysis-text {
+      max-width: 600px;
+    }
+
+    .analysis-text p {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 18px;
+      color: #222;
+    }
+
+    .analysis-text blockquote {
+      margin: 24px 0;
+      padding-left: 16px;
+      border-left: 1px solid #ccc;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .analysis-lead {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 36px;
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a id="nav-poem" class="active" onclick="showPoem()">Poema du jour</a>
+      <a id="nav-analysis" onclick="showAnalysis()">Análisis du jour</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="https://instagram.com/quemalpoema" target="_blank">Instagram</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+      <h1 id="poemHeader">Poema de DATO</h1>
+
+        <h2 class="poem-title">
+        </h2>
+
+      <div class="poem" id="poem">
+
+      </div>
+
+      <h1 id="analysisHeader">Análisis du jour</h1>
+        <div class="analysis" id="analysis">
+          <div class="analysis-context">
+            <h2 class="analysis-title">
+              trampa para cazar caballos
+            </h2>
+
+            <p class="analysis-meta">
+              Soledad Castresana·La carne se corta
+            </p>
+
+            <pre class="analysis-poem"></pre>
+          </div>
+
+          <div class="analysis-text">
+          </div>
+        </div>
+    </div>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const date = params.get('date');
+    console.log(date);
+    fetch('archivo.json')
+      .then(res => res.json())
+      .then(data => {
+        const entry = data.find(e => e.date === date);
+        if (!entry) {
+          // mostrar mensaje de error suave
+          return;
+        }
+        renderEntry(entry);
+    });
+
+    function renderEntry(entry) {
+      document.getElementById('poem').innerHTML = entry.poem.my_poem_html;
+
+      document.getElementById('analysis').innerHTML = `
+        <h2>${entry.analysis.poem_title || ''}</h2>
+        <p class="analysis-meta">${entry.analysis.poem_author}</p>
+        ${entry.analysis.poem_html}
+        <div class="analysis-text">
+          ${entry.analysis.text_html}
+        </div>
+      `;
+    }
+
+
+
+    function showPoem() {
+      document.getElementById('poemHeader').style.display = 'block';
+      document.getElementById('poem').style.display = 'block';
+      document.getElementById('analysisHeader').style.display = 'none';
+      document.getElementById('analysis').style.display = 'none';
+      document.getElementById('nav-poem').classList.add('active');
+      document.getElementById('nav-analysis').classList.remove('active');
+    }
+
+    function showAnalysis() {
+      document.getElementById('poemHeader').style.display = 'none';
+      document.getElementById('poem').style.display = 'none';
+      document.getElementById('analysisHeader').style.display = 'block';
+      document.getElementById('analysis').style.display = 'block';
+      document.getElementById('nav-analysis').classList.add('active');
+      document.getElementById('nav-poem').classList.remove('active');
+    }
+
+    //if we go from the archive to the analysis, we want
+    //to see that and not the poem
+    const urlParams = new URLSearchParams(window.location.search);
+    const analysisFlag = urlParams.get('a');
+    if (analysisFlag) {
+        showAnalysis();
+    } else {
+      showPoem(); 
+    }
+
+    function textToParagraphs(text) {
+      return text
+        .trim()
+        .split(/\n\s*\n/)
+        .map(p => `<p>${p.trim()}</p>`)
+        .join('');
+    }
+
+    function textToPre(text) {
+      return `<pre>${text.trim()}</pre>`;
+    }
+
+    document.getElementById('poem').innerHTML =
+      textToPre(entry.poem.text);
+
+    document.getElementById('analysis').innerHTML = `
+      <h2>${entry.analysis.poem_title || ''}</h2>
+      <p class="analysis-meta">
+        ${entry.analysis.poem_author}
+      </p>
+      ${textToPre(entry.analysis.poem_text)}
+      <div class="analysis-text">
+        ${textToParagraphs(entry.analysis.text)}
+      </div>
+    `;
+
+
+
+  </script>
+</body>
+</html>
