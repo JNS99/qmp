@@ -268,7 +268,7 @@
         const body = lines.slice(2).join('\n').trim();
 
         return `
-          <div class="poem-title">${title}</div>
+          <div class="poem-title">${escapeHtml(title)}</div>
           <pre>${body}</pre>
         `;
       }

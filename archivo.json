@@ -1,4 +1,46 @@
 [
+    {
+    "date": "2025-12-18",
+    "month": "2025-12",
+    "file": "textos/2025-12-18.txt",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "tótem",
+      "book_title": "La carne se corta"
+      },
+      "keywords": [
+        { "word": "ideas", "weight": 3 }
+        { "word": "escribir", "weight": 3 }
+        { "word": "nada", "weight": 3 }
+
+        { "word": "violencia", "weight": 3 },
+        { "word": "materialidad", "weight": 3 },
+        { "word": "deshumanizacion", "weight": 3 },
+        { "word": "animalidad", "weight": 3 },
+        { "word": "ausencia de simbolo", "weight": 3 },
+
+        { "word": "cuerpo", "weight": 2 },
+        { "word": "frontera humano animal", "weight": 2 },
+        { "word": "fisico", "weight": 2 },
+        { "word": "matanza", "weight": 2 },
+        { "word": "crueldad", "weight": 2 },
+        { "word": "instinto", "weight": 2 },
+        { "word": "sangre", "weight": 2 },
+        { "word": "significado", "weight": 2 },
+        { "word": "reduccion", "weight": 2 },
+
+        { "word": "nino", "weight": 1 },
+        { "word": "liebre", "weight": 1 },
+        { "word": "bosque", "weight": 1 },
+        { "word": "caza", "weight": 1 },
+        { "word": "golpe", "weight": 1 },
+        { "word": "piel", "weight": 1 },
+        { "word": "carne", "weight": 1 },
+        { "word": "sufrimiento", "weight": 1 },
+        { "word": "abandono", "weight": 1 },
+        { "word": "indiferencia", "weight": 1 }
+      ]
+    }
   {
     "date": "2025-12-17",
     "month": "2025-12",
