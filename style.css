@@ -51,18 +51,17 @@ h1 {
 #poem {
   margin-top: 48px;
   max-width: 480px;
-  padding-left: 24px;
+  padding-left: 28px;
 }
 
 #poem pre {
   font-size: 1.05rem;
-  line-height: 1.85;
 }
 
 .poem {
   line-height: 1.6;
   font-size: 1rem;
-  padding-left: 28px;
+  padding-left: 24px;
 }
 
 .poem-title{
@@ -75,9 +74,34 @@ h1 {
 .poem pre {
   font-family: inherit;
   font-size: 1.05rem;
-  line-height: 1.75;
+  line-height: 1.7;
   white-space: pre-wrap;
   margin: 0;
+}
+
+.poem pre::first-letter {
+  letter-spacing: 0.03em;
+}
+
+#poem::after {
+  content: "";
+  display: block;
+  height: 32px;
+}
+
+/*
+#poem pre {
+  border-left: 1px solid #ccc;
+  padding-left: 18px;
+}*/
+
+
+#poem {
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.03),
+    transparent 60%
+  );
 }
 
 pre.analysis-poem{

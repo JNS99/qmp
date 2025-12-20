@@ -36,10 +36,20 @@
       text-decoration: none;
       border-bottom: 1px solid #222;
     }
+
     #noEntry {
+      min-height: 0em;     /* menos alto */
+      margin: 6px 0 8px 0;   /* poco espacio, controlado */
       font-size: 0.9rem;
-      color: #555;
+      color: #666;
+      visibility: hidden;
     }
+
+    #noEntry.show {
+      visibility: visible;
+    }
+
+
 
     .meta {
       font-size: 0.8rem;
@@ -61,7 +71,6 @@
 
     <!-- Filtros -->
     <div class="filters">
-
       <select id="monthFilter">
         <option value="">Mes actual</option>
         <option value="todo">De todos los tiempos</option>
@@ -72,8 +81,9 @@
       </select>
 
       <input type="text" id="keywordFilter" placeholder="Palabras clave" />
-      <p id="noEntry" style="display:none;">No se han encontrado escritos.</p>
     </div>
+
+    <p id="noEntry">No se han encontrado escritos.</p>
 
     <!-- Lista de escritos -->
 
@@ -226,7 +236,7 @@
 
 
 
-        noResultsFound.style.display = visibleCount === 0 ? 'block' : 'none';
+        noResultsFound.classList.toggle('show', visibleCount === 0);
       }
 
     //to normalize, avoid accents etc...
