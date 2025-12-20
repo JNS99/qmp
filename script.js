@@ -193,7 +193,7 @@ function setCitedMeta(chosen) {
 
   // Línea 2: autor / poemario
   const parts = [poet, book].filter(Boolean);
-  sourceEl.textContent = parts.join(' / ');
+  sourceEl.textContent = parts.join(' · ');
   sourceEl.style.display = parts.length ? 'block' : 'none';
 }
 
