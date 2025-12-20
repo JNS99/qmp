@@ -16,6 +16,7 @@
       margin-bottom: 40px;
       font-size: 0.9rem;
     }
+
     select, input {
       font-family: inherit;
       font-size: 0.9rem;
@@ -23,11 +24,13 @@
       border: 1px solid #222;
       background: #fafafa;
     }
+
     ul {
       list-style: none;
       padding: 0;
       max-width: 650px;
     }
+
     li {
       margin-bottom: 16px;
     }
@@ -44,13 +47,15 @@
       display: none; /* clave */
     }
 
-
-
-
     .meta {
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       color: #555;
+      margin-top: 4px;
+      line-height: 1.35;
     }
+
+    .meta em { font-style: italic; }
+
   </style>
 </head>
 <body>
@@ -98,6 +103,30 @@
     let entries = [];
     const currentMonth = getCurrentMonth();
 
+    function escapeHtml(s) {
+      return (s || '')
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
+    }
+
+    function ellipsizeWords(text, maxWords = 8) {
+      const words = (text || '').trim().split(/\s+/).filter(Boolean);
+      if (words.length === 0) return '';
+      return (words.length > maxWords)
+      ? words.slice(0, maxWords).join(' ') + '…'
+      : words.join(' ');
+    }
+
+    function ensureEllipsis(text) {
+      const t = (text || '').trim();
+      if (!t) return '';
+      return t.endsWith('…') ? t : (t + '…');
+    }
+
+
     fetch('archivo.json')
     .then(res => res.json())
     .then(data => {
@@ -107,6 +136,7 @@
 
         li.dataset.month = entry.month || '';
         li.dataset.author = entry.analysis?.poet || '';
+        li.dataset.date = entry.date; // para ordenar por fecha
         const rawKeywords = Array.isArray(entry.keywords) ? entry.keywords : [];
         const kwObjects = rawKeywords
         .map(k => {
@@ -127,6 +157,7 @@
         const poemTitle = entry.analysis?.poem_title || '';
         const bookTitle = entry.analysis?.book_title || '';
 
+
         li.dataset.search = normalize([poet, poemTitle, bookTitle].filter(Boolean).join(' '));
 
         const a = document.createElement('a');
@@ -135,6 +166,42 @@
         a.textContent = formatDate(entry.date);
 
         li.appendChild(a);
+
+        const myTitleRaw = (entry.my_poem_title || '').trim();
+        const mySnippetRaw = (entry.my_poem_snippet || '').trim();
+
+        const analyzedTitleRaw = (entry.analysis?.poem_title || '').trim();
+        const analyzedSnippetRaw = (entry.analysis?.poem_snippet || '').trim();
+
+        const analyzedPoet = (entry.analysis?.poet || '').trim();
+
+// Si hay título -> truncar sin elipsis forzada
+// Si hay snippet -> truncar y forzar elipsis siempre
+        const myPoemDisplay = myTitleRaw
+        ? ellipsizeWords(myTitleRaw, 8)
+        : ensureEllipsis(ellipsizeWords(mySnippetRaw, 8));
+
+        const analyzedPoemDisplay = analyzedTitleRaw
+        ? ellipsizeWords(analyzedTitleRaw, 8)
+        : ensureEllipsis(ellipsizeWords(analyzedSnippetRaw, 8));
+
+
+
+        // Construimos: Mi título · Poema analizado · Autor
+        const parts = [];
+        if (myPoemDisplay) parts.push(`<em>${escapeHtml(myPoemDisplay)}</em>`);
+        if (analyzedPoemDisplay) parts.push(`<em>${escapeHtml(analyzedPoemDisplay)}</em>`);
+
+        if (analyzedPoet) parts.push(escapeHtml(analyzedPoet));
+
+
+        if (parts.length) {
+          const meta = document.createElement('div');
+          meta.className = 'meta';
+          meta.innerHTML = parts.join(' · ');
+          li.appendChild(meta);
+        }
+
         entriesList.appendChild(li);
       });
 
@@ -187,9 +254,15 @@
 
       function monthLabel(ym) {
         const [y, m] = ym.split('-');
-        const months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
-        return `${months[parseInt(m, 10) - 1]} ${y}`;
+        const months = [
+          'enero','febrero','marzo','abril','mayo','junio',
+          'julio','agosto','septiembre','octubre','noviembre','diciembre'
+        ];
+
+        const name = months[parseInt(m, 10) - 1];
+        return `${name.charAt(0).toUpperCase() + name.slice(1)} ${y}`;
       }
+
 
       function formatDate(dateStr) {
         const [y, m, d] = dateStr.split('-');
@@ -228,7 +301,14 @@
           visible
           .sort((a, b) => (b._score || 0) - (a._score || 0))
           .forEach(li => entriesList.appendChild(li));
+        } else {
+          // restaurar orden cronológico (más reciente primero)
+          const visible = [...entries].filter(e => e.style.display !== 'none');
+          visible
+          .sort((a, b) => (b.dataset.date || '').localeCompare(a.dataset.date || ''))
+          .forEach(li => entriesList.appendChild(li));
         }
+
 
         const hasKeyword = terms.length > 0;
         noResultsFound.style.display = (hasKeyword && visibleCount === 0) ? 'block' : 'none';
@@ -259,7 +339,6 @@
 
         return score;
       }
-
 
       monthFilter.addEventListener('change', filterEntries);
       authorFilter.addEventListener('change', filterEntries);

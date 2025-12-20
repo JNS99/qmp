@@ -2,9 +2,12 @@
   "date": "2025-12-2",
   "month": "2025-12",
   "file": "textos/2025-12-2.txt",
+  "my_poem_title":"",
+  "my_poem_snippet":"",
   "analysis": {
     "poet": "",
     "poem_title": "",
+    "poem_snippet": "",
     "book_title": ""
     },
     "keywords": [

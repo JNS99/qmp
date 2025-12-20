@@ -3,6 +3,7 @@
     "date": "2025-12-19",
     "month": "2025-12",
     "file": "textos/2025-12-19.txt",
+    "my_poem_title": "autorretrato",
     "analysis": {
       "poet": "Alfonsina Storni",
       "poem_title": "Hombre pequeñito",
@@ -46,6 +47,7 @@
     "date": "2025-12-18",
     "month": "2025-12",
     "file": "textos/2025-12-18.txt",
+    "my_poem_title": "escribir",
     "analysis": {
       "poet": "Soledad Castresana",
       "poem_title": "tótem",
@@ -88,6 +90,7 @@
     "date": "2025-12-17",
     "month": "2025-12",
     "file": "textos/2025-12-17.txt",
+    "my_poem_title": "follar",
     "analysis": {
       "poet": "Soledad Castresana",
       "poem_title": "la suerte del que come",
@@ -133,6 +136,7 @@
     "date": "2025-12-16",
     "month": "2025-12",
     "file": "textos/2025-12-16.txt",
+    "my_poem_snippet": "de mi mano cae cae cae",
     "analysis": {
       "poet": "Soledad Castresana",
       "poem_title": "un entierro",
@@ -176,6 +180,7 @@
     "date": "2025-12-15",
     "month": "2025-12",
     "file": "textos/2025-12-15.txt",
+    "my_poem_title": "qué hay para ver en el bosque?",
     "analysis": {
       "poet": "Soledad Castresana",
       "poem_title": "trampa para cazar caballos",
@@ -225,6 +230,7 @@
     "date": "2025-12-14",
     "month": "2025-12",
     "file": "textos/2025-12-14.txt",
+    "my_poem_snippet": "ayer te di el agua del pozo",
     "analysis": {
       "poet": "Soledad Castresana",
       "poem_title": "charco en calma",
