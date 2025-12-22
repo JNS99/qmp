@@ -1,5 +1,44 @@
 [
   {
+    "date": "2025-12-21",
+    "month": "2025-12",
+    "file": "textos/2025-12-21.txt",
+    "my_poem_title":"",
+    "my_poem_snippet":"veo tu lágrima",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Escribir",
+      "poem_snippet": "",
+      "book_title": ""
+    },
+    "keywords": [
+      { "word": "escritura", "weight": 3 },
+      { "word": "dolor", "weight": 3 },
+      { "word": "autenticidad", "weight": 3 },
+      { "word": "interioridad", "weight": 3 },
+      { "word": "liberacion", "weight": 3 },
+
+      { "word": "cuerpo", "weight": 2 },
+      { "word": "sangre", "weight": 2 },
+      { "word": "exorcismo", "weight": 2 },
+      { "word": "ardor", "weight": 2 },
+      { "word": "catarsis", "weight": 2 },
+      { "word": "introspeccion", "weight": 2 },
+      { "word": "auto conocimiento", "weight": 2 },
+      { "word": "proceso creativo", "weight": 2 },
+      { "word": "compromiso", "weight": 2 },
+
+      { "word": "soledad", "weight": 1 },
+      { "word": "silencio", "weight": 1 },
+      { "word": "voz interior", "weight": 1 },
+      { "word": "fingimiento", "weight": 1 },
+      { "word": "honestidad", "weight": 1 },
+      { "word": "inutilidad", "weight": 1 },
+      { "word": "impulso", "weight": 1 },
+      { "word": "pensamiento", "weight": 1 }
+    ]
+  },
+  {
     "date": "2025-12-20",
     "month": "2025-12",
     "file": "textos/2025-12-20.txt",
