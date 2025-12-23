@@ -1,5 +1,46 @@
 [
   {
+    "date": "2025-12-22",
+    "month": "2025-12",
+    "file": "textos/2025-12-22.txt",
+    "my_poem_title":"",
+    "my_poem_snippet":"no te puedo ver esta semana",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "grieta",
+      "poem_snippet": "",
+      "book_title": ""
+    },
+    "keywords": [
+      { "word": "identidad", "weight": 3 },
+      { "word": "crisis", "weight": 3 },
+      { "word": "voz interior", "weight": 3 },
+      { "word": "lenguaje", "weight": 3 },
+      { "word": "memoria", "weight": 3 },
+
+      { "word": "autocritica", "weight": 2 },
+      { "word": "presion", "weight": 2 },
+      { "word": "miedo", "weight": 2 },
+      { "word": "olvido", "weight": 2 },
+      { "word": "fragmentacion", "weight": 2 },
+      { "word": "multiplicidad del yo", "weight": 2 },
+      { "word": "libertad", "weight": 2 },
+      { "word": "expresion", "weight": 2 },
+      { "word": "inspiracion", "weight": 2 },
+
+      { "word": "yo", "weight": 1 },
+      { "word": "mirada", "weight": 1 },
+      { "word": "juicio", "weight": 1 },
+      { "word": "abismo", "weight": 1 },
+      { "word": "animales", "weight": 1 },
+      { "word": "palabras", "weight": 1 },
+      { "word": "silencio", "weight": 1 },
+      { "word": "dolor", "weight": 1 },
+      { "word": "resistencia", "weight": 1 }
+    ]
+
+  },
+  {
     "date": "2025-12-21",
     "month": "2025-12",
     "file": "textos/2025-12-21.txt",
