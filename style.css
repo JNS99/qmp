@@ -51,7 +51,7 @@ h1 {
 #poem {
   margin-top: 48px;
   max-width: 480px;
-  padding: 28px 0;         /* <- nuevo: arriba/abajo */
+  padding: 24px 0;         /* <- nuevo: arriba/abajo */
   padding-left: 28px;      /* mantienes tu “cuaderno” a la derecha */
   background: linear-gradient(
     to right,
@@ -60,27 +60,30 @@ h1 {
   );
 }
 
-
 #poem pre {
   font-family: inherit;
   font-size: 1.05rem;
   line-height: 1.7;
   white-space: pre-wrap;
   margin: 0;
-
-  border-left: 1px solid #ccc;
-  padding-left: 18px;
 }
 
 .poem {
   line-height: 1.6;
   font-size: 1rem;
   padding-left: 0px;
+  position: relative;
 }
 
 /*solo si hay cambios en el futuro */
 .poem pre {
+  margin-top: 0;
+}
 
+.poem-lines{
+  border-left: 1px solid #ccc;
+  padding-left: 18px;
+  display: inline-block; /* importante: la altura sigue el texto */
 }
 
 .indent {
@@ -90,7 +93,7 @@ h1 {
 .poem-title{
   font-weight: 600;
   font-size: 1.05rem;
-  margin: 0 0 14px 0;
+  margin: 0 0 8px 0;
   letter-spacing: 0.02em;
 }
 

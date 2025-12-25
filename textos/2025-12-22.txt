@@ -5,7 +5,7 @@ por |el dinero
 |el cansancio
 |la falta de tiempo
 
-no puede pasar nada en diez minutos… ¿verdad?
+no puede pasar |nada en diez minutos… ¿verdad?
 ¿cuántas palabras se pueden decir? 
 
 no te puedo ver nunca

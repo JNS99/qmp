@@ -246,7 +246,8 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
 
 
 function renderPoemWithTitleFromJson(poemText, titleFromJson) {
-  const body = (poemText || '').replace(/\s+$/, '');
+  const body = (poemText || '').replace(/^\s*\n+/, '').replace(/\s+$/, '');
+
 
   const wrapper = document.createElement('div');
   wrapper.className = 'poem';
@@ -292,7 +293,8 @@ async function loadTodayEntry() {
 
 // Ahora que el <pre> ya está en el DOM, medimos con la fuente real:
   const pre = poemEl.querySelector('pre');
-  pre.innerHTML = renderPoemWithAnchorIndents(pre.dataset.raw, pre);
+  pre.innerHTML = `<span class="poem-lines">${renderPoemWithAnchorIndents(pre.dataset.raw, pre)}</span>`;
+
 
   document.querySelector('.analysis-poem').textContent = parsed.citedPoem;
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
@@ -334,7 +336,8 @@ async function loadPastEntry() {
 
 // Ahora que el <pre> ya está en el DOM, medimos con la fuente real:
   const pre = poemEl.querySelector('pre');
-  pre.innerHTML = renderPoemWithAnchorIndents(pre.dataset.raw, pre);
+  pre.innerHTML = `<span class="poem-lines">${renderPoemWithAnchorIndents(pre.dataset.raw, pre)}</span>`;
+
 
   document.querySelector('.analysis-poem').textContent = parsed.citedPoem;
   document.querySelector('.analysis-text').innerHTML = textToParagraphs(parsed.analysisText);
