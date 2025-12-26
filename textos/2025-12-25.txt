@@ -1,0 +1,46 @@
+FECHA: 2025-12-25
+MY_POEM_TITLE:
+POETA: Soledad Castresana
+POEM_TITLE: Tabú
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+piensa piensa
+delante de las puertas
+la una azul 
+la otra roja
+
+la azul recientemente pintada
+la roja está descascarillada
+un tapeta delante de una
+una perilla dorada, la otra
+
+una mirada 
+más cercana
+revela dos
+maderas distintas
+
+piensa piensa
+sin saber que 
+se abren hacia
+la misma casa
+
+# POEMA_CITADO
+
+¿Será que si me cortan las dos tetas, por fin
+voy a poder andar por la calle con la camisa
+abierta y sin corpiño para que el aire
+me bese la piel en los días de tanto calor?
+
+No. Tampoco nos dejan mostrar las cicatrices.
+
+# TEXTO
+
+Un poema corto y concreto pero no obstante profundo, **Tabú** habla sobre la socialización del cuerpo. El poema plantea que el individuo no tiene el poder de elegir lo que es visible o no en la sociedad; más bien, el poema sugiere que el cuerpo no es regulado por ser sexual sino porque es simplemente un cuerpo.
+
+En el poema vemos lo individual (primera estrofa) y lo social (segunda estrofa). En la primera estrofa vemos razones por las que es bueno mostrarse sin camisa: “el aire me bese la piel”; el narrador fantasea con el placer posible de la automutilación. Es decir, el narrador intenta adaptarse a las normas de una cultura que prohíbe mostrar la sexualidad en el espacio público, mutilándose para poder sentirse más cómoda.
+
+Pero este esfuerzo de adaptación es en vano: en la segunda estrofa vemos otro reglamento: “Tampoco nos dejan mostrar las cicatrices”. Vemos que aquí no hay una explicación para la norma; solo se nos dice que no se permite. Esto contrasta con la primera estrofa, donde el narrador presenta una razón; la voz de la sociedad no tiene que explicarse, solo tiene que decir “No”.
+
+Las cicatrices sugieren algo importante: además de lo literal (que ya no hay senos sino cicatrices), existe también la connotación de que la pena y el esfuerzo no importan a los ojos de quienes regulan. La cuestión, entonces, es quiénes son los “legisladores” y quiénes los “nos”. Puede ser que las mujeres sean el “nos” y el gobierno los legisladores, pero creo que hay una interpretación más general: los “nos” son las víctimas reflexivas pero sin poder, mientras que los legisladores son aquellos con poder que no necesitan ser reflexivos. No solo regulan sin necesidad de comprensión, sino que también rechazan la adaptación; los legisladores no operan bajo un principio que deba justificarse, a diferencia de las víctimas.
