@@ -1,29 +1,29 @@
 {
-"keywords": [
-{ "word": "tabu", "weight": 3 },
-{ "word": "cuerpo", "weight": 3 },
-{ "word": "regulacion", "weight": 3 },
-{ "word": "poder", "weight": 3 },
-{ "word": "visibilidad", "weight": 3 },
+  "keywords": [
+    { "word": "sensibilidad", "weight": 3 },
+    { "word": "poder", "weight": 3 },
+    { "word": "control", "weight": 3 },
+    { "word": "cuerpo", "weight": 3 },
+    { "word": "intervencion", "weight": 3 },
 
-{ "word": "control social", "weight": 2 },
-{ "word": "norma", "weight": 2 },
-{ "word": "prohibicion", "weight": 2 },
-{ "word": "censura", "weight": 2 },
-{ "word": "sexualidad", "weight": 2 },
-{ "word": "violencia simbolica", "weight": 2 },
-{ "word": "adaptacion", "weight": 2 },
-{ "word": "mutilacion", "weight": 2 },
-{ "word": "autoridad", "weight": 2 },
+    { "word": "medicina", "weight": 2 },
+    { "word": "cesarea", "weight": 2 },
+    { "word": "quirurgico", "weight": 2 },
+    { "word": "autoridad", "weight": 2 },
+    { "word": "desigualdad", "weight": 2 },
+    { "word": "anestesia", "weight": 2 },
+    { "word": "sistema", "weight": 2 },
+    { "word": "disrupcion", "weight": 2 },
+    { "word": "utilidad", "weight": 2 },
 
-{ "word": "puerta", "weight": 1 },
-{ "word": "eleccion", "weight": 1 },
-{ "word": "apariencia", "weight": 1 },
-{ "word": "cicatrices", "weight": 1 },
-{ "word": "piel", "weight": 1 },
-{ "word": "mujer", "weight": 1 },
-{ "word": "legisladores", "weight": 1 },
-{ "word": "victimas", "weight": 1 },
-{ "word": "obediencia", "weight": 1 }
-]
+    { "word": "dolor", "weight": 1 },
+    { "word": "conciencia", "weight": 1 },
+    { "word": "tecnica", "weight": 1 },
+    { "word": "procedimiento", "weight": 1 },
+    { "word": "paciente", "weight": 1 },
+    { "word": "medicos", "weight": 1 },
+    { "word": "vulnerabilidad", "weight": 1 },
+    { "word": "poesia", "weight": 1 },
+    { "word": "camino", "weight": 1 }
+  ]
 }

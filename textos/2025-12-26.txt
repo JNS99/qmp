@@ -1,0 +1,34 @@
+FECHA: 2025-12-26
+MY_POEM_TITLE: hacia la playa
+POETA:Soledad Castresana 
+POEM_TITLE: Cesárea
+BOOK_TITLE: La carne se corta
+
+# POEMA
+camino hacia la playa
+no sé a qué distancia está
+
+la senda se hace más larga
+con cada día que pasa
+
+quiero meterme en una concha
+hasta olvidar de regreso la vía 
+
+
+# POEMA_CITADO
+Yo olía mi carne quemarse y juraba
+sentir cómo se abrían las capas de grasa
+y de piel bajo el peso ínfimo del bisturí.
+
+Decidieron, sin dudar, cambiar el plan
+sobre la marcha: me durmieron.
+Que no podían trabajar tranquilos
+con una sensibilidad como la mía.
+
+# TEXTO
+
+Bajo las luces de un quirófano, el narrador tiene una hiperconciencia de su cesárea; incluso tiene la impresión de “sentir cómo se abrían las capas de grasa” durante el procedimiento. Al ver esto, los médicos deciden anestesiar al paciente para que ellos puedan trabajar sin interrupción. Este poema sugiere que, en ambientes técnicos, una sensibilidad no es una virtud sino un impedimento para las personas de los alrededores; más generalmente, el poema sugiere que una sensibilidad puede interpretarse como algo que obstaculiza un proceso sistémico al interrumpir el flujo estándar.
+
+Vemos una escena de poder desigual: el paciente está bajo el control de los médicos y no puede dar su consentimiento para ser anestesiado o no, incluso si no expresa explícitamente el deseo de serlo. Acá, los médicos representan lo procesal y lo técnico; el narrador, lo perturbador.
+
+Aunque el narrador tenga una cualidad positiva (puede sentir con muchos detalles), esta cualidad se interpreta como una disrupción posible durante el procedimiento. El narrador plantea que la utilidad de nuestras cualidades depende de la circunstancia; para los médicos, esta sensibilidad es percibida como algo molesto, pero en otras situaciones (la escritura de poesía, por ejemplo), esta cualidad puede resultar beneficiosa.

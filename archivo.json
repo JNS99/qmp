@@ -1,5 +1,219 @@
 [
   {
+    "date": "2025-12-27",
+    "month": "2025-12",
+    "file": "textos/2025-12-27.txt",
+    "my_poem_title": "seguir pensando",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Caos y corte",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "sensibilidad",
+        "weight": 3
+      },
+      {
+        "word": "poder",
+        "weight": 3
+      },
+      {
+        "word": "control",
+        "weight": 3
+      },
+      {
+        "word": "cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "intervencion",
+        "weight": 3
+      },
+      {
+        "word": "medicina",
+        "weight": 2
+      },
+      {
+        "word": "cesarea",
+        "weight": 2
+      },
+      {
+        "word": "quirurgico",
+        "weight": 2
+      },
+      {
+        "word": "autoridad",
+        "weight": 2
+      },
+      {
+        "word": "desigualdad",
+        "weight": 2
+      },
+      {
+        "word": "anestesia",
+        "weight": 2
+      },
+      {
+        "word": "sistema",
+        "weight": 2
+      },
+      {
+        "word": "disrupcion",
+        "weight": 2
+      },
+      {
+        "word": "utilidad",
+        "weight": 2
+      },
+      {
+        "word": "dolor",
+        "weight": 1
+      },
+      {
+        "word": "conciencia",
+        "weight": 1
+      },
+      {
+        "word": "tecnica",
+        "weight": 1
+      },
+      {
+        "word": "procedimiento",
+        "weight": 1
+      },
+      {
+        "word": "paciente",
+        "weight": 1
+      },
+      {
+        "word": "medicos",
+        "weight": 1
+      },
+      {
+        "word": "vulnerabilidad",
+        "weight": 1
+      },
+      {
+        "word": "poesia",
+        "weight": 1
+      },
+      {
+        "word": "camino",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-26",
+    "month": "2025-12",
+    "file": "textos/2025-12-26.txt",
+    "my_poem_title": "hacia la playa",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Cesárea",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "sensibilidad",
+        "weight": 3
+      },
+      {
+        "word": "poder",
+        "weight": 3
+      },
+      {
+        "word": "control",
+        "weight": 3
+      },
+      {
+        "word": "cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "intervencion",
+        "weight": 3
+      },
+      {
+        "word": "medicina",
+        "weight": 2
+      },
+      {
+        "word": "cesarea",
+        "weight": 2
+      },
+      {
+        "word": "quirurgico",
+        "weight": 2
+      },
+      {
+        "word": "autoridad",
+        "weight": 2
+      },
+      {
+        "word": "desigualdad",
+        "weight": 2
+      },
+      {
+        "word": "anestesia",
+        "weight": 2
+      },
+      {
+        "word": "sistema",
+        "weight": 2
+      },
+      {
+        "word": "disrupcion",
+        "weight": 2
+      },
+      {
+        "word": "utilidad",
+        "weight": 2
+      },
+      {
+        "word": "dolor",
+        "weight": 1
+      },
+      {
+        "word": "conciencia",
+        "weight": 1
+      },
+      {
+        "word": "tecnica",
+        "weight": 1
+      },
+      {
+        "word": "procedimiento",
+        "weight": 1
+      },
+      {
+        "word": "paciente",
+        "weight": 1
+      },
+      {
+        "word": "medicos",
+        "weight": 1
+      },
+      {
+        "word": "vulnerabilidad",
+        "weight": 1
+      },
+      {
+        "word": "poesia",
+        "weight": 1
+      },
+      {
+        "word": "camino",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2025-12-25",
     "month": "2025-12",
     "file": "textos/2025-12-25.txt",
