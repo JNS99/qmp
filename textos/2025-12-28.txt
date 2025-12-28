@@ -1,0 +1,40 @@
+FECHA: 2025-12-28
+MY_POEM_TITLE:
+POETA: Soledad Castresana
+POEM_TITLE: Legrado
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+enciendo la velo
+baila para mí
+
+nunca la dejo extinguirse
+en su charco de sudor
+
+enciendo la llama
+para que yo pueda
+decidir cuando
+mi ráfaga va a
+desgarrarla
+
+
+# POEMA_CITADO
+
+No pude terminar de limpiar sola. A veces una
+no puede con todo. Hay que aceptarlo.
+
+Hacer que otro raspe las paredes de tu útero
+con una cucharita afilada mientras dormís
+profundo por primera vez en mucho tiempo
+es también una forma del amor.
+
+
+# TEXTO
+
+Según **Legrado**, el amor no es el sexo sino la vulnerabilidad, la confianza y el deseo de ser ayudado. Por eso, incluso en un hospital con un médico podemos ver “una forma del amor”: el poema nos presenta un procedimiento médico donde el narrador muestra la vulnerabilidad de hacerlo pero, además, la vulnerabilidad de anestesiarse. Después del procedimiento, el narrador cuenta su necesidad de ayuda; todo eso sugiere que “amor” es el reconocimiento de la falta de autosuficiencia y la confianza de ser dañado por otra persona, como el médico del poema.
+
+El narrador se presenta sin ciertos poderes: no puede cuidarse en la primera estrofa y en la segunda acepta la invasión médica del doctor; este doctor “raspa” al narrador, mostrando que acá no hay placer sino incomodidad. Pero eso es un *daño anticipado* y, además, el médico *tiene el poder* de hacer aún más daño cuando el paciente está durmiendo; o sea, acá vemos la aceptación de un daño como parte del procedimiento y la confianza de que, aunque el médico puede dañar más, no va a hacerlo.
+
+Pero, a pesar de su falta de control, el narrador siente un cierto amor durante la experiencia: aunque no está consciente, hay la vulnerabilidad del narrador de recibir ayuda (de limpiarse, pero también del procedimiento en sí mismo). Creo que el narrador está diciéndose que “a veces una no puede con todo” para mostrar que el amor no es el sexo o la compatibilidad, sino la *capacidad de aceptar y recibir la ayuda de otro*; el amor reside en aceptar nuestros propios límites y permitir a alguien sostenernos.
+

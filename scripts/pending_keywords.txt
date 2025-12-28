@@ -1,26 +1,26 @@
 {
   "keywords": [
-    { "word": "norma", "weight": 3 },
-    { "word": "violencia legitimada", "weight": 3 },
-    { "word": "corte", "weight": 3 },
-    { "word": "danio", "weight": 3 },
+    { "word": "vulnerabilidad", "weight": 3 },
     { "word": "cuerpo", "weight": 3 },
-    { "word": "obediencia", "weight": 2 },
+    { "word": "danio", "weight": 3 },
+    { "word": "poder", "weight": 3 },
+    { "word": "amor", "weight": 3 },
+
+    { "word": "dependencia", "weight": 2 },
+    { "word": "confianza", "weight": 2 },
+    { "word": "entrega", "weight": 2 },
     { "word": "control", "weight": 2 },
-    { "word": "protocolo", "weight": 2 },
-    { "word": "precision", "weight": 2 },
-    { "word": "deseo de norma", "weight": 2 },
-    { "word": "evitacion del caos", "weight": 2 },
-    { "word": "disciplinamiento", "weight": 2 },
-    { "word": "lenguaje normativo", "weight": 2 },
-    { "word": "cicatriz", "weight": 1 },
-    { "word": "mascara", "weight": 1 },
-    { "word": "papel", "weight": 1 },
-    { "word": "rostro", "weight": 1 },
-    { "word": "operacion", "weight": 1 },
-    { "word": "tejido", "weight": 1 },
-    { "word": "herida", "weight": 1 },
+    { "word": "limite corporal", "weight": 2 },
+    { "word": "violencia aceptada", "weight": 2 },
+    { "word": "cuidado", "weight": 2 },
+    { "word": "asimetria", "weight": 2 },
+
+    { "word": "llama", "weight": 1 },
+    { "word": "fuego", "weight": 1 },
     { "word": "desgarro", "weight": 1 },
-    { "word": "transparencia", "weight": 1 }
+    { "word": "uterus", "weight": 1 },
+    { "word": "raspar", "weight": 1 },
+    { "word": "anestesia", "weight": 1 },
+    { "word": "procedimiento medico", "weight": 1 }
   ]
 }

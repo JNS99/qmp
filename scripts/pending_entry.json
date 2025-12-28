@@ -1,30 +1,18 @@
 {
-  "date": "2025-12-27",
+  "date": "2025-12-28",
   "month": "2025-12",
-  "file": "textos/2025-12-27.txt",
-  "my_poem_title": "seguir pensando",
-  "my_poem_snippet": "",
+  "file": "textos/2025-12-28.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "enciendo la velo",
   "analysis": {
     "poet": "Soledad Castresana",
-    "poem_title": "Caos y corte",
+    "poem_title": "Legrado",
     "poem_snippet": "",
     "book_title": "La carne se corta"
   },
   "keywords": [
     {
-      "word": "norma",
-      "weight": 3
-    },
-    {
-      "word": "violencia legitimada",
-      "weight": 3
-    },
-    {
-      "word": "corte",
-      "weight": 3
-    },
-    {
-      "word": "danio",
+      "word": "vulnerabilidad",
       "weight": 3
     },
     {
@@ -32,7 +20,27 @@
       "weight": 3
     },
     {
-      "word": "obediencia",
+      "word": "danio",
+      "weight": 3
+    },
+    {
+      "word": "poder",
+      "weight": 3
+    },
+    {
+      "word": "amor",
+      "weight": 3
+    },
+    {
+      "word": "dependencia",
+      "weight": 2
+    },
+    {
+      "word": "confianza",
+      "weight": 2
+    },
+    {
+      "word": "entrega",
       "weight": 2
     },
     {
@@ -40,55 +48,27 @@
       "weight": 2
     },
     {
-      "word": "protocolo",
+      "word": "limite corporal",
       "weight": 2
     },
     {
-      "word": "precision",
+      "word": "violencia aceptada",
       "weight": 2
     },
     {
-      "word": "deseo de norma",
+      "word": "cuidado",
       "weight": 2
     },
     {
-      "word": "evitacion del caos",
+      "word": "asimetria",
       "weight": 2
     },
     {
-      "word": "disciplinamiento",
-      "weight": 2
-    },
-    {
-      "word": "lenguaje normativo",
-      "weight": 2
-    },
-    {
-      "word": "cicatriz",
+      "word": "llama",
       "weight": 1
     },
     {
-      "word": "mascara",
-      "weight": 1
-    },
-    {
-      "word": "papel",
-      "weight": 1
-    },
-    {
-      "word": "rostro",
-      "weight": 1
-    },
-    {
-      "word": "operacion",
-      "weight": 1
-    },
-    {
-      "word": "tejido",
-      "weight": 1
-    },
-    {
-      "word": "herida",
+      "word": "fuego",
       "weight": 1
     },
     {
@@ -96,7 +76,19 @@
       "weight": 1
     },
     {
-      "word": "transparencia",
+      "word": "uterus",
+      "weight": 1
+    },
+    {
+      "word": "raspar",
+      "weight": 1
+    },
+    {
+      "word": "anestesia",
+      "weight": 1
+    },
+    {
+      "word": "procedimiento medico",
       "weight": 1
     }
   ]
