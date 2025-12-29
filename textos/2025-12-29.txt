@@ -1,0 +1,62 @@
+FECHA: 2025-12-29
+MY_POEM_TITLE: dibujar
+POETA: Soldead Castresana
+POEM_TITLE: de lejos
+BOOK_TITLE: La carne se corta
+
+# POEMA
+
+el papel estaba en blanco hasta que me di cuenta que
+dibujar es rodar una pelota por una pared: |b
+y intentar atraparla en una copa: |u
+
+# POEMA_CITADO
+
+donde los troncos
+cambian a ceniza
+se sostiene la ronda
+
+una chispa es el origen
+del equilibrio
+
+pero alguien
+lanza el aire un desafío
+y otro
+invade el centro
+se inclina sobre la luz
+que le cierra la frente
+
+todo cabe en el fuego
+todo toma su forma
+
+los dedos
+la piel del brazo
+penetran las llamas
+
+arde el miedo
+de lejos
+se huele la mano
+
+un silencio enorme
+abre los rostros
+después del grito
+
+el horizonte se revuelve
+ahoga al viento
+espanta a los animales del aire
+huyen los que pueden correr
+y se comprime el cielo como un pozo
+
+solos en medio de la noche
+sin caballas
+
+# TEXTO
+
+Alrededor de un fuego, una comunidad baila; entonces, alguien rompe el ritual para tocar el fuego. Todo el tiempo, los animales huyen para evitar el viento que ahoga por el fuego y, finalmente, unos “solos” anónimos (pueden ser los animales o la gente de la comunidad) se quedan sin alimentación. Propongo que el poema es una descripción de la impracticabilidad de unos rituales que, para la gente que participa, tienen un significado, pero este significado no es solo efímero y sin valor material (como la comida), sino que también tiene un impacto deletéreo en el ambiente fuera de los humanos.
+
+El poema presenta el poder del fuego para esta comunidad. Puede ser algo que sostiene (“se sostiene la ronda”), pero también algo que destruye (“todo cabe en el fuego”). Además, vemos que el comienzo del fuego, “una chispa”, es lo que crea “el equilibrio” en la comunidad (noto que el equilibrio puede también tener un sentido literal, porque la gente está bailando). Todo esto sugiere que la gente necesita el fuego para la estabilidad, aunque el fuego puede borrar todo (“todo cabe en el fuego / todo toma su forma”). El fuego presenta una situación precaria, porque sin el fuego no hay baile ni equilibrio (o sea, no hay comunidad), pero con el fuego hay el borrado de todo.
+
+Todo este ritual tiene un sentido especial para la comunidad (se unen y bailan), pero la gente no tiene en cuenta ni la salud del ambiente ni su propia salud. Vemos la destrucción de la naturaleza (“los troncos”) y la huida de los animales por el aire lleno de humo (octava estrofa). La descripción de este evento en la octava estrofa es muy intensa, en particular “ahoga al viento” y “se comprime el cielo”. Vemos que el ambiente se hace inhabitable por el ritual. Dentro de la comunidad, vemos la pena también, con la persona que toca el fuego y grita. Y, al final, vemos que no hay nada materialmente beneficioso tras el ritual (“solos… sin caballas”). Me parece interesante esta palabra, “solos”. Me da la impresión de que el ritual representa la unificación de la comunidad, pero es una unificación transitoria; después del ritual, desaparece la comunidad y nos quedan individuos, no un grupo.
+
+Me parece que el poema pone en tela de juicio el papel de los rituales. Por un lado, tienen el poder de unir a las personas, pero al mismo tiempo esta conexión es efímera (dura durante el fuego; al final quedan solos), y el ritual es peligroso (el fuego quema) y cegador (la persona que toca el fuego desprecia su salud; la gente ignora el efecto negativo sobre los animales; ignoran la necesidad de la comida). A mis ojos, el poema muestra que los rituales tienen un costo que se olvida fácilmente.
+

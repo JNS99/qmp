@@ -1,5 +1,100 @@
 [
   {
+    "date": "2025-12-29",
+    "month": "2025-12",
+    "file": "textos/2025-12-29.txt",
+    "my_poem_title": "dibujar",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soldead Castresana",
+      "poem_title": "de lejos",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
+    },
+    "keywords": [
+      {
+        "word": "vulnerabilidad",
+        "weight": 3
+      },
+      {
+        "word": "cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "danio",
+        "weight": 3
+      },
+      {
+        "word": "poder",
+        "weight": 3
+      },
+      {
+        "word": "amor",
+        "weight": 3
+      },
+      {
+        "word": "dependencia",
+        "weight": 2
+      },
+      {
+        "word": "confianza",
+        "weight": 2
+      },
+      {
+        "word": "entrega",
+        "weight": 2
+      },
+      {
+        "word": "control",
+        "weight": 2
+      },
+      {
+        "word": "limite corporal",
+        "weight": 2
+      },
+      {
+        "word": "violencia aceptada",
+        "weight": 2
+      },
+      {
+        "word": "cuidado",
+        "weight": 2
+      },
+      {
+        "word": "asimetria",
+        "weight": 2
+      },
+      {
+        "word": "llama",
+        "weight": 1
+      },
+      {
+        "word": "fuego",
+        "weight": 1
+      },
+      {
+        "word": "desgarro",
+        "weight": 1
+      },
+      {
+        "word": "uterus",
+        "weight": 1
+      },
+      {
+        "word": "raspar",
+        "weight": 1
+      },
+      {
+        "word": "anestesia",
+        "weight": 1
+      },
+      {
+        "word": "procedimiento medico",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2025-12-28",
     "month": "2025-12",
     "file": "textos/2025-12-28.txt",
