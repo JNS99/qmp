@@ -213,36 +213,46 @@ function renderPoemWithAnchorIndents(poemText, preEl) {
   let anchorPx = null;
 
   return lines.map((line) => {
+    // 1) NUEVO: soporte para "||" (continuación con prefijo)
+    const dbl = line.indexOf('||');
+    if (dbl !== -1) {
+      const before = line.slice(0, dbl);        // texto que se conserva
+      const after  = line.slice(dbl + 2);       // texto a alinear
+
+      // si no hay ancla previa, lo tratamos como ancla (fallback razonable)
+      if (anchorPx === null) {
+        anchorPx = ctx.measureText(before).width;
+        return escapeHtml(before + after);
+      }
+
+      const prefixPx = ctx.measureText(before).width;
+      const pad = Math.max(anchorPx - prefixPx, 0);
+      const content = after.replace(/^\s+/, '');
+
+      return `${escapeHtml(before)}<span class="indent" style="padding-left:${pad}px">${escapeHtml(content)}</span>`;
+    }
+
+    // 2) Comportamiento actual con "|" (ancla o continuación al inicio)
     const pipePos = line.indexOf('|');
     if (pipePos === -1) return escapeHtml(line);
 
-    // ¿Es continuación? (líneas que empiezan con |, con o sin espacios antes)
     const isContinuation = /^\s*\|/.test(line);
-
-    const before = line.slice(0, pipePos);     // antes del |
-    const after  = line.slice(pipePos + 1);    // después del |
+    const before = line.slice(0, pipePos);
+    const after  = line.slice(pipePos + 1);
 
     if (!isContinuation) {
       // Línea ancla: "por |el dinero"
-      // Guardamos el ancho de "por " (todo lo que haya antes del |)
       anchorPx = ctx.measureText(before).width;
-
-      // Render normal quitando el |
       return escapeHtml(before + after);
     }
 
     // Línea continuación: "| el cansancio"
-    // Quitamos espacios inmediatamente después del | para que el indent sea el único desplazamiento
     const content = after.replace(/^\s+/, '');
-
-    // Si por alguna razón no hubo ancla antes, no indentes
     const pad = anchorPx ?? 0;
 
     return `<span class="indent" style="padding-left:${pad}px">${escapeHtml(content)}</span>`;
   }).join('\n');
 }
-
-
 
 
 function renderPoemWithTitleFromJson(poemText, titleFromJson) {

@@ -1,3 +1,128 @@
+251229 resumen de la dirección
+
+Claro 🙂. Aquí va un resumen limpio y completo de lo que construimos y decidimos para tu proyecto, pensado para que lo puedas guardar como referencia cuando cierres el hilo.
+📘 Resumen del proyecto y del flujo actual
+🎯 Objetivo general
+Crear un flujo de publicación diario para un sitio literario que sea:
+rápido (un comando)
+seguro (validaciones, dry-run)
+flexible (crear y editar entradas pasadas)
+humano (tú decides contenido y keywords)
+sin dependencia de APIs de pago
+🧱 Estructura base del proyecto
+qmp/
+├── archivo.json              # índice principal del sitio
+├── textos/
+│   ├── YYYY-MM-DD.txt        # textos diarios
+│   └── templateTEXT.txt      # plantilla base
+├── scripts/
+│   ├── make_pending_entry.py
+│   ├── merge_pending.py
+│   ├── qmp_publish.sh
+│   ├── qd.sh
+│   ├── pending_keywords.txt
+│   └── pending_entry.json   # temporal (se borra tras publicar)
+├── logs/
+│   └── publish_log.jsonl     # historial de publicaciones
+✍️ Flujo creativo (día a día)
+1) Preparar la sesión
+Desde cualquier directorio:
+qd
+# o
+qd YYYY-MM-DD
+Hace:
+crea textos/YYYY-MM-DD.txt desde plantilla solo si no existe
+abre en Sublime:
+el .txt
+scripts/pending_keywords.txt
+y archivo.json si la fecha ya existe (modo edición)
+2) Escribir
+Escribes el poema y el análisis en el .txt
+Pegas keywords (JSON con pesos) en pending_keywords.txt
+Las keywords las generas manualmente con ChatGPT (sin API)
+3) Probar (sin riesgo)
+q --dry-run YYYY-MM-DD
+Hace:
+genera pending_entry.json
+valida estructura y keywords
+detecta si es entrada nueva o edición
+muestra el mensaje de commit
+no toca git ni archivo.json
+4) Publicar
+q YYYY-MM-DD
+Hace:
+crea o actualiza la entrada (upsert)
+actualiza archivo.json
+genera commit automático
+hace push a GitHub
+borra pending_entry.json
+deja pending_keywords.txt intacto
+🧠 Comportamiento clave (decisiones importantes)
+Crear vs editar
+No hay comandos separados:
+si la fecha no existe → nueva entrada
+si la fecha ya existe → edición automática
+El sistema decide solo.
+Commit messages
+Automáticos y semánticos:
+Nueva:
+Entrada 2025-12-27 — Título
+Edición:
+Edición 2025-12-25 — Título
+(Título o primer verso si no hay título.)
+🛡️ Validaciones implementadas
+En zshrc
+Validación estricta de fecha (YYYY-MM-DD)
+Rechaza fechas imposibles
+Manejo correcto de flags (--dry-run)
+En scripts
+Verificación de estructura (# TEXTO)
+Keywords mínimas
+JSON válido
+Protección contra errores silenciosos
+🧩 Reglas de contenido (muy importantes)
+my_poem_snippet
+❌ NO se autogenera si hay título
+✅ Solo aparece si:
+no hay título (primer verso), o
+tú lo defines explícitamente
+poem_snippet (poema citado)
+❌ Nunca se autogenera
+✅ Solo existe si tú lo das explícitamente
+📜 Log de publicaciones
+Archivo:
+logs/publish_log.jsonl
+Cada publicación añade una línea como:
+{
+  "date": "2025-12-25",
+  "file": "textos/2025-12-25.txt",
+  "title": "crecer",
+  "keywords": 24,
+  "timestamp": "2025-12-26T01:23:45Z"
+}
+Sirve para:
+historial real
+estadísticas futuras
+debugging
+posibles páginas de archivo
+🖥️ Herramientas elegidas
+Editor: Sublime Text (rápido, sin fricción)
+Control: Git + GitHub Pages
+Automatización local: zsh + bash + Python
+Automatización futura: GitHub Actions (diseñada, no obligatoria)
+🧠 Filosofía del flujo
+El humano escribe y decide.
+El sistema valida, ensambla y publica.
+Un solo gesto (qd, q) activa todo.
+Editar el pasado es tan natural como publicar hoy.
+Ningún paso es irreversible sin que tú lo veas antes.
+Si algún día quieres:
+mover esto a GitHub Actions 100% (iPad-only),
+generar páginas desde el log,
+o refinar aún más la ergonomía,
+ya tienes una base muy sólida y bien pensada.
+Ha sido un gusto acompañarte en este proceso.
+
 251225 resumen del sitio hilo
 
 ---

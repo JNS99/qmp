@@ -8,7 +8,7 @@ BOOK_TITLE: La carne se corta
 
 el papel estaba en blanco hasta que me di cuenta que
 dibujar es rodar una pelota por una pared: |b
-y intentar atraparla en una copa: |u
+y intentar atraparla en una copa: ||u
 
 # POEMA_CITADO
 
