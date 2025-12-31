@@ -1,5 +1,108 @@
 [
   {
+    "date": "2026-01-01",
+    "month": "2026-01",
+    "file": "textos/2026-01-01.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "o es un copo de nieve",
+    "analysis": {
+      "poet": "Luna Miguel",
+      "poem_title": "Un San Valentín con Gala y Luna",
+      "poem_snippet": "",
+      "book_title": "Poesía Masculina"
+    },
+    "keywords": [
+      {
+        "word": "visibilidad",
+        "weight": 3
+      },
+      {
+        "word": "amor",
+        "weight": 3
+      },
+      {
+        "word": "identidad",
+        "weight": 3
+      },
+      {
+        "word": "transformacion",
+        "weight": 3
+      },
+      {
+        "word": "cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "norma",
+        "weight": 2
+      },
+      {
+        "word": "anormalidad",
+        "weight": 2
+      },
+      {
+        "word": "genero",
+        "weight": 2
+      },
+      {
+        "word": "deseo",
+        "weight": 2
+      },
+      {
+        "word": "finito",
+        "weight": 2
+      },
+      {
+        "word": "exposicion",
+        "weight": 2
+      },
+      {
+        "word": "diferencia",
+        "weight": 2
+      },
+      {
+        "word": "convocatoria",
+        "weight": 2
+      },
+      {
+        "word": "copo de nieve",
+        "weight": 1
+      },
+      {
+        "word": "derretimiento",
+        "weight": 1
+      },
+      {
+        "word": "invierno",
+        "weight": 1
+      },
+      {
+        "word": "carreta",
+        "weight": 1
+      },
+      {
+        "word": "lado",
+        "weight": 1
+      },
+      {
+        "word": "mano",
+        "weight": 1
+      },
+      {
+        "word": "respiracion",
+        "weight": 1
+      },
+      {
+        "word": "boca",
+        "weight": 1
+      },
+      {
+        "word": "fantasia",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2025-12-31",
     "month": "2025-12",
     "file": "textos/2025-12-31.txt",
