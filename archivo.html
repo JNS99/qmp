@@ -102,7 +102,8 @@
     .then(data => {
         // 1) Crear lista de escritos
       const today = getTodayISO();
-      data.forEach(entry => {
+      const archiveData = data.filter(e => e.date < today); // hasta ayer
+      archiveData.forEach(entry => {
         // Archivo muestra SOLO hasta ayer (excluye hoy y excluye futuro)
         if (entry.date >= today) return;
 
@@ -180,8 +181,8 @@
       });
 
         // 2) Poblar filtros (meses y autores) desde JSON
-      populateMonthOptions(data);
-      populateAuthorOptions(data);
+      populateMonthOptions(archiveData);
+      populateAuthorOptions(archiveData);
 
         // 3) Activar filtrado
       entries = document.querySelectorAll('#entries li[data-month]');

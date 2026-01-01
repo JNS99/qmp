@@ -126,13 +126,37 @@ if [[ "$DRY_RUN" == "1" ]]; then
   exit 0
 fi
 
+# → Append log (solo si NO es dry-run; y solo si hubo cambios reales)
+mkdir -p logs
+python3 - <<PY
+import json, datetime, pathlib
+
+entry = json.load(open("scripts/pending_entry.json","r",encoding="utf-8"))
+
+date = (entry.get("date") or "").strip()
+title = (entry.get("my_poem_title") or "").strip() or (entry.get("my_poem_snippet") or "").strip()
+kw_count = len(entry.get("keywords") or [])
+
+log_line = {
+  "date": date,
+  "file": "${TXT_PATH}",
+  "title": " ".join(title.split())[:120],
+  "keywords": kw_count,
+  "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00","Z")
+}
+
+p = pathlib.Path("logs/publish_log.jsonl")
+with p.open("a", encoding="utf-8") as f:
+  f.write(json.dumps(log_line, ensure_ascii=False) + "\n")
+PY
+
 if [[ -z "$(git status --porcelain)" ]]; then
   echo "No hay cambios para commitear. Salgo."
   exit 0
 fi
 
 echo "→ Git add/commit/push"
-git add archivo.json "$TXT_PATH" scripts/pending_entry.json scripts/pending_keywords.txt || true
+git add archivo.json "$TXT_PATH" logs/publish_log.jsonl scripts/pending_entry.json scripts/pending_keywords.txt || true
 git commit -m "$COMMIT_MSG"
 git push
 
