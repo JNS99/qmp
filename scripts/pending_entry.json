@@ -1,86 +1,82 @@
 {
-  "date": "2026-01-01",
+  "date": "2026-01-02",
   "month": "2026-01",
-  "file": "textos/2026-01-01.txt",
+  "file": "textos/2026-01-02.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "o es un copo de nieve",
+  "my_poem_snippet": "es la misma montaña de mierda",
   "analysis": {
-    "poet": "Luna Miguel",
-    "poem_title": "Un San Valentín con Gala y Luna",
+    "poet": "Alfonsina Storni",
+    "poem_title": "A Horacio Quiroga",
     "poem_snippet": "",
-    "book_title": "Poesía Masculina"
+    "book_title": "Poemas"
   },
   "keywords": [
     {
-      "word": "visibilidad",
+      "word": "silencio",
       "weight": 3
     },
     {
-      "word": "amor",
+      "word": "culpa",
       "weight": 3
-    },
-    {
-      "word": "identidad",
-      "weight": 3
-    },
-    {
-      "word": "transformacion",
-      "weight": 3
-    },
-    {
-      "word": "cuerpo",
-      "weight": 3
-    },
-    {
-      "word": "norma",
-      "weight": 2
-    },
-    {
-      "word": "anormalidad",
-      "weight": 2
-    },
-    {
-      "word": "genero",
-      "weight": 2
     },
     {
       "word": "deseo",
+      "weight": 3
+    },
+    {
+      "word": "agotamiento",
+      "weight": 3
+    },
+    {
+      "word": "muerte",
+      "weight": 3
+    },
+    {
+      "word": "priorizacion",
       "weight": 2
     },
     {
-      "word": "finito",
+      "word": "evasion",
       "weight": 2
     },
     {
-      "word": "exposicion",
+      "word": "dignidad",
       "weight": 2
     },
     {
-      "word": "diferencia",
+      "word": "miedo",
       "weight": 2
     },
     {
-      "word": "convocatoria",
+      "word": "memoria",
       "weight": 2
     },
     {
-      "word": "copo de nieve",
+      "word": "tiempo",
+      "weight": 2
+    },
+    {
+      "word": "responsabilidad",
+      "weight": 2
+    },
+    {
+      "word": "palabra no dicha",
       "weight": 1
     },
     {
-      "word": "derretimiento",
+      "word": "orgasmo",
       "weight": 1
     },
     {
-      "word": "invierno",
+      "word": "montana",
       "weight": 1
     },
     {
-      "word": "carreta",
+      "word": "pala",
       "weight": 1
     },
     {
-      "word": "lado",
+      "word": "obra",
       "weight": 1
     },
     {
@@ -88,15 +84,11 @@
       "weight": 1
     },
     {
-      "word": "respiracion",
+      "word": "rayo",
       "weight": 1
     },
     {
-      "word": "boca",
-      "weight": 1
-    },
-    {
-      "word": "fantasia",
+      "word": "selva",
       "weight": 1
     }
   ]

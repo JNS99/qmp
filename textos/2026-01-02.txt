@@ -1,0 +1,45 @@
+FECHA: 2026-01-02
+MY_POEM_TITLE: 
+POETA: Alfonsina Storni 
+POEM_TITLE: A Horacio Quiroga
+BOOK_TITLE: Poemas
+
+# POEMA
+
+es la misma montaña de mierda
+pero la pala se vuelve más pequeña
+con cada palabra no dicha
+cada orgasmo priorizado
+
+
+# POEMA_CITADO
+
+Morir como tú, Horacio, en tus cabales,
+y así como en tus cuentos, no está mal;
+un rayo a tiempo y se acabó la feria…
+Allá dirán.
+
+No se vive en la selva impunemente,
+ni cara al Paraná.
+Bien por tu mano firme, gran Horacio…
+Allá dirán.
+
+“Nos hiere cada hora –queda escrito–,
+nos mata al final”.
+Unos minutos menos… ¿quién te acusa?
+Allá dirán.
+
+Más pudre el miedo, Horacio, que la muerte
+que a las espaldas va.
+Bebiste bien, que luego sonreías…
+Allá dirán.
+
+Sé que la mano obrera te estrecharon,
+mas no, sí, Alguno, o simplemente, Pan,
+que no es de fuertes renegar de su obra…
+(Más que tú mismo es fuerte quien dirá).
+
+
+# TEXTO
+
+El poema presenta una visión de una muerte con dignidad; aunque el narrador tiene ideas pesimistas, anima a Horacio a enfrentarse sin miedo a la muerte. Además, el narrador sugiere, con el uso del futuro (“dirán”, “dirá”), que su muerte respetable será una manera de ser recordado por la gente.
