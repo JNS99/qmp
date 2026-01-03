@@ -56,6 +56,12 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           ./scripts/qk.sh "${{ inputs.date }}"
+          
+      - name: Show pending keywords (debug)
+        run: |
+          echo "=== scripts/pending_keywords.txt ==="
+          ls -la scripts/pending_keywords.txt || true
+          sed -n '1,120p' scripts/pending_keywords.txt || true
 
       - name: Publish (or dry-run)
         run: |
@@ -83,3 +89,5 @@ jobs:
           else
             echo "No changes to commit."
           fi
+
+
