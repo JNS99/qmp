@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-01-04",
+    "month": "2026-01",
+    "file": "textos/2026-01-04.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "las hojas en el terreno",
+    "analysis": {
+      "poet": "Horacio Quiroga",
+      "poem_title": "LAS PANTALLAS DE FÁTIMA",
+      "poem_snippet": "",
+      "book_title": ""
+    },
+    "keywords": [
+      {
+        "word": "incertidumbre",
+        "weight": 3
+      },
+      {
+        "word": "niebla",
+        "weight": 3
+      },
+      {
+        "word": "desaparecen",
+        "weight": 3
+      },
+      {
+        "word": "tierra",
+        "weight": 3
+      },
+      {
+        "word": "certidumbre",
+        "weight": 2
+      },
+      {
+        "word": "hojas",
+        "weight": 2
+      },
+      {
+        "word": "miraje",
+        "weight": 2
+      },
+      {
+        "word": "imprecision",
+        "weight": 2
+      },
+      {
+        "word": "oscuro",
+        "weight": 2
+      },
+      {
+        "word": "muerte",
+        "weight": 2
+      },
+      {
+        "word": "arrugan",
+        "weight": 1
+      },
+      {
+        "word": "marrones",
+        "weight": 1
+      },
+      {
+        "word": "vago",
+        "weight": 1
+      },
+      {
+        "word": "noche",
+        "weight": 1
+      },
+      {
+        "word": "luz indecisa",
+        "weight": 1
+      },
+      {
+        "word": "desierto",
+        "weight": 1
+      },
+      {
+        "word": "ilusion",
+        "weight": 1
+      },
+      {
+        "word": "trayectorias",
+        "weight": 1
+      },
+      {
+        "word": "quimera",
+        "weight": 1
+      },
+      {
+        "word": "romanza",
+        "weight": 1
+      },
+      {
+        "word": "exito",
+        "weight": 1
+      },
+      {
+        "word": "belleza",
+        "weight": 1
+      },
+      {
+        "word": "restrictivo",
+        "weight": 1
+      },
+      {
+        "word": "decepcionante",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-03",
     "month": "2026-01",
     "file": "textos/2026-01-03.txt",

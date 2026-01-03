@@ -1,0 +1,51 @@
+FECHA: 2026-01-04
+MY_POEM_TITLE:
+POETA: Horacio Quiroga
+POEM_TITLE: LAS PANTALLAS DE FÁTIMA
+BOOK_TITLE:
+
+# POEMA
+
+las hojas en el terreno
+cuanto más miro
+más se vuelvan marrones
+	se arrugan
+se vuelven parte de la tierra
+
+las hojas que cuelgan de los árboles
+cuanto más me acerco
+más se fuman
+desaparecen en la niebla
+
+la tierra la niebla
+la certidumbre
+que me causa
+incertidumbre
+
+
+# POEMA_CITADO
+
+Niebla y paisaje. Vago hemisferio
+que marca un lírico planisferio;
+noche de noches y de zafires
+sobre la ruta de los fakires;
+
+luna que azula la lontananza
+con las turquesas de su romanza;
+cielo que empluma los desahelos
+con la quimera de tardos vuelos:
+
+en el desierto de locas glorias
+donde se angostan las trayectorias.
+Tienden las brumas en los mirajes
+Su desabrido guipur de encajes.
+
+Luz indecisa de un asteroide
+Sobre la negra mancha elipsoide
+Y hay un Mar Muerto tras la neblina,
+Como una gota de tinta china.
+
+
+# TEXTO
+
+La primera palabra, “Niebla”, marca la pauta del poema: estamos en un lugar literalmente oscuro —es de noche y hay niebla—, pero también figuradamente oscuro —el narrador nunca especifica qué significan “los tardos vuelos”, la “luz indecisa” o el mar como “tinta china”—; el hablante expone una idea imprecisa de lo que quiere decir y su estilo escrito refleja esta imprecisión. De todos modos, interpreto el poema como la imposibilidad de la certidumbre: el narrador ve el éxito como un miraje —es restrictivo y decepcionante—, la belleza como un miraje —la neblina oculta la muerte—, y el miraje *en sí* como un miraje —la ilusión no se puede ver claramente—.

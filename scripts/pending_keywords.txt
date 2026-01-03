@@ -1,118 +1,98 @@
 [
   {
-    "word": "golpe",
+    "word": "incertidumbre",
     "weight": 3
   },
   {
-    "word": "voz",
+    "word": "niebla",
     "weight": 3
   },
   {
-    "word": "yunque",
+    "word": "desaparecen",
     "weight": 3
   },
   {
-    "word": "fallar",
+    "word": "tierra",
     "weight": 3
   },
   {
-    "word": "hembra",
-    "weight": 3
-  },
-  {
-    "word": "ausencia",
-    "weight": 3
-  },
-  {
-    "word": "saber",
-    "weight": 3
-  },
-  {
-    "word": "decir",
-    "weight": 3
-  },
-  {
-    "word": "volver",
+    "word": "certidumbre",
     "weight": 2
   },
   {
-    "word": "placer",
+    "word": "hojas",
     "weight": 2
   },
   {
-    "word": "halago",
+    "word": "miraje",
     "weight": 2
   },
   {
-    "word": "soberano",
+    "word": "imprecision",
     "weight": 2
   },
   {
-    "word": "mujer",
+    "word": "oscuro",
     "weight": 2
-  },
-  {
-    "word": "alma",
-    "weight": 2
-  },
-  {
-    "word": "sumision",
-    "weight": 2
-  },
-  {
-    "word": "jerarquia",
-    "weight": 2
-  },
-  {
-    "word": "renuncia",
-    "weight": 2
-  },
-  {
-    "word": "dependencia",
-    "weight": 2
-  },
-  {
-    "word": "egoismo",
-    "weight": 2
-  },
-  {
-    "word": "restar",
-    "weight": 1
-  },
-  {
-    "word": "frente",
-    "weight": 1
-  },
-  {
-    "word": "lucha",
-    "weight": 1
-  },
-  {
-    "word": "venganza",
-    "weight": 1
-  },
-  {
-    "word": "admiracion",
-    "weight": 1
-  },
-  {
-    "word": "animal",
-    "weight": 1
-  },
-  {
-    "word": "social",
-    "weight": 1
   },
   {
     "word": "muerte",
+    "weight": 2
+  },
+  {
+    "word": "arrugan",
     "weight": 1
   },
   {
-    "word": "genero",
+    "word": "marrones",
     "weight": 1
   },
   {
-    "word": "frustracion",
+    "word": "vago",
+    "weight": 1
+  },
+  {
+    "word": "noche",
+    "weight": 1
+  },
+  {
+    "word": "luz indecisa",
+    "weight": 1
+  },
+  {
+    "word": "desierto",
+    "weight": 1
+  },
+  {
+    "word": "ilusion",
+    "weight": 1
+  },
+  {
+    "word": "trayectorias",
+    "weight": 1
+  },
+  {
+    "word": "quimera",
+    "weight": 1
+  },
+  {
+    "word": "romanza",
+    "weight": 1
+  },
+  {
+    "word": "exito",
+    "weight": 1
+  },
+  {
+    "word": "belleza",
+    "weight": 1
+  },
+  {
+    "word": "restrictivo",
+    "weight": 1
+  },
+  {
+    "word": "decepcionante",
     "weight": 1
   }
 ]
