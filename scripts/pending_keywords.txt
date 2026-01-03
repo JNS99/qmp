@@ -1,91 +1,83 @@
 {
   "keywords": [
     {
-      "word": "voz de ariba",
+      "word": "verguenza",
       "weight": 3
     },
     {
-      "word": "yunke",
+      "word": "represion",
       "weight": 3
+    },
+    {
+      "word": "erosion de la agencia",
+      "weight": 3
+    },
+    {
+      "word": "priorizacion del placer",
+      "weight": 3
+    },
+    {
+      "word": "acumulacion de inmundicia",
+      "weight": 3
+    },
+    {
+      "word": "asco",
+      "weight": 3
+    },
+    {
+      "word": "minimizacion del instrumento",
+      "weight": 3
+    },
+    {
+      "word": "evasion",
+      "weight": 2
     },
     {
       "word": "silencio",
-      "weight": 3
-    },
-    {
-      "word": "repeticion",
-      "weight": 3
-    },
-    {
-      "word": "restar",
-      "weight": 3
-    },
-    {
-      "word": "numero de pizza",
-      "weight": 3
-    },
-    {
-      "word": "golpe",
       "weight": 2
     },
     {
-      "word": "violencia",
+      "word": "autocensura",
       "weight": 2
     },
     {
-      "word": "poder",
+      "word": "deterioro progresivo",
       "weight": 2
     },
     {
-      "word": "sumision",
+      "word": "consuelo corporal",
       "weight": 2
     },
     {
-      "word": "trabajo",
+      "word": "renuncia",
       "weight": 2
     },
     {
-      "word": "admiracion",
+      "word": "culpa",
       "weight": 2
     },
     {
-      "word": "placer",
+      "word": "juicio ajeno",
       "weight": 2
     },
     {
-      "word": "jerarquia",
-      "weight": 2
-    },
-    {
-      "word": "egoismo",
-      "weight": 2
-    },
-    {
-      "word": "animalidad",
-      "weight": 2
-    },
-    {
-      "word": "hembra",
+      "word": "montana de mierda",
       "weight": 1
     },
     {
-      "word": "ausencia",
+      "word": "pala",
       "weight": 1
     },
     {
-      "word": "frente",
+      "word": "palabras no dichas",
       "weight": 1
     },
     {
-      "word": "voz perdida",
+      "word": "orgasmo",
       "weight": 1
     },
     {
-      "word": "soberania",
-      "weight": 1
-    },
-    {
-      "word": "halago",
+      "word": "manos pequenas",
       "weight": 1
     },
     {
@@ -93,27 +85,7 @@
       "weight": 1
     },
     {
-      "word": "torpeza",
-      "weight": 1
-    },
-    {
-      "word": "tactil",
-      "weight": 1
-    },
-    {
-      "word": "fracaso",
-      "weight": 1
-    },
-    {
-      "word": "dependencia",
-      "weight": 1
-    },
-    {
-      "word": "presencia",
-      "weight": 1
-    },
-    {
-      "word": "lucha",
+      "word": "restos",
       "weight": 1
     }
   ]

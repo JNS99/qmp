@@ -1,26 +1,88 @@
 {
   "keywords": [
-    { "word": "silencio", "weight": 3 },
-    { "word": "culpa", "weight": 3 },
-    { "word": "deseo", "weight": 3 },
-    { "word": "agotamiento", "weight": 3 },
-    { "word": "muerte", "weight": 3 },
-
-    { "word": "priorizacion", "weight": 2 },
-    { "word": "evasión", "weight": 2 },
-    { "word": "dignidad", "weight": 2 },
-    { "word": "miedo", "weight": 2 },
-    { "word": "memoria", "weight": 2 },
-    { "word": "tiempo", "weight": 2 },
-    { "word": "responsabilidad", "weight": 2 },
-
-    { "word": "palabra no dicha", "weight": 1 },
-    { "word": "orgasmo", "weight": 1 },
-    { "word": "montana", "weight": 1 },
-    { "word": "pala", "weight": 1 },
-    { "word": "obra", "weight": 1 },
-    { "word": "mano", "weight": 1 },
-    { "word": "rayo", "weight": 1 },
-    { "word": "selva", "weight": 1 }
+    {
+      "word": "feminizacion",
+      "weight": 3
+    },
+    {
+      "word": "deseo erotico",
+      "weight": 3
+    },
+    {
+      "word": "identidad fluctuante",
+      "weight": 3
+    },
+    {
+      "word": "anormalidad sexual",
+      "weight": 3
+    },
+    {
+      "word": "transformacion",
+      "weight": 3
+    },
+    {
+      "word": "ternio amoroso",
+      "weight": 3
+    },
+    {
+      "word": "vulnerabilidad",
+      "weight": 3
+    },
+    {
+      "word": "fantasia corporal",
+      "weight": 2
+    },
+    {
+      "word": "nombrarse femenino",
+      "weight": 2
+    },
+    {
+      "word": "renuncia al rol masculino",
+      "weight": 2
+    },
+    {
+      "word": "mimetismo de genero",
+      "weight": 2
+    },
+    {
+      "word": "respiracion sincronizada",
+      "weight": 2
+    },
+    {
+      "word": "visibilidad y desaparicion",
+      "weight": 2
+    },
+    {
+      "word": "deformacion",
+      "weight": 2
+    },
+    {
+      "word": "purificacion erotica",
+      "weight": 2
+    },
+    {
+      "word": "copo de nieve",
+      "weight": 1
+    },
+    {
+      "word": "gorro de invierno",
+      "weight": 1
+    },
+    {
+      "word": "carreta",
+      "weight": 1
+    },
+    {
+      "word": "derretirse",
+      "weight": 1
+    },
+    {
+      "word": "golpe de dientes",
+      "weight": 1
+    },
+    {
+      "word": "esposa",
+      "weight": 1
+    }
   ]
 }

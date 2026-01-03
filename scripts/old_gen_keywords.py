@@ -12,7 +12,6 @@ DEFAULT_INPUT_FILE = "test_file.txt"
 DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-5-mini")
 MAX_KEYWORDS = 25
 REASONING = os.getenv("OPENAI_REASONING", "low")
-MAX_TEXTO_CHARS = int(os.getenv("QMP_TEXTO_MAX_CHARS", "1800"))
 
 
 INSTRUCTIONS = """
@@ -109,55 +108,6 @@ def trim_text_block(text: str) -> str:
     return paragraphs[0] + "\n\n" + paragraphs[-1]
 
 
-def trim_texto_section(full_text: str, max_chars: int = 1800) -> str:
-    """
-    If the input contains a '# TEXTO' section, reduce its token footprint:
-      - If TEXTO has >3 paragraphs, keep only first + last paragraph.
-      - Optionally cap to max_chars characters (soft cut).
-    Other sections remain unchanged.
-    """
-    # Split by markdown-style headers: "# POEMA", "# POEMA_CITADO", "# TEXTO"
-    header_re = re.compile(r"(?m)^(#\s*(POEMA|POEMA_CITADO|TEXTO)\s*)$", re.UNICODE)
-
-    parts = []
-    last = 0
-    matches = list(header_re.finditer(full_text))
-    if not matches:
-        return full_text.strip()
-
-    # Build list of (header, body) segments
-    segments = []
-    for idx, m in enumerate(matches):
-        header_start = m.start()
-        header_end = m.end()
-        if idx == 0 and header_start > 0:
-            # preamble before first header (keep as-is)
-            pre = full_text[:header_start].rstrip()
-            if pre:
-                segments.append((None, pre))
-        next_start = matches[idx + 1].start() if idx + 1 < len(matches) else len(full_text)
-        header_line = m.group(1).rstrip()
-        body = full_text[header_end:next_start].strip("\n")
-        segments.append((header_line, body))
-
-    out_segments = []
-    for header, body in segments:
-        if header is None:
-            out_segments.append(body.strip())
-            continue
-
-        if re.search(r"(?i)^#\s*TEXTO\b", header):
-            trimmed = trim_text_block(body)
-            trimmed = trimmed.strip()
-            if max_chars and len(trimmed) > max_chars:
-                trimmed = trimmed[:max_chars].rstrip()
-            out_segments.append(header.rstrip() + "\n\n" + trimmed)
-        else:
-            out_segments.append(header.rstrip() + ("\n\n" + body.strip() if body.strip() else ""))
-
-    return "\n\n".join([s for s in out_segments if s.strip()]).strip()
-
-
 def extract_output_text(resp) -> str:
     """
     Prefer resp.output_text (SDK helper). Fallback to traversing resp.output blocks.
@@ -203,14 +153,13 @@ def main() -> int:
         raw_text = f.read()
 
     text = strip_leading_metadata(raw_text).strip()
-    text = trim_texto_section(text, MAX_TEXTO_CHARS)
 
 
     client = OpenAI()
     resp = client.responses.create(
         model=DEFAULT_MODEL,
         reasoning={"effort": REASONING},
-        max_output_tokens=1200,
+        max_output_tokens=1000,
         input=[
             {"role": "system", "content": "Responde SOLO con JSON válido según el schema. Sin explicaciones."},
             {"role": "user", "content": INSTRUCTIONS + "\n\n---\n\nTEXTO COMPLETO:\n" + text},

@@ -1,118 +1,92 @@
-[
-  {
-    "word": "golpe",
-    "weight": 3
-  },
-  {
-    "word": "voz",
-    "weight": 3
-  },
-  {
-    "word": "yunque",
-    "weight": 3
-  },
-  {
-    "word": "fallar",
-    "weight": 3
-  },
-  {
-    "word": "hembra",
-    "weight": 3
-  },
-  {
-    "word": "ausencia",
-    "weight": 3
-  },
-  {
-    "word": "saber",
-    "weight": 3
-  },
-  {
-    "word": "decir",
-    "weight": 3
-  },
-  {
-    "word": "volver",
-    "weight": 2
-  },
-  {
-    "word": "placer",
-    "weight": 2
-  },
-  {
-    "word": "halago",
-    "weight": 2
-  },
-  {
-    "word": "soberano",
-    "weight": 2
-  },
-  {
-    "word": "mujer",
-    "weight": 2
-  },
-  {
-    "word": "alma",
-    "weight": 2
-  },
-  {
-    "word": "sumision",
-    "weight": 2
-  },
-  {
-    "word": "jerarquia",
-    "weight": 2
-  },
-  {
-    "word": "renuncia",
-    "weight": 2
-  },
-  {
-    "word": "dependencia",
-    "weight": 2
-  },
-  {
-    "word": "egoismo",
-    "weight": 2
-  },
-  {
-    "word": "restar",
-    "weight": 1
-  },
-  {
-    "word": "frente",
-    "weight": 1
-  },
-  {
-    "word": "lucha",
-    "weight": 1
-  },
-  {
-    "word": "venganza",
-    "weight": 1
-  },
-  {
-    "word": "admiracion",
-    "weight": 1
-  },
-  {
-    "word": "animal",
-    "weight": 1
-  },
-  {
-    "word": "social",
-    "weight": 1
-  },
-  {
-    "word": "muerte",
-    "weight": 1
-  },
-  {
-    "word": "genero",
-    "weight": 1
-  },
-  {
-    "word": "frustracion",
-    "weight": 1
-  }
-]
+{
+  "keywords": [
+    {
+      "word": "verguenza",
+      "weight": 3
+    },
+    {
+      "word": "represion",
+      "weight": 3
+    },
+    {
+      "word": "erosion de la agencia",
+      "weight": 3
+    },
+    {
+      "word": "priorizacion del placer",
+      "weight": 3
+    },
+    {
+      "word": "acumulacion de inmundicia",
+      "weight": 3
+    },
+    {
+      "word": "asco",
+      "weight": 3
+    },
+    {
+      "word": "minimizacion del instrumento",
+      "weight": 3
+    },
+    {
+      "word": "evasion",
+      "weight": 2
+    },
+    {
+      "word": "silencio",
+      "weight": 2
+    },
+    {
+      "word": "autocensura",
+      "weight": 2
+    },
+    {
+      "word": "deterioro progresivo",
+      "weight": 2
+    },
+    {
+      "word": "consuelo corporal",
+      "weight": 2
+    },
+    {
+      "word": "renuncia",
+      "weight": 2
+    },
+    {
+      "word": "culpa",
+      "weight": 2
+    },
+    {
+      "word": "juicio ajeno",
+      "weight": 2
+    },
+    {
+      "word": "montana de mierda",
+      "weight": 1
+    },
+    {
+      "word": "pala",
+      "weight": 1
+    },
+    {
+      "word": "palabras no dichas",
+      "weight": 1
+    },
+    {
+      "word": "orgasmo",
+      "weight": 1
+    },
+    {
+      "word": "manos pequenas",
+      "weight": 1
+    },
+    {
+      "word": "peso",
+      "weight": 1
+    },
+    {
+      "word": "restos",
+      "weight": 1
+    }
+  ]
+}
