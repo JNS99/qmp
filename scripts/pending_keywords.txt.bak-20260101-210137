@@ -1,0 +1,26 @@
+{
+  "keywords": [
+    { "word": "silencio", "weight": 3 },
+    { "word": "culpa", "weight": 3 },
+    { "word": "deseo", "weight": 3 },
+    { "word": "agotamiento", "weight": 3 },
+    { "word": "muerte", "weight": 3 },
+
+    { "word": "priorizacion", "weight": 2 },
+    { "word": "evasión", "weight": 2 },
+    { "word": "dignidad", "weight": 2 },
+    { "word": "miedo", "weight": 2 },
+    { "word": "memoria", "weight": 2 },
+    { "word": "tiempo", "weight": 2 },
+    { "word": "responsabilidad", "weight": 2 },
+
+    { "word": "palabra no dicha", "weight": 1 },
+    { "word": "orgasmo", "weight": 1 },
+    { "word": "montana", "weight": 1 },
+    { "word": "pala", "weight": 1 },
+    { "word": "obra", "weight": 1 },
+    { "word": "mano", "weight": 1 },
+    { "word": "rayo", "weight": 1 },
+    { "word": "selva", "weight": 1 }
+  ]
+}

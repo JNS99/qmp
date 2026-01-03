@@ -1,0 +1,167 @@
+📘 Proyecto QMP — Resumen completo del sistema y del flujo
+🎯 Objetivo general
+Construir y mantener un sitio literario/poético diario que sea:
+Editorialmente sobrio (experiencia de lectura prioritaria)
+Rápido (un comando para publicar)
+Seguro (validaciones, dry-run, nada irreversible)
+Flexible (crear y editar entradas pasadas)
+Humano (el autor decide todo el contenido)
+Sin dependencia de servicios de pago
+Sostenible en el tiempo
+El sistema separa estrictamente:
+contenido (texto),
+datos (JSON),
+presentación (HTML/CSS),
+lógica (JS / scripts locales).
+🧱 Estructura del proyecto
+qmp/
+├── index.html
+├── archivo.html
+├── passe.html
+├── style.css
+├── script.js
+├── archivo.json              # índice único del sitio
+├── textos/
+│   ├── YYYY-MM-DD.txt        # textos diarios (poema + citas + análisis)
+│   └── templateTEXT.txt
+├── scripts/
+│   ├── merge_pending.py
+│   ├── qmp_publish.sh
+│   ├── qd.sh
+│   ├── pending_entry.json   # temporal (se borra tras publicar)
+│   ├── pending_keywords.txt # temporal (no se borra)
+├── logs/
+│   └── publish_log.jsonl     # log append-only de publicaciones
+✍️ Flujo creativo diario (local)
+1) Preparar la sesión
+Desde cualquier directorio:
+qd
+# o
+qd YYYY-MM-DD
+Hace:
+crea textos/YYYY-MM-DD.txt desde plantilla solo si no existe
+abre en el editor:
+el .txt
+scripts/pending_keywords.txt
+archivo.json solo si la fecha ya existe (modo edición)
+2) Escribir
+Escribes el poema y el análisis en el .txt
+Pegas keywords manuales (JSON con pesos) en pending_keywords.txt
+Las keywords no se infieren
+Se generan conscientemente (p. ej. con ChatGPT, sin API)
+3) Probar (sin riesgo)
+q --dry-run YYYY-MM-DD
+Hace:
+genera pending_entry.json
+valida:
+formato de fecha
+estructura del texto
+JSON de keywords
+detecta:
+entrada nueva o edición
+muestra el mensaje de commit
+no toca git
+no modifica archivo.json
+4) Publicar
+q YYYY-MM-DD
+Hace:
+upsert automático:
+si la fecha no existe → crea entrada
+si existe → edita entrada
+actualiza archivo.json
+añade una línea a logs/publish_log.jsonl
+commit automático + push a GitHub
+borra pending_entry.json
+deja pending_keywords.txt intacto
+🧠 Decisiones editoriales clave
+Crear vs editar
+No hay comandos distintos:
+la fecha decide todo.
+Commit messages
+Automáticos y semánticos:
+Nueva entrada:
+Entrada 2025-12-27 — Título
+Edición:
+Edición 2025-12-25 — Título
+(Título o primer verso si no hay título.)
+🧩 Reglas de contenido (muy importantes)
+my_poem_title
+opcional
+si existe → NO se genera snippet
+my_poem_snippet
+❌ nunca se autogenera si hay título
+✅ solo existe si:
+no hay título, o
+el autor lo define explícitamente
+Poema citado
+❌ ningún snippet se infiere
+✅ solo existe si el autor lo da explícitamente
+👉 El sistema nunca inventa contenido.
+🖥️ Sitio web — Comportamiento
+index.html
+Muestra el día actual del visitante
+Alterna:
+Poema du jour
+Analyse du jour
+La fecha (flecha) se muestra a la derecha en el nav
+Nunca muestra contenido futuro
+Si hoy no existe:
+muestra la entrada más reciente ≤ hoy
+archivo.html
+Muestra solo el pasado
+Regla:
+lista hasta ayer según el visitante
+excluye hoy (porque ya está en index)
+excluye todo el futuro
+Filtros (mes / autor / búsqueda) se construyen solo con datos visibles
+Nunca aparecen meses ni autores futuros
+passe.html
+Muestra un día pasado vía ?date=YYYY-MM-DD
+Alternancia poema/análisis idéntica a index
+Flecha clara
+Enlace para volver al día actual
+✒️ Convención tipográfica especial (alineación poética)
+Sintaxis en .txt
+por |el dinero
+|el cansancio
+y ||la falta de tiempo
+Significado
+| → define una ancla de alineación
+| al inicio → línea alineada bajo la ancla
+|| → alineación con prefijo:
+el texto antes de || se conserva
+lo que sigue se alinea bajo la ancla vigente
+Todo se mide con canvas.measureText usando la fuente real del <pre>.
+📜 Log de publicaciones
+Archivo:
+logs/publish_log.jsonl
+Formato (una línea por publicación real):
+{
+  "date": "2025-12-25",
+  "file": "textos/2025-12-25.txt",
+  "title": "crecer",
+  "keywords": 24,
+  "timestamp": "2025-12-26T01:23:45Z"
+}
+Sirve para:
+historial real
+debugging
+estadísticas futuras
+páginas derivadas
+🌍 Publicación y hosting
+Repositorio en GitHub
+Publicación vía GitHub Pages
+Flujo local principal
+Extensión futura prevista (gratis):
+GitHub Actions para:
+publicar desde iPad
+generar keywords vía script (API opcional)
+ejecutar el mismo pipeline en cloud
+🧠 Filosofía del sistema
+El humano escribe y decide.
+El sistema valida, ensambla y publica.
+Un solo gesto activa todo.
+Editar el pasado es natural.
+Nada irreversible ocurre sin visibilidad previa.
+Código explícito > heurísticas.
+Legibilidad > automatismo.

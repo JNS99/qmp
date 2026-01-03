@@ -1,3 +1,43 @@
+qd
+qd 2026-01-01
+-usa hoy si no se pasa fecha
+-valida la fecha
+-si el archivo no existe, crea un nuevo desde templateText.txt
+-abre en subl la entrada, pending_keywords.txt, archivo.json (si la fecha ya existe)
+
+qk
+qk 2026-01-01
+-opcional
+-llama la api gemini
+-enerea sugerencias de keywords
+-sobresecribe pending_keywords.txt
+-crea backup automático si ya existía
+-no toca git
+-no modifica archivo.json
+-el human decide si las acepta, edita, o borra
+
+q --dry-run
+q --dry-run 2026-01-01
+-opcional pero muy recomendado
+-genera pending_entry.json
+-valida el formato de fecha, la estructura del .txt, json, reglas editoriales
+-detecta automáticamente nueva entrada o edición de entrada existente
+-muestra mensaje de commit que se usaría
+-no toca git
+-no modifica archivo.json
+-nada irreversible ocurre
+
+q
+q 2026-01-01
+-upsert autoático en archivo.json (si la fecha no existe, crea entrada, sino edita entrada)
+-añade una línea a logs/publish_log.jsonl
+-commit y push a GitHub
+-borra pending_entry
+-no borrar pending_keywords
+
+
+-____________________________________________-
+
 python3 scripts/make_pending_entry.py textos/2025-12-25.txt
 
 python3 scripts/merge_pending.py

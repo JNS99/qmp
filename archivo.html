@@ -268,7 +268,7 @@
           entry.dataset.month === month;
 
           const matchAuthor = !author || entry.dataset.author === author;
-          const score = terms.length === 0 ? 1 : keywordScore(entry, terms);
+          const score = terms.length === 0 ? 1 : keywordScore(entry, terms, keyword);
           const matchKeyword = score > 0;
           entry._score = score;
 
@@ -294,9 +294,10 @@
 
 
         const hasActiveFilters =
-        monthFilter.value !== 'current' ||
+        monthFilter.value !== '' ||
         authorFilter.value !== '' ||
         terms.length > 0;
+
 
         noResultsFound.style.display =
         (hasActiveFilters && visibleCount === 0) ? 'block' : 'none';
@@ -310,27 +311,70 @@
         .replace(/[\u0300-\u036f]/g, '');
       }
 
-      function keywordScore(entry, terms) {
+      function keywordScore(entry, terms, fullQuery) {
         let score = 0;
 
         const keywordsArr = JSON.parse(entry.dataset.keywords || '[]');
+        const searchText = entry.dataset.search || '';
 
-        for (const t of terms) {
-          const match = keywordsArr.find(k => k.word === t);
-          if (match) score += match.weight;
+         // --- helpers ---
+        const kwWords = (kw) => kw.word.split(/\s+/).filter(Boolean);
+
+          // 1) Match de FRASE exacta (prioridad máxima)
+        if (fullQuery && terms.length >= 2) {
+          const exact = keywordsArr.find(k => k.word === fullQuery);
+          if (exact) score += (exact.weight * 2) + 2; // fuerte: exact phrase
+          else {
+            // frase como substring dentro de una keyword (p.ej. "corte deliberado" dentro de algo más largo)
+            const partialPhrase = keywordsArr.find(k => k.word.includes(fullQuery));
+            if (partialPhrase) score += partialPhrase.weight + 1;
+          }
         }
 
-        const searchText = entry.dataset.search || '';
+        // 2) Match por palabras (AND): si el usuario escribió 2+ palabras,
+        //    premiamos entradas que cubren TODAS las palabras, aunque sea disperso.
+        if (terms.length >= 2) {
+          const coversAll = terms.every(t => {
+            // aparece como keyword exacta de una palabra
+            if (keywordsArr.some(k => k.word === t)) return true;
+            // aparece dentro de una keyword multi-palabra
+            if (keywordsArr.some(k => kwWords(k).includes(t))) return true;
+            // aparece en metadatos search (poeta/títulos)
+            if (searchText.includes(t)) return true;
+            return false;
+          });
+
+          if (!coversAll) return 0; // AND estricto: si falta una, no hay match
+        }
+
+        // 3) Scoring fino por token:
+        //    - keyword exacta de 1 palabra suma weight completo
+        //    - token dentro de keyword multi-palabra suma fracción
         for (const t of terms) {
+          const exactToken = keywordsArr.find(k => k.word === t);
+          if (exactToken) score += exactToken.weight;
+
+          // token dentro de keyword multi-palabra
+          for (const k of keywordsArr) {
+            const parts = kwWords(k);
+            if (parts.length >= 2 && parts.includes(t)) {
+              // fracción: keyword más específica, pero no exacta
+              score += k.weight * 0.5;
+              break;
+            }
+          }
+
           if (searchText.includes(t)) score += 0.5;
         }
 
         return score;
       }
 
-      monthFilter.addEventListener('change', filterEntries);
-      authorFilter.addEventListener('change', filterEntries);
-      keywordFilter.addEventListener('input', filterEntries);
-    </script>
-  </body>
-  </html>
+
+
+monthFilter.addEventListener('change', filterEntries);
+authorFilter.addEventListener('change', filterEntries);
+keywordFilter.addEventListener('input', filterEntries);
+</script>
+</body>
+</html>
