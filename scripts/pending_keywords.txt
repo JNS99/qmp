@@ -1,99 +1,104 @@
 {
+  "date": "2026-01-02",
   "keywords": [
     {
-      "word": "ausencia",
+      "word": "degradacion",
       "weight": 3
     },
     {
-      "word": "sombra",
+      "word": "merma de poder",
       "weight": 3
     },
     {
-      "word": "ocultamiento",
+      "word": "silencio autoimpuesto",
       "weight": 3
     },
     {
-      "word": "anhelo",
+      "word": "prioridad al placer",
       "weight": 3
     },
     {
-      "word": "reencuentro",
+      "word": "resignacion",
       "weight": 3
     },
     {
-      "word": "presencia ausente",
+      "word": "culpa cotidiana",
       "weight": 3
     },
     {
-      "word": "fantasma",
+      "word": "cuerpo deseante",
       "weight": 3
     },
     {
-      "word": "olvido",
+      "word": "trabajo humillante",
       "weight": 3
     },
     {
-      "word": "imitacion",
+      "word": "acumulacion de compromisos",
+      "weight": 3
+    },
+    {
+      "word": "herramienta que empequenece",
       "weight": 2
     },
     {
-      "word": "hacer sombra",
+      "word": "palabras no dichas",
       "weight": 2
     },
     {
-      "word": "desvanecimiento",
+      "word": "orgasmo como consuelo",
       "weight": 2
     },
     {
-      "word": "desaparicion",
+      "word": "renuncia progresiva",
       "weight": 2
     },
     {
-      "word": "soledad",
+      "word": "erosion de recursos",
       "weight": 2
     },
     {
-      "word": "provinciano",
+      "word": "normalizacion del asco",
       "weight": 2
     },
     {
-      "word": "poder aparente",
+      "word": "priorizar gratificacion inmediata",
       "weight": 2
     },
     {
-      "word": "performatividad",
+      "word": "comodificacion del cuerpo",
       "weight": 2
     },
     {
-      "word": "imitador",
+      "word": "complicidad silenciosa",
       "weight": 2
     },
     {
-      "word": "distancia emocional",
+      "word": "habituacion al abandono",
       "weight": 2
     },
     {
-      "word": "escritorio",
+      "word": "montana de mierda",
       "weight": 1
     },
     {
-      "word": "palabra ardiente",
+      "word": "pala",
       "weight": 1
     },
     {
-      "word": "piel",
+      "word": "palabra",
       "weight": 1
     },
     {
-      "word": "joven",
+      "word": "orgasmo",
       "weight": 1
     },
     {
-      "word": "escritor",
+      "word": "materia putrefacta",
       "weight": 1
     },
     {
-      "word": "manias",
+      "word": "mano que trabaja",
       "weight": 1
     }
   ]
