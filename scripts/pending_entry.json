@@ -1,0 +1,99 @@
+{
+  "date": "2026-01-04",
+  "month": "2026-01",
+  "file": "textos/2026-01-04.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "las hojas en el terreno",
+  "analysis": {
+    "poet": "Horacio Quiroga",
+    "poem_title": "LAS PANTALLAS DE FÁTIMA",
+    "poem_snippet": "",
+    "book_title": ""
+  },
+  "keywords": [
+    {
+      "word": "voz de arriba",
+      "weight": 3
+    },
+    {
+      "word": "golpe",
+      "weight": 3
+    },
+    {
+      "word": "deseo de venganza",
+      "weight": 3
+    },
+    {
+      "word": "silencio",
+      "weight": 3
+    },
+    {
+      "word": "admiracion",
+      "weight": 3
+    },
+    {
+      "word": "hembra",
+      "weight": 3
+    },
+    {
+      "word": "repeticion insistente",
+      "weight": 3
+    },
+    {
+      "word": "ausencia",
+      "weight": 3
+    },
+    {
+      "word": "caida",
+      "weight": 2
+    },
+    {
+      "word": "impacto",
+      "weight": 2
+    },
+    {
+      "word": "peso",
+      "weight": 2
+    },
+    {
+      "word": "conflicto admiracion violencia",
+      "weight": 2
+    },
+    {
+      "word": "resignacion",
+      "weight": 2
+    },
+    {
+      "word": "trabajo motivado por halago",
+      "weight": 2
+    },
+    {
+      "word": "no decir",
+      "weight": 2
+    },
+    {
+      "word": "jerarquia de poder",
+      "weight": 2
+    },
+    {
+      "word": "resonancia",
+      "weight": 2
+    },
+    {
+      "word": "restar",
+      "weight": 2
+    },
+    {
+      "word": "pizza",
+      "weight": 1
+    },
+    {
+      "word": "yunke",
+      "weight": 1
+    },
+    {
+      "word": "frente",
+      "weight": 1
+    }
+  ]
+}

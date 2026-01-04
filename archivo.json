@@ -7,105 +7,93 @@
     "my_poem_snippet": "las hojas en el terreno",
     "analysis": {
       "poet": "Horacio Quiroga",
-      "poem_title": "Las Pantallas de Fátima",
+      "poem_title": "LAS PANTALLAS DE FÁTIMA",
       "poem_snippet": "",
       "book_title": ""
     },
     "keywords": [
       {
-        "word": "incertidumbre",
+        "word": "voz de arriba",
         "weight": 3
       },
       {
-        "word": "niebla",
+        "word": "golpe",
         "weight": 3
       },
       {
-        "word": "desaparecen",
+        "word": "deseo de venganza",
         "weight": 3
       },
       {
-        "word": "tierra",
+        "word": "silencio",
         "weight": 3
       },
       {
-        "word": "certidumbre",
+        "word": "admiracion",
+        "weight": 3
+      },
+      {
+        "word": "hembra",
+        "weight": 3
+      },
+      {
+        "word": "repeticion insistente",
+        "weight": 3
+      },
+      {
+        "word": "ausencia",
+        "weight": 3
+      },
+      {
+        "word": "caida",
         "weight": 2
       },
       {
-        "word": "hojas",
+        "word": "impacto",
         "weight": 2
       },
       {
-        "word": "miraje",
+        "word": "peso",
         "weight": 2
       },
       {
-        "word": "imprecision",
+        "word": "conflicto admiracion violencia",
         "weight": 2
       },
       {
-        "word": "oscuro",
+        "word": "resignacion",
         "weight": 2
       },
       {
-        "word": "muerte",
+        "word": "trabajo motivado por halago",
         "weight": 2
       },
       {
-        "word": "arrugan",
+        "word": "no decir",
+        "weight": 2
+      },
+      {
+        "word": "jerarquia de poder",
+        "weight": 2
+      },
+      {
+        "word": "resonancia",
+        "weight": 2
+      },
+      {
+        "word": "restar",
+        "weight": 2
+      },
+      {
+        "word": "pizza",
         "weight": 1
       },
       {
-        "word": "marrones",
+        "word": "yunke",
         "weight": 1
       },
       {
-        "word": "vago",
-        "weight": 1
-      },
-      {
-        "word": "noche",
-        "weight": 1
-      },
-      {
-        "word": "luz indecisa",
-        "weight": 1
-      },
-      {
-        "word": "desierto",
-        "weight": 1
-      },
-      {
-        "word": "ilusion",
-        "weight": 1
-      },
-      {
-        "word": "trayectorias",
-        "weight": 1
-      },
-      {
-        "word": "quimera",
-        "weight": 1
-      },
-      {
-        "word": "romanza",
-        "weight": 1
-      },
-      {
-        "word": "exito",
-        "weight": 1
-      },
-      {
-        "word": "belleza",
-        "weight": 1
-      },
-      {
-        "word": "restrictivo",
-        "weight": 1
-      },
-      {
-        "word": "decepcionante",
+        "word": "frente",
         "weight": 1
       }
     ]

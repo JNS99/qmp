@@ -8,8 +8,8 @@ BOOK_TITLE:
 
 las hojas en el terreno
 cuanto más miro
-más se vuelvan marrones
-	se arrugan
+más |se vuelvan marrones
+|se arrugan
 se vuelven parte de la tierra
 
 las hojas que cuelgan de los árboles
