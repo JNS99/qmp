@@ -371,14 +371,6 @@
           "weight": 3
         },
         {
-          "word": "comodificacion del cuerpo",
-          "weight": 2
-        },
-        {
-          "word": "complicidad silenciosa",
-          "weight": 2
-        },
-        {
           "word": "cuerpo deseante",
           "weight": 3
         },
@@ -389,6 +381,34 @@
         {
           "word": "degradacion",
           "weight": 3
+        },
+        {
+          "word": "merma de poder",
+          "weight": 3
+        },
+        {
+          "word": "prioridad al placer",
+          "weight": 3
+        },
+        {
+          "word": "resignacion",
+          "weight": 3
+        },
+        {
+          "word": "silencio autoimpuesto",
+          "weight": 3
+        },
+        {
+          "word": "trabajo humillante",
+          "weight": 3
+        },
+        {
+          "word": "comodificacion del cuerpo",
+          "weight": 2
+        },
+        {
+          "word": "complicidad silenciosa",
+          "weight": 2
         },
         {
           "word": "erosion de recursos",
@@ -403,48 +423,16 @@
           "weight": 2
         },
         {
-          "word": "mano que trabaja",
-          "weight": 1
-        },
-        {
-          "word": "materia putrefacta",
-          "weight": 1
-        },
-        {
-          "word": "merma de poder",
-          "weight": 3
-        },
-        {
-          "word": "montana de mierda",
-          "weight": 1
-        },
-        {
           "word": "normalizacion del asco",
           "weight": 2
-        },
-        {
-          "word": "orgasmo",
-          "weight": 1
         },
         {
           "word": "orgasmo como consuelo",
           "weight": 2
         },
         {
-          "word": "pala",
-          "weight": 1
-        },
-        {
-          "word": "palabra",
-          "weight": 1
-        },
-        {
           "word": "palabras no dichas",
           "weight": 2
-        },
-        {
-          "word": "prioridad al placer",
-          "weight": 3
         },
         {
           "word": "priorizar gratificacion inmediata",
@@ -455,16 +443,28 @@
           "weight": 2
         },
         {
-          "word": "resignacion",
-          "weight": 3
+          "word": "mano que trabaja",
+          "weight": 1
         },
         {
-          "word": "silencio autoimpuesto",
-          "weight": 3
+          "word": "materia putrefacta",
+          "weight": 1
         },
         {
-          "word": "trabajo humillante",
-          "weight": 3
+          "word": "montana de mierda",
+          "weight": 1
+        },
+        {
+          "word": "orgasmo",
+          "weight": 1
+        },
+        {
+          "word": "pala",
+          "weight": 1
+        },
+        {
+          "word": "palabra",
+          "weight": 1
         }
       ]
     },
