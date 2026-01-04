@@ -1,69 +1,8 @@
 {
-  "date": "2026-01-02",
   "keywords": [
-    {
-      "word": "degradacion",
-      "weight": 3
-    },
-    {
-      "word": "merma de poder",
-      "weight": 3
-    },
-    {
-      "word": "silencio autoimpuesto",
-      "weight": 3
-    },
-    {
-      "word": "prioridad al placer",
-      "weight": 3
-    },
-    {
-      "word": "resignacion",
-      "weight": 3
-    },
-    {
-      "word": "culpa cotidiana",
-      "weight": 3
-    },
-    {
-      "word": "cuerpo deseante",
-      "weight": 3
-    },
-    {
-      "word": "trabajo humillante",
-      "weight": 3
-    },
     {
       "word": "acumulacion de compromisos",
       "weight": 3
-    },
-    {
-      "word": "herramienta que empequenece",
-      "weight": 2
-    },
-    {
-      "word": "palabras no dichas",
-      "weight": 2
-    },
-    {
-      "word": "orgasmo como consuelo",
-      "weight": 2
-    },
-    {
-      "word": "renuncia progresiva",
-      "weight": 2
-    },
-    {
-      "word": "erosion de recursos",
-      "weight": 2
-    },
-    {
-      "word": "normalizacion del asco",
-      "weight": 2
-    },
-    {
-      "word": "priorizar gratificacion inmediata",
-      "weight": 2
     },
     {
       "word": "comodificacion del cuerpo",
@@ -74,12 +13,56 @@
       "weight": 2
     },
     {
+      "word": "cuerpo deseante",
+      "weight": 3
+    },
+    {
+      "word": "culpa cotidiana",
+      "weight": 3
+    },
+    {
+      "word": "degradacion",
+      "weight": 3
+    },
+    {
+      "word": "erosion de recursos",
+      "weight": 2
+    },
+    {
       "word": "habituacion al abandono",
       "weight": 2
     },
     {
+      "word": "herramienta que empequenece",
+      "weight": 2
+    },
+    {
+      "word": "mano que trabaja",
+      "weight": 1
+    },
+    {
+      "word": "materia putrefacta",
+      "weight": 1
+    },
+    {
+      "word": "merma de poder",
+      "weight": 3
+    },
+    {
       "word": "montana de mierda",
       "weight": 1
+    },
+    {
+      "word": "normalizacion del asco",
+      "weight": 2
+    },
+    {
+      "word": "orgasmo",
+      "weight": 1
+    },
+    {
+      "word": "orgasmo como consuelo",
+      "weight": 2
     },
     {
       "word": "pala",
@@ -90,16 +73,32 @@
       "weight": 1
     },
     {
-      "word": "orgasmo",
-      "weight": 1
+      "word": "palabras no dichas",
+      "weight": 2
     },
     {
-      "word": "materia putrefacta",
-      "weight": 1
+      "word": "prioridad al placer",
+      "weight": 3
     },
     {
-      "word": "mano que trabaja",
-      "weight": 1
+      "word": "priorizar gratificacion inmediata",
+      "weight": 2
+    },
+    {
+      "word": "renuncia progresiva",
+      "weight": 2
+    },
+    {
+      "word": "resignacion",
+      "weight": 3
+    },
+    {
+      "word": "silencio autoimpuesto",
+      "weight": 3
+    },
+    {
+      "word": "trabajo humillante",
+      "weight": 3
     }
   ]
 }

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
 import argparse
 import json
 import re
@@ -6,140 +8,112 @@ from pathlib import Path
 from typing import Dict, Tuple
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-ARCHIVO_JSON = REPO_ROOT / "archivo.json"
 PENDING_ENTRY = REPO_ROOT / "scripts" / "pending_entry.json"
 
-SECTION_HEADERS = ["POEMA", "POEMA_CITADO", "TEXTO"]
+SECTION_HEADERS = ("POEMA", "POEMA_CITADO", "TEXTO")
 
-# Metadatos opcionales (si un día quieres añadirlos arriba del txt)
 META_ALIASES = {
     "FECHA": "date",
+    "MY_POEM_TITLE": "my_poem_title",
     "POETA": "poet",
     "POEM_TITLE": "poem_title",
     "BOOK_TITLE": "book_title",
-    "MY_POEM_TITLE": "my_poem_title",
-    "MY_POEM_SNIPPET": "my_poem_snippet",
-    "POEM_SNIPPET": "poem_snippet",
 }
 
-def parse_txt(txt_path: Path) -> Tuple[Dict[str, str], Dict[str, str]]:
-    raw = txt_path.read_text(encoding="utf-8").replace("\r\n", "\n")
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
-    # meta: líneas "CLAVE: valor" antes del primer header "# ..."
+def parse_meta_and_body(raw: str) -> Tuple[Dict[str, str], str]:
+    """Parse optional metadata header (KEY: value) at top. Returns (meta, rest)."""
     meta: Dict[str, str] = {}
-    first_header_pos = len(raw)
-    for h in SECTION_HEADERS:
-        m = re.search(rf"(?m)^\s*#\s*{re.escape(h)}\s*$", raw)
-        if m:
-            first_header_pos = min(first_header_pos, m.start())
-
-    meta_block = raw[:first_header_pos]
-    for line in meta_block.splitlines():
-        m = re.match(r"^\s*([A-Za-zÁÉÍÓÚÑ_]+)\s*:\s*(.*?)\s*$", line)
+    lines = raw.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i].rstrip("\n")
+        if not line.strip():
+            i += 1
+            break
+        m = re.match(r"^\s*([A-Z_]+)\s*:\s*(.*)\s*$", line)
         if not m:
-            continue
-        k = m.group(1).strip().upper()
-        v = m.group(2).strip()
-        if not v:
-            continue
+            break
+        k, v = m.group(1), m.group(2)
         if k in META_ALIASES:
             meta[META_ALIASES[k]] = v
+        i += 1
+    body = "\n".join(lines[i:]).strip()
+    return meta, body
 
-    # sections: texto entre headers "# NAME" y el siguiente header
+def extract_sections(body: str) -> Dict[str, str]:
     sections: Dict[str, str] = {}
-    header_re = r"(?m)^\s*#\s*(POEMA|POEMA_CITADO|TEXTO)\s*$"
-    matches = list(re.finditer(header_re, raw))
-    for i, m in enumerate(matches):
+    header_re = re.compile(r"(?m)^\s*#\s*(POEMA|POEMA_CITADO|TEXTO)\s*$")
+    matches = list(header_re.finditer(body))
+    for idx, m in enumerate(matches):
         name = m.group(1)
         start = m.end()
-        end = matches[i + 1].start() if i + 1 < len(matches) else len(raw)
-        sections[name] = raw[start:end].strip()
+        end = matches[idx + 1].start() if idx + 1 < len(matches) else len(body)
+        sections[name] = body[start:end].strip()
+    return sections
 
-    # fecha: si no está en meta, intenta sacarla del nombre del archivo YYYY-MM-DD
-    if "date" not in meta:
-        m = re.search(r"\d{4}-\d{2}-\d{2}", txt_path.name)
-        if m:
-            meta["date"] = m.group(0)
+def first_nonempty_line(s: str) -> str:
+    for line in s.splitlines():
+        t = line.strip()
+        if t:
+            return t
+    return ""
 
-    # snippet de TU poema:
-    # - si tú lo das explícitamente (MY_POEM_SNIPPET: ...), se usa
-    # - si NO hay título (MY_POEM_TITLE vacío), entonces autogeneramos snippet desde # POEMA
-    # - si SÍ hay título, NO autogeneramos snippet (lo dejamos vacío)
-    if "my_poem_snippet" not in meta:
-        title = (meta.get("my_poem_title") or "").strip()
-        if not title:
-            for line in sections.get("POEMA", "").splitlines():
-                line = line.strip()
-                if line:
-                    meta["my_poem_snippet"] = line
-                    break
-        else:
-            meta["my_poem_snippet"] = ""
+def month_from_date(d: str) -> str:
+    return d[:7]
 
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("txt_path", help="Path a textos/YYYY-MM-DD.txt")
+    ap.add_argument("--out", default=str(PENDING_ENTRY), help="Output pending_entry.json path")
+    args = ap.parse_args()
 
+    txt_path = Path(args.txt_path)
+    if not txt_path.is_absolute():
+        txt_path = (REPO_ROOT / txt_path).resolve()
 
-    return meta, sections
+    raw = txt_path.read_text(encoding="utf-8")
 
-def load_archivo() -> list:
-    if not ARCHIVO_JSON.exists():
-        raise FileNotFoundError(f"No encuentro {ARCHIVO_JSON}")
-    data = json.loads(ARCHIVO_JSON.read_text(encoding="utf-8"))
-    if not isinstance(data, list):
-        raise ValueError("archivo.json debe ser una LISTA de entradas.")
-    return data
+    meta, body = parse_meta_and_body(raw)
+    sections = extract_sections(body)
 
-def build_entry(meta: dict, txt_relpath: str) -> dict:
-    date = (meta.get("date") or "").strip()
-    if not re.match(r"^\d{4}-\d{2}-\d{2}$", date):
-        raise ValueError(
-            "Fecha inválida o ausente. Nombra el archivo como YYYY-MM-DD.txt "
-            "o añade 'FECHA: YYYY-MM-DD' arriba."
-        )
+    # date: from meta or filename
+    date = meta.get("date")
+    if not date:
+        date = txt_path.stem
+    if not DATE_RE.fullmatch(date):
+        raise SystemExit(f"Invalid/missing date (FECHA:) and filename not YYYY-MM-DD: {date}")
 
     entry = {
         "date": date,
-        "month": date[:7],
-        "file": txt_relpath,
-        "my_poem_title": (meta.get("my_poem_title") or "").strip(),
-        "my_poem_snippet": (meta.get("my_poem_snippet") or "").strip(),
+        "month": month_from_date(date),
+        "file": f"textos/{date}.txt",
+        "my_poem_title": meta.get("my_poem_title", "").strip(),
+        "my_poem_snippet": first_nonempty_line(sections.get("POEMA", "")),
         "analysis": {
-            "poet": (meta.get("poet") or "").strip(),
-            "poem_title": (meta.get("poem_title") or "").strip(),
-            "poem_snippet": (meta.get("poem_snippet") or "").strip(),  # puede quedar ""
-            "book_title": (meta.get("book_title") or "").strip(),
+            "poet": meta.get("poet", "").strip(),
+            "poem_title": meta.get("poem_title", "").strip(),
+            "poem_snippet": first_nonempty_line(sections.get("POEMA_CITADO", "")),
+            "book_title": meta.get("book_title", "").strip(),
         },
-        "keywords": []  # vacío a propósito
+        # keywords are filled/kept in merge step
+        "keywords": [],
+        # carry full sections so the site can render from the txt file (your JS reads txt file).
+        # We still include them in pending for validation/logging.
+        "sections": {
+            "POEMA": sections.get("POEMA", ""),
+            "POEMA_CITADO": sections.get("POEMA_CITADO", ""),
+            "TEXTO": sections.get("TEXTO", ""),
+        },
     }
-    return entry
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("txt", help="Ruta al .txt (ej: textos/2025-12-25.txt)")
-    args = ap.parse_args()
-
-    txt_path = (REPO_ROOT / args.txt).resolve()
-    if not txt_path.exists():
-        raise FileNotFoundError(f"No existe: {txt_path}")
-
-    meta, sections = parse_txt(txt_path)
-
-    # Validación mínima: que exista análisis
-    if not sections.get("TEXTO", "").strip():
-        raise ValueError("No encuentro contenido bajo '# TEXTO' (tu análisis).")
-
-    txt_relpath = str(txt_path.relative_to(REPO_ROOT)).replace("\\", "/")
-    entry = build_entry(meta, txt_relpath)
-
-    # Evita duplicar por fecha
-    entries = load_archivo()
-    if any(e.get("date") == entry["date"] for e in entries):
-        print(f"⚠️  Nota: ya existe date={entry['date']} en archivo.json. Voy a generar pending_entry.json igual.")
-
-
-    PENDING_ENTRY.write_text(json.dumps(entry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"OK: creado {PENDING_ENTRY}")
-    print("Siguiente: pega las keywords (JSON con pesos) en scripts/pending_keywords.txt")
-    print("y corre: python3 scripts/merge_pending.py")
+    out_path = Path(args.out)
+    if not out_path.is_absolute():
+        out_path = (REPO_ROOT / out_path).resolve()
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(entry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Wrote {out_path}")
 
 if __name__ == "__main__":
     main()

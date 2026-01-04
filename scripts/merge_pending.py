@@ -1,121 +1,182 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
 import argparse
 import json
-import re
+import subprocess
+import sys
 import unicodedata
 from pathlib import Path
+from typing import Any, Dict, List, Tuple
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-ARCHIVO_JSON = REPO_ROOT / "archivo.json"
-PENDING_ENTRY = REPO_ROOT / "scripts" / "pending_entry.json"
-PENDING_KEYWORDS = REPO_ROOT / "scripts" / "pending_keywords.txt"
 
-def normalize_kw(s: str) -> str:
-    s = s.strip().lower()
-    s = "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
-    s = re.sub(r"\s+", " ", s)
+def _repo_root_from_txt(txt_path: Path) -> Path:
+    # textos/YYYY-MM-DD.txt -> repo root = textos/.. = parent
+    # but user might pass absolute/relative; be robust
+    p = txt_path.resolve()
+    if p.parent.name == "textos":
+        return p.parent.parent
+    # fallback: assume scripts lives in ../scripts relative to txt
+    return p.parent.parent
+
+
+def load_archivo(path: Path) -> Tuple[Dict[str, Any] | List[Any], List[Dict[str, Any]]]:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    entries = data.get("entries", []) if isinstance(data, dict) else data
+    if not isinstance(entries, list):
+        raise SystemExit("archivo.json: entries no es una lista")
+    # normalize: ensure dicts
+    out: List[Dict[str, Any]] = []
+    for e in entries:
+        if isinstance(e, dict):
+            out.append(e)
+    return data, out
+
+
+def strip_accents(s: str) -> str:
+    s = unicodedata.normalize("NFKD", s)
+    return "".join(ch for ch in s if not unicodedata.combining(ch))
+
+
+def norm_word(s: str) -> str:
+    s = strip_accents(s).lower().strip()
+    s = " ".join(s.split())
     return s
 
-def load_entries() -> list:
-    data = json.loads(ARCHIVO_JSON.read_text(encoding="utf-8"))
-    if not isinstance(data, list):
-        raise ValueError("archivo.json debe ser una lista.")
-    return data
 
-def save_entries(entries: list) -> None:
-    entries = sorted(entries, key=lambda e: e.get("date", ""), reverse=True)
-    ARCHIVO_JSON.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-def parse_keywords_payload(text: str) -> list:
+def normalize_keywords(kws: Any) -> List[Dict[str, Any]]:
     """
-    Acepta:
-    - Array JSON: [ {...}, ... ]
-    - Objeto JSON: { "keywords": [ ... ] }
-    - Fragmento JSON: "keywords": [ ... ]  (lo envolvemos)
+    Accepts:
+      - list[{"word":..., "weight":...}]
+      - {"keywords": [...]}
+      - {"date": "...", "keywords":[...]}
+    Returns stable, deduped, sorted list (desc weight, asc word).
     """
-    s = text.strip()
-    if not s:
-        raise ValueError("pending_keywords.txt está vacío.")
-
-    # Permitir fragmento '"keywords": [...]'
-    if s.startswith('"keywords"') or s.startswith("'keywords'") or s.startswith("keywords"):
-        s = "{ " + s
-        if not s.rstrip().endswith("}"):
-            s = s + " }"
-
-    obj = json.loads(s)
-    if isinstance(obj, list):
-        kws = obj
-    elif isinstance(obj, dict) and isinstance(obj.get("keywords"), list):
-        kws = obj["keywords"]
+    if kws is None:
+        raw = []
+    elif isinstance(kws, dict):
+        raw = kws.get("keywords", [])
     else:
-        raise ValueError('pending_keywords.txt debe ser JSON: [...] o {"keywords":[...]} o el fragmento "keywords": [...]')
+        raw = kws
 
-    out = []
-    seen = set()
-    for it in kws:
-        if not isinstance(it, dict):
+    if not isinstance(raw, list):
+        raw = []
+
+    best: Dict[str, int] = {}
+    for item in raw:
+        if not isinstance(item, dict):
             continue
-        word = it.get("word") or it.get("k") or ""
-        weight = it.get("weight") or it.get("w") or 1
-
+        w = norm_word(str(item.get("word", "")))
+        if not w:
+            continue
         try:
-            weight = int(weight)
+            weight = int(item.get("weight", 1))
         except Exception:
             weight = 1
-        weight = 3 if weight >= 3 else (2 if weight == 2 else 1)
+        weight = max(1, min(3, weight))
+        best[w] = max(best.get(w, 0), weight)
 
-        word = normalize_kw(str(word))
-        if not word or word in seen:
-            continue
-        seen.add(word)
-        out.append({"word": word, "weight": weight})
+    out = [{"word": w, "weight": best[w]} for w in best]
+    out.sort(key=lambda d: (-d["weight"], d["word"]))
+    return out
 
-    return out[:30]
 
-def main():
+def keywords_equal(a: Any, b: Any) -> bool:
+    return normalize_keywords(a) == normalize_keywords(b)
+
+
+def build_pending_entry_via_script(repo: Path, txt_path: Path, out_path: Path) -> Dict[str, Any]:
+    script = repo / "scripts" / "make_pending_entry.py"
+    if not script.exists():
+        raise SystemExit("No existe scripts/make_pending_entry.py (necesario para parsear el .txt con schema histórico)")
+    cmd = [sys.executable, str(script), str(txt_path), "--out", str(out_path)]
+    subprocess.check_call(cmd)
+    entry = json.loads(out_path.read_text(encoding="utf-8"))
+    if not isinstance(entry, dict) or entry.get("date") is None:
+        raise SystemExit("pending_entry.json inválido (make_pending_entry.py no devolvió un entry correcto)")
+    # archivo.json debe ser índice: NO guardamos sections completas
+    entry.pop("sections", None)
+    return entry
+
+
+def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dry-run", "--dry", "-n", action="store_true", help="No escribe archivo.json (solo valida y actualiza pending_entry.json).")
-    ap.add_argument("--new-only", action="store_true", help="Falla si ya existe una entrada con la misma date.")
+    ap.add_argument("txt_path", help="Path a textos/YYYY-MM-DD.txt")
+    ap.add_argument("--apply-keywords", action="store_true", help="Aplicar keywords desde scripts/pending_keywords.txt")
+    ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    if not PENDING_ENTRY.exists():
-        raise FileNotFoundError(f"No encuentro {PENDING_ENTRY}. Primero corre make_pending_entry.py")
-    if not PENDING_KEYWORDS.exists():
-        raise FileNotFoundError(f"No encuentro {PENDING_KEYWORDS}. Pega ahí el JSON de keywords con pesos.")
+    txt_path = Path(args.txt_path)
+    if not txt_path.exists():
+        raise SystemExit(f"No existe: {txt_path}")
 
-    entry = json.loads(PENDING_ENTRY.read_text(encoding="utf-8"))
-    entry_date = (entry.get("date") or "").strip()
-    if not entry_date:
-        raise ValueError("pending_entry.json no tiene 'date'")
+    repo = _repo_root_from_txt(txt_path)
+    archivo = repo / "archivo.json"
+    pending_kw_path = repo / "scripts" / "pending_keywords.txt"
+    pending_entry_path = repo / "scripts" / "pending_entry.json"
 
-    kw_text = PENDING_KEYWORDS.read_text(encoding="utf-8").strip()
-    entry["keywords"] = parse_keywords_payload(kw_text)
+    data, entries = load_archivo(archivo)
 
-    # Guardar pending_entry.json actualizado (sí incluso en dry-run; es útil para commit msg / inspección)
-    PENDING_ENTRY.write_text(json.dumps(entry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # Parsear contenido con el schema histórico (single source of truth)
+    entry = build_pending_entry_via_script(repo, txt_path, pending_entry_path)
+    date = entry["date"]
 
-    entries = load_entries()
-    exists = any(e.get("date") == entry_date for e in entries)
+    old_entry = next((e for e in entries if e.get("date") == date), None)
+    exists_before = old_entry is not None
 
-    if exists and args.new_only:
-        raise ValueError(f"Ya existe una entrada con date={entry_date} en archivo.json (new-only).")
+    # keywords logic
+    applied_keywords = False
+    if args.apply_keywords:
+        if not pending_kw_path.exists():
+            raise SystemExit("Falta scripts/pending_keywords.txt (necesario para --apply-keywords)")
+        pending_payload = json.loads(pending_kw_path.read_text(encoding="utf-8"))
+        new_kws = normalize_keywords(pending_payload)
+        entry["keywords"] = new_kws
+        applied_keywords = True
+    else:
+        # preserve existing keywords
+        entry["keywords"] = old_entry.get("keywords", []) if old_entry else []
 
-    action = "update" if exists else "new"
+    # Enforce contract: una entrada nueva NO se publica sin keywords
+    if not exists_before and not entry.get("keywords"):
+        raise SystemExit("Entrada nueva sin keywords. Usa: q --kw YYYY-MM-DD (o ejecuta qk primero).")
 
+    # Change detection
+    def without_keywords(e: Dict[str, Any]) -> Dict[str, Any]:
+        d = dict(e)
+        d.pop("keywords", None)
+        return d
+
+    content_changed = True
+    if old_entry:
+        content_changed = without_keywords(old_entry) != without_keywords(entry)
+
+    keywords_changed = True
+    if old_entry:
+        keywords_changed = not keywords_equal(old_entry.get("keywords", []), entry.get("keywords", []))
+    else:
+        # new entry: treat as changed if it has any keywords
+        keywords_changed = bool(entry.get("keywords"))
+
+    # Write pending_entry.json (already created; rewrite to ensure keywords are final)
+    pending_entry_path.write_text(json.dumps(entry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    status = {
+        "dry_run": bool(args.dry_run),
+        "date": date,
+        "exists_before": exists_before,
+        "content_changed": bool(content_changed),
+        "keywords_changed": bool(keywords_changed),
+        "applied_keywords": bool(applied_keywords),
+        # for commit message (must be from poema propio)
+        "my_poem_title": entry.get("my_poem_title", "") or "",
+        "my_poem_snippet": entry.get("my_poem_snippet", "") or "",
+    }
+
+    print("STATUS_JSON=" + json.dumps(status, ensure_ascii=False))
     if args.dry_run:
-        # No tocamos archivo.json, pero reportamos la acción
-        print(f"ACTION={action}")
-        print(f"OK (dry-run): entrada {entry_date} lista ({len(entry.get('keywords', []))} keywords).")
         return
 
-    # UPSERT: si existe, reemplaza; si no, añade
-    entries = [e for e in entries if e.get("date") != entry_date]
-    entries.append(entry)
-    save_entries(entries)
-
-    print(f"ACTION={action}")
-    print(f"OK: {'reemplazada' if exists else 'añadida'} entrada {entry_date} con {len(entry.get('keywords', []))} keywords.")
 
 if __name__ == "__main__":
     main()

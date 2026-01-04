@@ -1,3 +1,57 @@
+
+
+
+____________________________________________________________________
+qd [YYYY-MM-DD]		#prepara/abriar
+			#si fecha no existe, crear desde template
+			#si la fecha existe: pull kw a nuevo archivo
+			#abre p_w_fecha y archivo.json
+
+qd --use-kw YYYY-MM-DD  #activar keywords sin copiar/pegar
+			#de p_k_fecha -> pending_k
+
+qd --use-kw YYYY-MM-DD  #llama a OpenAI y genera keywords
+			#escribe a pending_keywords.txt
+			#crea un backup
+
+q YYYY-MM-DD		#publica texto/metadatos del .txt
+			#si la fecha existe, no toca keywords
+
+q --kw YYYY-MM-DD	#publica text/metadatos y además aplica keywords desde pending_kw
+
+q --dry-run YYYY-MM-DD  #valida y construye lo que publicaría pero no hace el commit
+
+PE:
+
+____________________________________________________________________
+Nueva entrada (texto + keywords)
+
+qd 2026-01-05          # creas/edita el txt
+qk 2026-01-05          # genera keywords (pending_keywords.txt)
+q --dry-run 2026-01-05 # verifica
+q --kw 2026-01-05      # publica todo (texto + keywords)
+
+
+Ediatr título (sin tocar keywords)
+qd 2026-01-03          # abre txt + (si existe) workspace keywords + archivo.json
+# editas textos/2026-01-03.txt
+q --dry-run 2026-01-03
+q 2026-01-03           # publica texto, keywords quedan iguales
+
+Editar keywords manualmente
+qd 2026-01-03                 # abre workspace por fecha
+# editas scripts/pending_keywords_2026-01-03.json
+qd --use-kw 2026-01-03        # activa staging global
+q --dry-run 2026-01-03
+q --kw 2026-01-03             # aplica keywords nuevas
+
+Regenrar keywords por api para una entrada existente
+qk 2026-01-03
+# opcional: editas scripts/pending_keywords.txt
+q --dry-run 2026-01-03
+q --kw 2026-01-03
+
+____________________________________________________________________
 qd YYYY-MM-DD        # escribir
 qk YYYY-MM-DD        # generar keywords
 q --dry-run YYYY-MM-DD
@@ -8,7 +62,7 @@ qdk YYYY-MM-DD       # keywords + dry-run
 q YYYY-MM-DD         # publicar
 
 
-__________________________________-
+____________________________________________________________________
 qd
 qd 2026-01-01
 -usa hoy si no se pasa fecha

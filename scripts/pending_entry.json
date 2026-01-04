@@ -1,0 +1,115 @@
+{
+  "date": "2026-01-02",
+  "month": "2026-01",
+  "file": "textos/2026-01-02.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "es la misma montaña de mierda",
+  "analysis": {
+    "poet": "Alfonsina Storni",
+    "poem_title": "A Horacio Quiroga",
+    "poem_snippet": "Morir como tú, Horacio, en tus cabales,",
+    "book_title": "Poemas"
+  },
+  "keywords": [
+    {
+      "word": "acumulacion de compromisos",
+      "weight": 3
+    },
+    {
+      "word": "cuerpo deseante",
+      "weight": 3
+    },
+    {
+      "word": "culpa cotidiana",
+      "weight": 3
+    },
+    {
+      "word": "degradacion",
+      "weight": 3
+    },
+    {
+      "word": "merma de poder",
+      "weight": 3
+    },
+    {
+      "word": "prioridad al placer",
+      "weight": 3
+    },
+    {
+      "word": "resignacion",
+      "weight": 3
+    },
+    {
+      "word": "silencio autoimpuesto",
+      "weight": 3
+    },
+    {
+      "word": "trabajo humillante",
+      "weight": 3
+    },
+    {
+      "word": "comodificacion del cuerpo",
+      "weight": 2
+    },
+    {
+      "word": "complicidad silenciosa",
+      "weight": 2
+    },
+    {
+      "word": "erosion de recursos",
+      "weight": 2
+    },
+    {
+      "word": "habituacion al abandono",
+      "weight": 2
+    },
+    {
+      "word": "herramienta que empequenece",
+      "weight": 2
+    },
+    {
+      "word": "normalizacion del asco",
+      "weight": 2
+    },
+    {
+      "word": "orgasmo como consuelo",
+      "weight": 2
+    },
+    {
+      "word": "palabras no dichas",
+      "weight": 2
+    },
+    {
+      "word": "priorizar gratificacion inmediata",
+      "weight": 2
+    },
+    {
+      "word": "renuncia progresiva",
+      "weight": 2
+    },
+    {
+      "word": "mano que trabaja",
+      "weight": 1
+    },
+    {
+      "word": "materia putrefacta",
+      "weight": 1
+    },
+    {
+      "word": "montana de mierda",
+      "weight": 1
+    },
+    {
+      "word": "orgasmo",
+      "weight": 1
+    },
+    {
+      "word": "pala",
+      "weight": 1
+    },
+    {
+      "word": "palabra",
+      "weight": 1
+    }
+  ]
+}

@@ -1,2587 +1,2577 @@
-{
-  "entries": [
-    {
-      "date": "2026-01-05",
-      "month": "2026-01",
-      "file": "textos/2026-01-05.txt",
-      "my_poem_title": "",
-      "my_poem_snippet": "dónde estás escondido?",
-      "analysis": {
-        "poet": "Raúl Gómez Jattin",
-        "poem_title": "Un político",
-        "poem_snippet": "",
-        "book_title": "Amanecer en el Valle del Sinú"
-      },
-      "keywords": [
-        {
-          "word": "ausencia",
-          "weight": 3
-        },
-        {
-          "word": "sombra",
-          "weight": 3
-        },
-        {
-          "word": "ocultamiento",
-          "weight": 3
-        },
-        {
-          "word": "anhelo",
-          "weight": 3
-        },
-        {
-          "word": "reencuentro",
-          "weight": 3
-        },
-        {
-          "word": "presencia ausente",
-          "weight": 3
-        },
-        {
-          "word": "fantasma",
-          "weight": 3
-        },
-        {
-          "word": "olvido",
-          "weight": 3
-        },
-        {
-          "word": "imitacion",
-          "weight": 2
-        },
-        {
-          "word": "hacer sombra",
-          "weight": 2
-        },
-        {
-          "word": "desvanecimiento",
-          "weight": 2
-        },
-        {
-          "word": "desaparicion",
-          "weight": 2
-        },
-        {
-          "word": "soledad",
-          "weight": 2
-        },
-        {
-          "word": "provinciano",
-          "weight": 2
-        },
-        {
-          "word": "poder aparente",
-          "weight": 2
-        },
-        {
-          "word": "performatividad",
-          "weight": 2
-        },
-        {
-          "word": "imitador",
-          "weight": 2
-        },
-        {
-          "word": "distancia emocional",
-          "weight": 2
-        },
-        {
-          "word": "escritorio",
-          "weight": 1
-        },
-        {
-          "word": "palabra ardiente",
-          "weight": 1
-        },
-        {
-          "word": "piel",
-          "weight": 1
-        },
-        {
-          "word": "joven",
-          "weight": 1
-        },
-        {
-          "word": "escritor",
-          "weight": 1
-        },
-        {
-          "word": "manias",
-          "weight": 1
-        }
-      ]
+[
+  {
+    "date": "2026-01-05",
+    "month": "2026-01",
+    "file": "textos/2026-01-05.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "dónde estás escondido?",
+    "analysis": {
+      "poet": "Raúl Gómez Jattin",
+      "poem_title": "Un político",
+      "poem_snippet": "",
+      "book_title": "Amanecer en el Valle del Sinú"
     },
-    {
-      "date": "2026-01-04",
-      "month": "2026-01",
-      "file": "textos/2026-01-04.txt",
-      "my_poem_title": "",
-      "my_poem_snippet": "las hojas en el terreno",
-      "analysis": {
-        "poet": "Horacio Quiroga",
-        "poem_title": "Las Pantallas de Fátima",
-        "poem_snippet": "",
-        "book_title": ""
+    "keywords": [
+      {
+        "word": "ausencia",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "transitoriedad",
-          "weight": 3
-        },
-        {
-          "word": "decaimiento",
-          "weight": 3
-        },
-        {
-          "word": "retorno a la tierra",
-          "weight": 3
-        },
-        {
-          "word": "desaparicion",
-          "weight": 3
-        },
-        {
-          "word": "incertidumbre",
-          "weight": 3
-        },
-        {
-          "word": "transformacion",
-          "weight": 3
-        },
-        {
-          "word": "atencion y proximidad",
-          "weight": 3
-        },
-        {
-          "word": "evaporacion de la imagen",
-          "weight": 2
-        },
-        {
-          "word": "dilucion en la niebla",
-          "weight": 2
-        },
-        {
-          "word": "perdida de contorno",
-          "weight": 2
-        },
-        {
-          "word": "cegada por el acercamiento",
-          "weight": 2
-        },
-        {
-          "word": "certeza que se deshace",
-          "weight": 2
-        },
-        {
-          "word": "metamorfosis material",
-          "weight": 2
-        },
-        {
-          "word": "erosion de lo visible",
-          "weight": 2
-        },
-        {
-          "word": "fumar como desaparicion",
-          "weight": 2
-        },
-        {
-          "word": "hojas",
-          "weight": 1
-        },
-        {
-          "word": "tierra",
-          "weight": 1
-        },
-        {
-          "word": "niebla",
-          "weight": 1
-        },
-        {
-          "word": "arboles",
-          "weight": 1
-        },
-        {
-          "word": "marron",
-          "weight": 1
-        },
-        {
-          "word": "arrugas",
-          "weight": 1
-        },
-        {
-          "word": "bruma",
-          "weight": 1
-        },
-        {
-          "word": "ruta desierta",
-          "weight": 1
-        },
-        {
-          "word": "luz indecisa",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "sombra",
+        "weight": 3
+      },
+      {
+        "word": "ocultamiento",
+        "weight": 3
+      },
+      {
+        "word": "anhelo",
+        "weight": 3
+      },
+      {
+        "word": "reencuentro",
+        "weight": 3
+      },
+      {
+        "word": "presencia ausente",
+        "weight": 3
+      },
+      {
+        "word": "fantasma",
+        "weight": 3
+      },
+      {
+        "word": "olvido",
+        "weight": 3
+      },
+      {
+        "word": "imitacion",
+        "weight": 2
+      },
+      {
+        "word": "hacer sombra",
+        "weight": 2
+      },
+      {
+        "word": "desvanecimiento",
+        "weight": 2
+      },
+      {
+        "word": "desaparicion",
+        "weight": 2
+      },
+      {
+        "word": "soledad",
+        "weight": 2
+      },
+      {
+        "word": "provinciano",
+        "weight": 2
+      },
+      {
+        "word": "poder aparente",
+        "weight": 2
+      },
+      {
+        "word": "performatividad",
+        "weight": 2
+      },
+      {
+        "word": "imitador",
+        "weight": 2
+      },
+      {
+        "word": "distancia emocional",
+        "weight": 2
+      },
+      {
+        "word": "escritorio",
+        "weight": 1
+      },
+      {
+        "word": "palabra ardiente",
+        "weight": 1
+      },
+      {
+        "word": "piel",
+        "weight": 1
+      },
+      {
+        "word": "joven",
+        "weight": 1
+      },
+      {
+        "word": "escritor",
+        "weight": 1
+      },
+      {
+        "word": "manias",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-01-04",
+    "month": "2026-01",
+    "file": "textos/2026-01-04.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "las hojas en el terreno",
+    "analysis": {
+      "poet": "Horacio Quiroga",
+      "poem_title": "Las Pantallas de Fátima",
+      "poem_snippet": "",
+      "book_title": ""
     },
-    {
-      "date": "2026-01-03",
-      "month": "2026-01",
-      "file": "textos/2026-01-03.txt",
-      "my_poem_title": "",
-      "my_poem_snippet": "ya la se",
-      "analysis": {
-        "poet": "César Vallejo",
-        "poem_title": "IX",
-        "poem_snippet": "",
-        "book_title": "Trilce"
+    "keywords": [
+      {
+        "word": "transitoriedad",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "golpe",
-          "weight": 3
-        },
-        {
-          "word": "voz",
-          "weight": 3
-        },
-        {
-          "word": "yunque",
-          "weight": 3
-        },
-        {
-          "word": "fallar",
-          "weight": 3
-        },
-        {
-          "word": "hembra",
-          "weight": 3
-        },
-        {
-          "word": "ausencia",
-          "weight": 3
-        },
-        {
-          "word": "saber",
-          "weight": 3
-        },
-        {
-          "word": "decir",
-          "weight": 3
-        },
-        {
-          "word": "volver",
-          "weight": 2
-        },
-        {
-          "word": "placer",
-          "weight": 2
-        },
-        {
-          "word": "halago",
-          "weight": 2
-        },
-        {
-          "word": "soberano",
-          "weight": 2
-        },
-        {
-          "word": "mujer",
-          "weight": 2
-        },
-        {
-          "word": "alma",
-          "weight": 2
-        },
-        {
-          "word": "sumision",
-          "weight": 2
-        },
-        {
-          "word": "jerarquia",
-          "weight": 2
-        },
-        {
-          "word": "renuncia",
-          "weight": 2
-        },
-        {
-          "word": "dependencia",
-          "weight": 2
-        },
-        {
-          "word": "egoismo",
-          "weight": 2
-        },
-        {
-          "word": "restar",
-          "weight": 1
-        },
-        {
-          "word": "frente",
-          "weight": 1
-        },
-        {
-          "word": "lucha",
-          "weight": 1
-        },
-        {
-          "word": "venganza",
-          "weight": 1
-        },
-        {
-          "word": "admiracion",
-          "weight": 1
-        },
-        {
-          "word": "animal",
-          "weight": 1
-        },
-        {
-          "word": "social",
-          "weight": 1
-        },
-        {
-          "word": "muerte",
-          "weight": 1
-        },
-        {
-          "word": "genero",
-          "weight": 1
-        },
-        {
-          "word": "frustracion",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "decaimiento",
+        "weight": 3
+      },
+      {
+        "word": "retorno a la tierra",
+        "weight": 3
+      },
+      {
+        "word": "desaparicion",
+        "weight": 3
+      },
+      {
+        "word": "incertidumbre",
+        "weight": 3
+      },
+      {
+        "word": "transformacion",
+        "weight": 3
+      },
+      {
+        "word": "atencion y proximidad",
+        "weight": 3
+      },
+      {
+        "word": "evaporacion de la imagen",
+        "weight": 2
+      },
+      {
+        "word": "dilucion en la niebla",
+        "weight": 2
+      },
+      {
+        "word": "perdida de contorno",
+        "weight": 2
+      },
+      {
+        "word": "cegada por el acercamiento",
+        "weight": 2
+      },
+      {
+        "word": "certeza que se deshace",
+        "weight": 2
+      },
+      {
+        "word": "metamorfosis material",
+        "weight": 2
+      },
+      {
+        "word": "erosion de lo visible",
+        "weight": 2
+      },
+      {
+        "word": "fumar como desaparicion",
+        "weight": 2
+      },
+      {
+        "word": "hojas",
+        "weight": 1
+      },
+      {
+        "word": "tierra",
+        "weight": 1
+      },
+      {
+        "word": "niebla",
+        "weight": 1
+      },
+      {
+        "word": "arboles",
+        "weight": 1
+      },
+      {
+        "word": "marron",
+        "weight": 1
+      },
+      {
+        "word": "arrugas",
+        "weight": 1
+      },
+      {
+        "word": "bruma",
+        "weight": 1
+      },
+      {
+        "word": "ruta desierta",
+        "weight": 1
+      },
+      {
+        "word": "luz indecisa",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-01-03",
+    "month": "2026-01",
+    "file": "textos/2026-01-03.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "ya la se",
+    "analysis": {
+      "poet": "César Vallejo",
+      "poem_title": "IX",
+      "poem_snippet": "",
+      "book_title": "Trilce"
     },
-    {
-      "date": "2026-01-02",
-      "month": "2026-01",
-      "file": "textos/2026-01-02.txt",
-      "my_poem_title": "",
-      "my_poem_snippet": "es la misma montaña de mierda",
-      "analysis": {
-        "poet": "Alfonsina Storni",
-        "poem_title": "A Horacio Quiroga",
-        "poem_snippet": "Morir como tú, Horacio, en tus cabales,",
-        "book_title": "Poemas"
+    "keywords": [
+      {
+        "word": "golpe",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "acumulacion de compromisos",
-          "weight": 3
-        },
-        {
-          "word": "cuerpo deseante",
-          "weight": 3
-        },
-        {
-          "word": "culpa cotidiana",
-          "weight": 3
-        },
-        {
-          "word": "degradacion",
-          "weight": 3
-        },
-        {
-          "word": "merma de poder",
-          "weight": 3
-        },
-        {
-          "word": "prioridad al placer",
-          "weight": 3
-        },
-        {
-          "word": "resignacion",
-          "weight": 3
-        },
-        {
-          "word": "silencio autoimpuesto",
-          "weight": 3
-        },
-        {
-          "word": "trabajo humillante",
-          "weight": 3
-        },
-        {
-          "word": "comodificacion del cuerpo",
-          "weight": 2
-        },
-        {
-          "word": "complicidad silenciosa",
-          "weight": 2
-        },
-        {
-          "word": "erosion de recursos",
-          "weight": 2
-        },
-        {
-          "word": "habituacion al abandono",
-          "weight": 2
-        },
-        {
-          "word": "herramienta que empequenece",
-          "weight": 2
-        },
-        {
-          "word": "normalizacion del asco",
-          "weight": 2
-        },
-        {
-          "word": "orgasmo como consuelo",
-          "weight": 2
-        },
-        {
-          "word": "palabras no dichas",
-          "weight": 2
-        },
-        {
-          "word": "priorizar gratificacion inmediata",
-          "weight": 2
-        },
-        {
-          "word": "renuncia progresiva",
-          "weight": 2
-        },
-        {
-          "word": "mano que trabaja",
-          "weight": 1
-        },
-        {
-          "word": "materia putrefacta",
-          "weight": 1
-        },
-        {
-          "word": "montana de mierda",
-          "weight": 1
-        },
-        {
-          "word": "orgasmo",
-          "weight": 1
-        },
-        {
-          "word": "pala",
-          "weight": 1
-        },
-        {
-          "word": "palabra",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "voz",
+        "weight": 3
+      },
+      {
+        "word": "yunque",
+        "weight": 3
+      },
+      {
+        "word": "fallar",
+        "weight": 3
+      },
+      {
+        "word": "hembra",
+        "weight": 3
+      },
+      {
+        "word": "ausencia",
+        "weight": 3
+      },
+      {
+        "word": "saber",
+        "weight": 3
+      },
+      {
+        "word": "decir",
+        "weight": 3
+      },
+      {
+        "word": "volver",
+        "weight": 2
+      },
+      {
+        "word": "placer",
+        "weight": 2
+      },
+      {
+        "word": "halago",
+        "weight": 2
+      },
+      {
+        "word": "soberano",
+        "weight": 2
+      },
+      {
+        "word": "mujer",
+        "weight": 2
+      },
+      {
+        "word": "alma",
+        "weight": 2
+      },
+      {
+        "word": "sumision",
+        "weight": 2
+      },
+      {
+        "word": "jerarquia",
+        "weight": 2
+      },
+      {
+        "word": "renuncia",
+        "weight": 2
+      },
+      {
+        "word": "dependencia",
+        "weight": 2
+      },
+      {
+        "word": "egoismo",
+        "weight": 2
+      },
+      {
+        "word": "restar",
+        "weight": 1
+      },
+      {
+        "word": "frente",
+        "weight": 1
+      },
+      {
+        "word": "lucha",
+        "weight": 1
+      },
+      {
+        "word": "venganza",
+        "weight": 1
+      },
+      {
+        "word": "admiracion",
+        "weight": 1
+      },
+      {
+        "word": "animal",
+        "weight": 1
+      },
+      {
+        "word": "social",
+        "weight": 1
+      },
+      {
+        "word": "muerte",
+        "weight": 1
+      },
+      {
+        "word": "genero",
+        "weight": 1
+      },
+      {
+        "word": "frustracion",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2026-01-02",
+    "title": "FECHA: 2026-01-02",
+    "poem": "MY_POEM_TITLE: \nPOETA: Alfonsina Storni \nPOEM_TITLE: A Horacio Quiroga\nBOOK_TITLE: Poemas\n# POEMA\nes la misma montaña de mierda\npero la pala se vuelve más pequeña\ncon cada palabra no dicha\ncada orgasmo priorizado\n# POEMA_CITADO\nMorir como tú, Horacio, en tus cabales,\ny así como en tus cuentos, no está mal;\nun rayo a tiempo y se acabó la feria…\nAllá dirán.\nNo se vive en la selva impunemente,\nni cara al Paraná.\nBien por tu mano firme, gran Horacio…\nAllá dirán.\n“Nos hiere cada hora –queda escrito–,\nnos mata al final”.\nUnos minutos menos… ¿quién te acusa?\nAllá dirán.\nMás pudre el miedo, Horacio, que la muerte\nque a las espaldas va.\nBebiste bien, que luego sonreías…\nAllá dirán.\nSé que la mano obrera te estrecharon,\nmas no, sí, Alguno, o simplemente, Pan,\nque no es de fuertes renegar de su obra…\n(Más que tú mismo es fuerte quien dirá).\n# TEXTO\nEl poema presenta una visión de una muerte con dignidad; aunque el narrador tiene ideas pesimistas, anima a Horacio a enfrentarse sin miedo a la muerte. Además, el narrador sugiere, con el uso del futuro (“dirán”, “dirá”), que su muerte respetable será una manera de ser recordado por la gente.",
+    "keywords": [
+      {
+        "word": "acumulacion de compromisos",
+        "weight": 3
+      },
+      {
+        "word": "comodificacion del cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "complicidad silenciosa",
+        "weight": 2
+      },
+      {
+        "word": "cuerpo deseante",
+        "weight": 3
+      },
+      {
+        "word": "culpa cotidiana",
+        "weight": 3
+      },
+      {
+        "word": "degradacion",
+        "weight": 3
+      },
+      {
+        "word": "erosion de recursos",
+        "weight": 2
+      },
+      {
+        "word": "habituacion al abandono",
+        "weight": 2
+      },
+      {
+        "word": "herramienta que empequenece",
+        "weight": 2
+      },
+      {
+        "word": "mano que trabaja",
+        "weight": 1
+      },
+      {
+        "word": "materia putrefacta",
+        "weight": 1
+      },
+      {
+        "word": "merma de poder",
+        "weight": 3
+      },
+      {
+        "word": "montana de mierda",
+        "weight": 1
+      },
+      {
+        "word": "normalizacion del asco",
+        "weight": 2
+      },
+      {
+        "word": "orgasmo",
+        "weight": 1
+      },
+      {
+        "word": "orgasmo como consuelo",
+        "weight": 2
+      },
+      {
+        "word": "pala",
+        "weight": 1
+      },
+      {
+        "word": "palabra",
+        "weight": 1
+      },
+      {
+        "word": "palabras no dichas",
+        "weight": 2
+      },
+      {
+        "word": "prioridad al placer",
+        "weight": 3
+      },
+      {
+        "word": "priorizar gratificacion inmediata",
+        "weight": 2
+      },
+      {
+        "word": "renuncia progresiva",
+        "weight": 2
+      },
+      {
+        "word": "resignacion",
+        "weight": 3
+      },
+      {
+        "word": "silencio autoimpuesto",
+        "weight": 3
+      },
+      {
+        "word": "trabajo humillante",
+        "weight": 3
+      }
+    ]
+  },
+  {
+    "date": "2026-01-01",
+    "month": "2026-01",
+    "file": "textos/2026-01-01.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "o es un copo de nieve",
+    "analysis": {
+      "poet": "Luna Miguel",
+      "poem_title": "Un San Valentín con Gala y Luna",
+      "poem_snippet": "",
+      "book_title": "Poesía Masculina"
     },
-    {
-      "date": "2026-01-01",
-      "month": "2026-01",
-      "file": "textos/2026-01-01.txt",
-      "my_poem_title": "",
-      "my_poem_snippet": "o es un copo de nieve",
-      "analysis": {
-        "poet": "Luna Miguel",
-        "poem_title": "Un San Valentín con Gala y Luna",
-        "poem_snippet": "",
-        "book_title": "Poesía Masculina"
+    "keywords": [
+      {
+        "word": "visibilidad",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "visibilidad",
-          "weight": 3
-        },
-        {
-          "word": "amor",
-          "weight": 3
-        },
-        {
-          "word": "identidad",
-          "weight": 3
-        },
-        {
-          "word": "transformacion",
-          "weight": 3
-        },
-        {
-          "word": "cuerpo",
-          "weight": 3
-        },
-        {
-          "word": "norma",
-          "weight": 2
-        },
-        {
-          "word": "anormalidad",
-          "weight": 2
-        },
-        {
-          "word": "genero",
-          "weight": 2
-        },
-        {
-          "word": "deseo",
-          "weight": 2
-        },
-        {
-          "word": "finito",
-          "weight": 2
-        },
-        {
-          "word": "exposicion",
-          "weight": 2
-        },
-        {
-          "word": "diferencia",
-          "weight": 2
-        },
-        {
-          "word": "convocatoria",
-          "weight": 2
-        },
-        {
-          "word": "copo de nieve",
-          "weight": 1
-        },
-        {
-          "word": "derretimiento",
-          "weight": 1
-        },
-        {
-          "word": "invierno",
-          "weight": 1
-        },
-        {
-          "word": "carreta",
-          "weight": 1
-        },
-        {
-          "word": "lado",
-          "weight": 1
-        },
-        {
-          "word": "mano",
-          "weight": 1
-        },
-        {
-          "word": "respiracion",
-          "weight": 1
-        },
-        {
-          "word": "boca",
-          "weight": 1
-        },
-        {
-          "word": "fantasia",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "amor",
+        "weight": 3
+      },
+      {
+        "word": "identidad",
+        "weight": 3
+      },
+      {
+        "word": "transformacion",
+        "weight": 3
+      },
+      {
+        "word": "cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "norma",
+        "weight": 2
+      },
+      {
+        "word": "anormalidad",
+        "weight": 2
+      },
+      {
+        "word": "genero",
+        "weight": 2
+      },
+      {
+        "word": "deseo",
+        "weight": 2
+      },
+      {
+        "word": "finito",
+        "weight": 2
+      },
+      {
+        "word": "exposicion",
+        "weight": 2
+      },
+      {
+        "word": "diferencia",
+        "weight": 2
+      },
+      {
+        "word": "convocatoria",
+        "weight": 2
+      },
+      {
+        "word": "copo de nieve",
+        "weight": 1
+      },
+      {
+        "word": "derretimiento",
+        "weight": 1
+      },
+      {
+        "word": "invierno",
+        "weight": 1
+      },
+      {
+        "word": "carreta",
+        "weight": 1
+      },
+      {
+        "word": "lado",
+        "weight": 1
+      },
+      {
+        "word": "mano",
+        "weight": 1
+      },
+      {
+        "word": "respiracion",
+        "weight": 1
+      },
+      {
+        "word": "boca",
+        "weight": 1
+      },
+      {
+        "word": "fantasia",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-31",
+    "month": "2025-12",
+    "file": "textos/2025-12-31.txt",
+    "my_poem_title": "gorjeo",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Hondura",
+      "poem_snippet": "",
+      "book_title": "Prisión Voluntaria"
     },
-    {
-      "date": "2025-12-31",
-      "month": "2025-12",
-      "file": "textos/2025-12-31.txt",
-      "my_poem_title": "gorjeo",
-      "my_poem_snippet": "",
-      "analysis": {
-        "poet": "Violeta Villalba",
-        "poem_title": "Hondura",
-        "poem_snippet": "",
-        "book_title": "Prisión Voluntaria"
+    "keywords": [
+      {
+        "word": "lenguaje",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "lenguaje",
-          "weight": 3
-        },
-        {
-          "word": "transformacion",
-          "weight": 3
-        },
-        {
-          "word": "adiccion",
-          "weight": 3
-        },
-        {
-          "word": "precariedad",
-          "weight": 3
-        },
-        {
-          "word": "huida",
-          "weight": 3
-        },
-        {
-          "word": "escucha",
-          "weight": 2
-        },
-        {
-          "word": "perdida de control",
-          "weight": 2
-        },
-        {
-          "word": "proceso",
-          "weight": 2
-        },
-        {
-          "word": "caida",
-          "weight": 2
-        },
-        {
-          "word": "interioridad",
-          "weight": 2
-        },
-        {
-          "word": "exterioridad",
-          "weight": 2
-        },
-        {
-          "word": "vacio",
-          "weight": 2
-        },
-        {
-          "word": "umbral",
-          "weight": 2
-        },
-        {
-          "word": "orejas",
-          "weight": 1
-        },
-        {
-          "word": "palabras",
-          "weight": 1
-        },
-        {
-          "word": "lava",
-          "weight": 1
-        },
-        {
-          "word": "letras",
-          "weight": 1
-        },
-        {
-          "word": "gorjeo",
-          "weight": 1
-        },
-        {
-          "word": "hilos",
-          "weight": 1
-        },
-        {
-          "word": "cama",
-          "weight": 1
-        },
-        {
-          "word": "puerta",
-          "weight": 1
-        },
-        {
-          "word": "hondura",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "transformacion",
+        "weight": 3
+      },
+      {
+        "word": "adiccion",
+        "weight": 3
+      },
+      {
+        "word": "precariedad",
+        "weight": 3
+      },
+      {
+        "word": "huida",
+        "weight": 3
+      },
+      {
+        "word": "escucha",
+        "weight": 2
+      },
+      {
+        "word": "perdida de control",
+        "weight": 2
+      },
+      {
+        "word": "proceso",
+        "weight": 2
+      },
+      {
+        "word": "caida",
+        "weight": 2
+      },
+      {
+        "word": "interioridad",
+        "weight": 2
+      },
+      {
+        "word": "exterioridad",
+        "weight": 2
+      },
+      {
+        "word": "vacio",
+        "weight": 2
+      },
+      {
+        "word": "umbral",
+        "weight": 2
+      },
+      {
+        "word": "orejas",
+        "weight": 1
+      },
+      {
+        "word": "palabras",
+        "weight": 1
+      },
+      {
+        "word": "lava",
+        "weight": 1
+      },
+      {
+        "word": "letras",
+        "weight": 1
+      },
+      {
+        "word": "gorjeo",
+        "weight": 1
+      },
+      {
+        "word": "hilos",
+        "weight": 1
+      },
+      {
+        "word": "cama",
+        "weight": 1
+      },
+      {
+        "word": "puerta",
+        "weight": 1
+      },
+      {
+        "word": "hondura",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-30",
+    "month": "2025-12",
+    "file": "textos/2025-12-30.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "la luz entierra y congela",
+    "analysis": {
+      "poet": "Ida Vitale",
+      "poem_title": "Terquedad de lo Ausente",
+      "poem_snippet": "",
+      "book_title": "Poesía Reunida"
     },
-    {
-      "date": "2025-12-30",
-      "month": "2025-12",
-      "file": "textos/2025-12-30.txt",
-      "my_poem_title": "",
-      "my_poem_snippet": "la luz entierra y congela",
-      "analysis": {
-        "poet": "Ida Vitale",
-        "poem_title": "Terquedad de lo Ausente",
-        "poem_snippet": "",
-        "book_title": "Poesía Reunida"
+    "keywords": [
+      {
+        "word": "ausencia",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "ausencia",
-          "weight": 3
-        },
-        {
-          "word": "vida",
-          "weight": 3
-        },
-        {
-          "word": "cicatriz",
-          "weight": 3
-        },
-        {
-          "word": "fragilidad",
-          "weight": 3
-        },
-        {
-          "word": "persistencia",
-          "weight": 3
-        },
-        {
-          "word": "orden",
-          "weight": 2
-        },
-        {
-          "word": "rutina",
-          "weight": 2
-        },
-        {
-          "word": "flotacion",
-          "weight": 2
-        },
-        {
-          "word": "vacio",
-          "weight": 2
-        },
-        {
-          "word": "resistencia",
-          "weight": 2
-        },
-        {
-          "word": "ocultamiento",
-          "weight": 2
-        },
-        {
-          "word": "tiempo",
-          "weight": 2
-        },
-        {
-          "word": "luz",
-          "weight": 1
-        },
-        {
-          "word": "ceniza",
-          "weight": 1
-        },
-        {
-          "word": "humo",
-          "weight": 1
-        },
-        {
-          "word": "maquillaje",
-          "weight": 1
-        },
-        {
-          "word": "curita",
-          "weight": 1
-        },
-        {
-          "word": "vidrio",
-          "weight": 1
-        },
-        {
-          "word": "arboles",
-          "weight": 1
-        },
-        {
-          "word": "pajaro",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "vida",
+        "weight": 3
+      },
+      {
+        "word": "cicatriz",
+        "weight": 3
+      },
+      {
+        "word": "fragilidad",
+        "weight": 3
+      },
+      {
+        "word": "persistencia",
+        "weight": 3
+      },
+      {
+        "word": "orden",
+        "weight": 2
+      },
+      {
+        "word": "rutina",
+        "weight": 2
+      },
+      {
+        "word": "flotacion",
+        "weight": 2
+      },
+      {
+        "word": "vacio",
+        "weight": 2
+      },
+      {
+        "word": "resistencia",
+        "weight": 2
+      },
+      {
+        "word": "ocultamiento",
+        "weight": 2
+      },
+      {
+        "word": "tiempo",
+        "weight": 2
+      },
+      {
+        "word": "luz",
+        "weight": 1
+      },
+      {
+        "word": "ceniza",
+        "weight": 1
+      },
+      {
+        "word": "humo",
+        "weight": 1
+      },
+      {
+        "word": "maquillaje",
+        "weight": 1
+      },
+      {
+        "word": "curita",
+        "weight": 1
+      },
+      {
+        "word": "vidrio",
+        "weight": 1
+      },
+      {
+        "word": "arboles",
+        "weight": 1
+      },
+      {
+        "word": "pajaro",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-29",
+    "month": "2025-12",
+    "file": "textos/2025-12-29.txt",
+    "my_poem_title": "dibujar",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "de lejos",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
     },
-    {
-      "date": "2025-12-29",
-      "month": "2025-12",
-      "file": "textos/2025-12-29.txt",
-      "my_poem_title": "dibujar",
-      "my_poem_snippet": "",
-      "analysis": {
-        "poet": "Soledad Castresana",
-        "poem_title": "de lejos",
-        "poem_snippet": "",
-        "book_title": "La carne se corta"
+    "keywords": [
+      {
+        "word": "lenguaje",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "lenguaje",
-          "weight": 3
-        },
-        {
-          "word": "ritual",
-          "weight": 3
-        },
-        {
-          "word": "comunidad",
-          "weight": 3
-        },
-        {
-          "word": "equilibrio precario",
-          "weight": 3
-        },
-        {
-          "word": "costo",
-          "weight": 3
-        },
-        {
-          "word": "gesto",
-          "weight": 2
-        },
-        {
-          "word": "juego",
-          "weight": 2
-        },
-        {
-          "word": "riesgo",
-          "weight": 2
-        },
-        {
-          "word": "poder",
-          "weight": 2
-        },
-        {
-          "word": "destruccion",
-          "weight": 2
-        },
-        {
-          "word": "efimeridad",
-          "weight": 2
-        },
-        {
-          "word": "violencia ritual",
-          "weight": 2
-        },
-        {
-          "word": "borrado",
-          "weight": 2
-        },
-        {
-          "word": "papel",
-          "weight": 1
-        },
-        {
-          "word": "dibujo",
-          "weight": 1
-        },
-        {
-          "word": "pelota",
-          "weight": 1
-        },
-        {
-          "word": "pared",
-          "weight": 1
-        },
-        {
-          "word": "copa",
-          "weight": 1
-        },
-        {
-          "word": "fuego",
-          "weight": 1
-        },
-        {
-          "word": "chispa",
-          "weight": 1
-        },
-        {
-          "word": "ceniza",
-          "weight": 1
-        },
-        {
-          "word": "animales",
-          "weight": 1
-        },
-        {
-          "word": "humo",
-          "weight": 1
-        },
-        {
-          "word": "hambre",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "ritual",
+        "weight": 3
+      },
+      {
+        "word": "comunidad",
+        "weight": 3
+      },
+      {
+        "word": "equilibrio precario",
+        "weight": 3
+      },
+      {
+        "word": "costo",
+        "weight": 3
+      },
+      {
+        "word": "gesto",
+        "weight": 2
+      },
+      {
+        "word": "juego",
+        "weight": 2
+      },
+      {
+        "word": "riesgo",
+        "weight": 2
+      },
+      {
+        "word": "poder",
+        "weight": 2
+      },
+      {
+        "word": "destruccion",
+        "weight": 2
+      },
+      {
+        "word": "efimeridad",
+        "weight": 2
+      },
+      {
+        "word": "violencia ritual",
+        "weight": 2
+      },
+      {
+        "word": "borrado",
+        "weight": 2
+      },
+      {
+        "word": "papel",
+        "weight": 1
+      },
+      {
+        "word": "dibujo",
+        "weight": 1
+      },
+      {
+        "word": "pelota",
+        "weight": 1
+      },
+      {
+        "word": "pared",
+        "weight": 1
+      },
+      {
+        "word": "copa",
+        "weight": 1
+      },
+      {
+        "word": "fuego",
+        "weight": 1
+      },
+      {
+        "word": "chispa",
+        "weight": 1
+      },
+      {
+        "word": "ceniza",
+        "weight": 1
+      },
+      {
+        "word": "animales",
+        "weight": 1
+      },
+      {
+        "word": "humo",
+        "weight": 1
+      },
+      {
+        "word": "hambre",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-28",
+    "month": "2025-12",
+    "file": "textos/2025-12-28.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "enciendo la velo",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Legrado",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
     },
-    {
-      "date": "2025-12-28",
-      "month": "2025-12",
-      "file": "textos/2025-12-28.txt",
-      "my_poem_title": "",
-      "my_poem_snippet": "enciendo la velo",
-      "analysis": {
-        "poet": "Soledad Castresana",
-        "poem_title": "Legrado",
-        "poem_snippet": "",
-        "book_title": "La carne se corta"
+    "keywords": [
+      {
+        "word": "vulnerabilidad",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "vulnerabilidad",
-          "weight": 3
-        },
-        {
-          "word": "cuerpo",
-          "weight": 3
-        },
-        {
-          "word": "danio",
-          "weight": 3
-        },
-        {
-          "word": "poder",
-          "weight": 3
-        },
-        {
-          "word": "amor",
-          "weight": 3
-        },
-        {
-          "word": "dependencia",
-          "weight": 2
-        },
-        {
-          "word": "confianza",
-          "weight": 2
-        },
-        {
-          "word": "entrega",
-          "weight": 2
-        },
-        {
-          "word": "control",
-          "weight": 2
-        },
-        {
-          "word": "limite corporal",
-          "weight": 2
-        },
-        {
-          "word": "violencia aceptada",
-          "weight": 2
-        },
-        {
-          "word": "cuidado",
-          "weight": 2
-        },
-        {
-          "word": "asimetria",
-          "weight": 2
-        },
-        {
-          "word": "llama",
-          "weight": 1
-        },
-        {
-          "word": "fuego",
-          "weight": 1
-        },
-        {
-          "word": "desgarro",
-          "weight": 1
-        },
-        {
-          "word": "uterus",
-          "weight": 1
-        },
-        {
-          "word": "raspar",
-          "weight": 1
-        },
-        {
-          "word": "anestesia",
-          "weight": 1
-        },
-        {
-          "word": "procedimiento medico",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "danio",
+        "weight": 3
+      },
+      {
+        "word": "poder",
+        "weight": 3
+      },
+      {
+        "word": "amor",
+        "weight": 3
+      },
+      {
+        "word": "dependencia",
+        "weight": 2
+      },
+      {
+        "word": "confianza",
+        "weight": 2
+      },
+      {
+        "word": "entrega",
+        "weight": 2
+      },
+      {
+        "word": "control",
+        "weight": 2
+      },
+      {
+        "word": "limite corporal",
+        "weight": 2
+      },
+      {
+        "word": "violencia aceptada",
+        "weight": 2
+      },
+      {
+        "word": "cuidado",
+        "weight": 2
+      },
+      {
+        "word": "asimetria",
+        "weight": 2
+      },
+      {
+        "word": "llama",
+        "weight": 1
+      },
+      {
+        "word": "fuego",
+        "weight": 1
+      },
+      {
+        "word": "desgarro",
+        "weight": 1
+      },
+      {
+        "word": "uterus",
+        "weight": 1
+      },
+      {
+        "word": "raspar",
+        "weight": 1
+      },
+      {
+        "word": "anestesia",
+        "weight": 1
+      },
+      {
+        "word": "procedimiento medico",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-27",
+    "month": "2025-12",
+    "file": "textos/2025-12-27.txt",
+    "my_poem_title": "seguir pensando",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Caos y corte",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
     },
-    {
-      "date": "2025-12-27",
-      "month": "2025-12",
-      "file": "textos/2025-12-27.txt",
-      "my_poem_title": "seguir pensando",
-      "my_poem_snippet": "",
-      "analysis": {
-        "poet": "Soledad Castresana",
-        "poem_title": "Caos y corte",
-        "poem_snippet": "",
-        "book_title": "La carne se corta"
+    "keywords": [
+      {
+        "word": "norma",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "norma",
-          "weight": 3
-        },
-        {
-          "word": "violencia legitimada",
-          "weight": 3
-        },
-        {
-          "word": "corte",
-          "weight": 3
-        },
-        {
-          "word": "danio",
-          "weight": 3
-        },
-        {
-          "word": "cuerpo",
-          "weight": 3
-        },
-        {
-          "word": "obediencia",
-          "weight": 2
-        },
-        {
-          "word": "control",
-          "weight": 2
-        },
-        {
-          "word": "protocolo",
-          "weight": 2
-        },
-        {
-          "word": "precision",
-          "weight": 2
-        },
-        {
-          "word": "deseo de norma",
-          "weight": 2
-        },
-        {
-          "word": "evitacion del caos",
-          "weight": 2
-        },
-        {
-          "word": "disciplinamiento",
-          "weight": 2
-        },
-        {
-          "word": "lenguaje normativo",
-          "weight": 2
-        },
-        {
-          "word": "cicatriz",
-          "weight": 1
-        },
-        {
-          "word": "mascara",
-          "weight": 1
-        },
-        {
-          "word": "papel",
-          "weight": 1
-        },
-        {
-          "word": "rostro",
-          "weight": 1
-        },
-        {
-          "word": "operacion",
-          "weight": 1
-        },
-        {
-          "word": "tejido",
-          "weight": 1
-        },
-        {
-          "word": "herida",
-          "weight": 1
-        },
-        {
-          "word": "desgarro",
-          "weight": 1
-        },
-        {
-          "word": "transparencia",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "violencia legitimada",
+        "weight": 3
+      },
+      {
+        "word": "corte",
+        "weight": 3
+      },
+      {
+        "word": "danio",
+        "weight": 3
+      },
+      {
+        "word": "cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "obediencia",
+        "weight": 2
+      },
+      {
+        "word": "control",
+        "weight": 2
+      },
+      {
+        "word": "protocolo",
+        "weight": 2
+      },
+      {
+        "word": "precision",
+        "weight": 2
+      },
+      {
+        "word": "deseo de norma",
+        "weight": 2
+      },
+      {
+        "word": "evitacion del caos",
+        "weight": 2
+      },
+      {
+        "word": "disciplinamiento",
+        "weight": 2
+      },
+      {
+        "word": "lenguaje normativo",
+        "weight": 2
+      },
+      {
+        "word": "cicatriz",
+        "weight": 1
+      },
+      {
+        "word": "mascara",
+        "weight": 1
+      },
+      {
+        "word": "papel",
+        "weight": 1
+      },
+      {
+        "word": "rostro",
+        "weight": 1
+      },
+      {
+        "word": "operacion",
+        "weight": 1
+      },
+      {
+        "word": "tejido",
+        "weight": 1
+      },
+      {
+        "word": "herida",
+        "weight": 1
+      },
+      {
+        "word": "desgarro",
+        "weight": 1
+      },
+      {
+        "word": "transparencia",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-26",
+    "month": "2025-12",
+    "file": "textos/2025-12-26.txt",
+    "my_poem_title": "hacia la playa",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Cesárea",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
     },
-    {
-      "date": "2025-12-26",
-      "month": "2025-12",
-      "file": "textos/2025-12-26.txt",
-      "my_poem_title": "hacia la playa",
-      "my_poem_snippet": "",
-      "analysis": {
-        "poet": "Soledad Castresana",
-        "poem_title": "Cesárea",
-        "poem_snippet": "",
-        "book_title": "La carne se corta"
+    "keywords": [
+      {
+        "word": "sensibilidad",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "sensibilidad",
-          "weight": 3
-        },
-        {
-          "word": "poder",
-          "weight": 3
-        },
-        {
-          "word": "control",
-          "weight": 3
-        },
-        {
-          "word": "cuerpo",
-          "weight": 3
-        },
-        {
-          "word": "intervencion",
-          "weight": 3
-        },
-        {
-          "word": "medicina",
-          "weight": 2
-        },
-        {
-          "word": "cesarea",
-          "weight": 2
-        },
-        {
-          "word": "quirurgico",
-          "weight": 2
-        },
-        {
-          "word": "autoridad",
-          "weight": 2
-        },
-        {
-          "word": "desigualdad",
-          "weight": 2
-        },
-        {
-          "word": "anestesia",
-          "weight": 2
-        },
-        {
-          "word": "sistema",
-          "weight": 2
-        },
-        {
-          "word": "disrupcion",
-          "weight": 2
-        },
-        {
-          "word": "utilidad",
-          "weight": 2
-        },
-        {
-          "word": "dolor",
-          "weight": 1
-        },
-        {
-          "word": "conciencia",
-          "weight": 1
-        },
-        {
-          "word": "tecnica",
-          "weight": 1
-        },
-        {
-          "word": "procedimiento",
-          "weight": 1
-        },
-        {
-          "word": "paciente",
-          "weight": 1
-        },
-        {
-          "word": "medicos",
-          "weight": 1
-        },
-        {
-          "word": "vulnerabilidad",
-          "weight": 1
-        },
-        {
-          "word": "poesia",
-          "weight": 1
-        },
-        {
-          "word": "camino",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "poder",
+        "weight": 3
+      },
+      {
+        "word": "control",
+        "weight": 3
+      },
+      {
+        "word": "cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "intervencion",
+        "weight": 3
+      },
+      {
+        "word": "medicina",
+        "weight": 2
+      },
+      {
+        "word": "cesarea",
+        "weight": 2
+      },
+      {
+        "word": "quirurgico",
+        "weight": 2
+      },
+      {
+        "word": "autoridad",
+        "weight": 2
+      },
+      {
+        "word": "desigualdad",
+        "weight": 2
+      },
+      {
+        "word": "anestesia",
+        "weight": 2
+      },
+      {
+        "word": "sistema",
+        "weight": 2
+      },
+      {
+        "word": "disrupcion",
+        "weight": 2
+      },
+      {
+        "word": "utilidad",
+        "weight": 2
+      },
+      {
+        "word": "dolor",
+        "weight": 1
+      },
+      {
+        "word": "conciencia",
+        "weight": 1
+      },
+      {
+        "word": "tecnica",
+        "weight": 1
+      },
+      {
+        "word": "procedimiento",
+        "weight": 1
+      },
+      {
+        "word": "paciente",
+        "weight": 1
+      },
+      {
+        "word": "medicos",
+        "weight": 1
+      },
+      {
+        "word": "vulnerabilidad",
+        "weight": 1
+      },
+      {
+        "word": "poesia",
+        "weight": 1
+      },
+      {
+        "word": "camino",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-25",
+    "month": "2025-12",
+    "file": "textos/2025-12-25.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "piensa piensa",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "Tabú",
+      "poem_snippet": "",
+      "book_title": "La carne se corta"
     },
-    {
-      "date": "2025-12-25",
-      "month": "2025-12",
-      "file": "textos/2025-12-25.txt",
-      "my_poem_title": "",
-      "my_poem_snippet": "piensa piensa",
-      "analysis": {
-        "poet": "Soledad Castresana",
-        "poem_title": "Tabú",
-        "poem_snippet": "",
-        "book_title": "La carne se corta"
+    "keywords": [
+      {
+        "word": "tabu",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "tabu",
-          "weight": 3
-        },
-        {
-          "word": "cuerpo",
-          "weight": 3
-        },
-        {
-          "word": "regulacion",
-          "weight": 3
-        },
-        {
-          "word": "poder",
-          "weight": 3
-        },
-        {
-          "word": "visibilidad",
-          "weight": 3
-        },
-        {
-          "word": "control social",
-          "weight": 2
-        },
-        {
-          "word": "norma",
-          "weight": 2
-        },
-        {
-          "word": "prohibicion",
-          "weight": 2
-        },
-        {
-          "word": "censura",
-          "weight": 2
-        },
-        {
-          "word": "sexualidad",
-          "weight": 2
-        },
-        {
-          "word": "violencia simbolica",
-          "weight": 2
-        },
-        {
-          "word": "adaptacion",
-          "weight": 2
-        },
-        {
-          "word": "mutilacion",
-          "weight": 2
-        },
-        {
-          "word": "autoridad",
-          "weight": 2
-        },
-        {
-          "word": "puerta",
-          "weight": 1
-        },
-        {
-          "word": "eleccion",
-          "weight": 1
-        },
-        {
-          "word": "apariencia",
-          "weight": 1
-        },
-        {
-          "word": "cicatrices",
-          "weight": 1
-        },
-        {
-          "word": "piel",
-          "weight": 1
-        },
-        {
-          "word": "mujer",
-          "weight": 1
-        },
-        {
-          "word": "legisladores",
-          "weight": 1
-        },
-        {
-          "word": "victimas",
-          "weight": 1
-        },
-        {
-          "word": "obediencia",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "regulacion",
+        "weight": 3
+      },
+      {
+        "word": "poder",
+        "weight": 3
+      },
+      {
+        "word": "visibilidad",
+        "weight": 3
+      },
+      {
+        "word": "control social",
+        "weight": 2
+      },
+      {
+        "word": "norma",
+        "weight": 2
+      },
+      {
+        "word": "prohibicion",
+        "weight": 2
+      },
+      {
+        "word": "censura",
+        "weight": 2
+      },
+      {
+        "word": "sexualidad",
+        "weight": 2
+      },
+      {
+        "word": "violencia simbolica",
+        "weight": 2
+      },
+      {
+        "word": "adaptacion",
+        "weight": 2
+      },
+      {
+        "word": "mutilacion",
+        "weight": 2
+      },
+      {
+        "word": "autoridad",
+        "weight": 2
+      },
+      {
+        "word": "puerta",
+        "weight": 1
+      },
+      {
+        "word": "eleccion",
+        "weight": 1
+      },
+      {
+        "word": "apariencia",
+        "weight": 1
+      },
+      {
+        "word": "cicatrices",
+        "weight": 1
+      },
+      {
+        "word": "piel",
+        "weight": 1
+      },
+      {
+        "word": "mujer",
+        "weight": 1
+      },
+      {
+        "word": "legisladores",
+        "weight": 1
+      },
+      {
+        "word": "victimas",
+        "weight": 1
+      },
+      {
+        "word": "obediencia",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-24",
+    "month": "2025-12",
+    "file": "textos/2025-12-24.txt",
+    "my_poem_title": "crecer",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Porfirio Barba-Jacob",
+      "poem_title": "Segunda canción sin motivo",
+      "poem_snippet": "",
+      "book_title": ""
     },
-    {
-      "date": "2025-12-24",
-      "month": "2025-12",
-      "file": "textos/2025-12-24.txt",
-      "my_poem_title": "crecer",
-      "my_poem_snippet": "",
-      "analysis": {
-        "poet": "Porfirio Barba-Jacob",
-        "poem_title": "Segunda canción sin motivo",
-        "poem_snippet": "",
-        "book_title": ""
+    "keywords": [
+      {
+        "word": "incertidumbre",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "incertidumbre",
-          "weight": 3
-        },
-        {
-          "word": "frontera difusa",
-          "weight": 3
-        },
-        {
-          "word": "deseo",
-          "weight": 3
-        },
-        {
-          "word": "incognoscible",
-          "weight": 3
-        },
-        {
-          "word": "ilusion",
-          "weight": 3
-        },
-        {
-          "word": "amor no correspondido",
-          "weight": 2
-        },
-        {
-          "word": "silencio",
-          "weight": 2
-        },
-        {
-          "word": "duda",
-          "weight": 2
-        },
-        {
-          "word": "fusion",
-          "weight": 2
-        },
-        {
-          "word": "espera",
-          "weight": 2
-        },
-        {
-          "word": "rechazo",
-          "weight": 2
-        },
-        {
-          "word": "limite",
-          "weight": 2
-        },
-        {
-          "word": "nebulosidad",
-          "weight": 2
-        },
-        {
-          "word": "pasividad",
-          "weight": 2
-        },
-        {
-          "word": "tarde",
-          "weight": 1
-        },
-        {
-          "word": "brumas",
-          "weight": 1
-        },
-        {
-          "word": "corazon",
-          "weight": 1
-        },
-        {
-          "word": "pregunta",
-          "weight": 1
-        },
-        {
-          "word": "esperanza",
-          "weight": 1
-        },
-        {
-          "word": "renuncia",
-          "weight": 1
-        },
-        {
-          "word": "conocimiento",
-          "weight": 1
-        },
-        {
-          "word": "camino",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "frontera difusa",
+        "weight": 3
+      },
+      {
+        "word": "deseo",
+        "weight": 3
+      },
+      {
+        "word": "incognoscible",
+        "weight": 3
+      },
+      {
+        "word": "ilusion",
+        "weight": 3
+      },
+      {
+        "word": "amor no correspondido",
+        "weight": 2
+      },
+      {
+        "word": "silencio",
+        "weight": 2
+      },
+      {
+        "word": "duda",
+        "weight": 2
+      },
+      {
+        "word": "fusion",
+        "weight": 2
+      },
+      {
+        "word": "espera",
+        "weight": 2
+      },
+      {
+        "word": "rechazo",
+        "weight": 2
+      },
+      {
+        "word": "limite",
+        "weight": 2
+      },
+      {
+        "word": "nebulosidad",
+        "weight": 2
+      },
+      {
+        "word": "pasividad",
+        "weight": 2
+      },
+      {
+        "word": "tarde",
+        "weight": 1
+      },
+      {
+        "word": "brumas",
+        "weight": 1
+      },
+      {
+        "word": "corazon",
+        "weight": 1
+      },
+      {
+        "word": "pregunta",
+        "weight": 1
+      },
+      {
+        "word": "esperanza",
+        "weight": 1
+      },
+      {
+        "word": "renuncia",
+        "weight": 1
+      },
+      {
+        "word": "conocimiento",
+        "weight": 1
+      },
+      {
+        "word": "camino",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-23",
+    "month": "2025-12",
+    "file": "textos/2025-12-23.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "unámonos por amor",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Pez de la noche",
+      "poem_snippet": "",
+      "book_title": ""
     },
-    {
-      "date": "2025-12-23",
-      "month": "2025-12",
-      "file": "textos/2025-12-23.txt",
-      "my_poem_title": "",
-      "my_poem_snippet": "unámonos por amor",
-      "analysis": {
-        "poet": "Violeta Villalba",
-        "poem_title": "Pez de la noche",
-        "poem_snippet": "",
-        "book_title": ""
+    "keywords": [
+      {
+        "word": "unir",
+        "weight": 2
       },
-      "keywords": [
-        {
-          "word": "unir",
-          "weight": 2
-        },
-        {
-          "word": "cámaras",
-          "weight": 3
-        },
-        {
-          "word": "genitales",
-          "weight": 3
-        },
-        {
-          "word": "autoalienacion",
-          "weight": 3
-        },
-        {
-          "word": "resistencia",
-          "weight": 3
-        },
-        {
-          "word": "identidad",
-          "weight": 3
-        },
-        {
-          "word": "margen",
-          "weight": 3
-        },
-        {
-          "word": "subsistencia",
-          "weight": 3
-        },
-        {
-          "word": "muerte",
-          "weight": 2
-        },
-        {
-          "word": "renuncia",
-          "weight": 2
-        },
-        {
-          "word": "intensidad emocional",
-          "weight": 2
-        },
-        {
-          "word": "sufrimiento",
-          "weight": 2
-        },
-        {
-          "word": "optimismo",
-          "weight": 2
-        },
-        {
-          "word": "nucleo del yo",
-          "weight": 2
-        },
-        {
-          "word": "permanencia",
-          "weight": 2
-        },
-        {
-          "word": "soledad",
-          "weight": 2
-        },
-        {
-          "word": "pez",
-          "weight": 1
-        },
-        {
-          "word": "noche",
-          "weight": 1
-        },
-        {
-          "word": "sueno",
-          "weight": 1
-        },
-        {
-          "word": "ola",
-          "weight": 1
-        },
-        {
-          "word": "pequenez",
-          "weight": 1
-        },
-        {
-          "word": "oscuridad",
-          "weight": 1
-        },
-        {
-          "word": "agua",
-          "weight": 1
-        },
-        {
-          "word": "interioridad",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "cámaras",
+        "weight": 3
+      },
+      {
+        "word": "genitales",
+        "weight": 3
+      },
+      {
+        "word": "autoalienacion",
+        "weight": 3
+      },
+      {
+        "word": "resistencia",
+        "weight": 3
+      },
+      {
+        "word": "identidad",
+        "weight": 3
+      },
+      {
+        "word": "margen",
+        "weight": 3
+      },
+      {
+        "word": "subsistencia",
+        "weight": 3
+      },
+      {
+        "word": "muerte",
+        "weight": 2
+      },
+      {
+        "word": "renuncia",
+        "weight": 2
+      },
+      {
+        "word": "intensidad emocional",
+        "weight": 2
+      },
+      {
+        "word": "sufrimiento",
+        "weight": 2
+      },
+      {
+        "word": "optimismo",
+        "weight": 2
+      },
+      {
+        "word": "nucleo del yo",
+        "weight": 2
+      },
+      {
+        "word": "permanencia",
+        "weight": 2
+      },
+      {
+        "word": "soledad",
+        "weight": 2
+      },
+      {
+        "word": "pez",
+        "weight": 1
+      },
+      {
+        "word": "noche",
+        "weight": 1
+      },
+      {
+        "word": "sueno",
+        "weight": 1
+      },
+      {
+        "word": "ola",
+        "weight": 1
+      },
+      {
+        "word": "pequenez",
+        "weight": 1
+      },
+      {
+        "word": "oscuridad",
+        "weight": 1
+      },
+      {
+        "word": "agua",
+        "weight": 1
+      },
+      {
+        "word": "interioridad",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-22",
+    "month": "2025-12",
+    "file": "textos/2025-12-22.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "no te puedo ver esta semana",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "grieta",
+      "poem_snippet": "",
+      "book_title": ""
     },
-    {
-      "date": "2025-12-22",
-      "month": "2025-12",
-      "file": "textos/2025-12-22.txt",
-      "my_poem_title": "",
-      "my_poem_snippet": "no te puedo ver esta semana",
-      "analysis": {
-        "poet": "Violeta Villalba",
-        "poem_title": "grieta",
-        "poem_snippet": "",
-        "book_title": ""
+    "keywords": [
+      {
+        "word": "identidad",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "identidad",
-          "weight": 3
-        },
-        {
-          "word": "crisis",
-          "weight": 3
-        },
-        {
-          "word": "voz interior",
-          "weight": 3
-        },
-        {
-          "word": "lenguaje",
-          "weight": 3
-        },
-        {
-          "word": "memoria",
-          "weight": 3
-        },
-        {
-          "word": "autocritica",
-          "weight": 2
-        },
-        {
-          "word": "presion",
-          "weight": 2
-        },
-        {
-          "word": "miedo",
-          "weight": 2
-        },
-        {
-          "word": "olvido",
-          "weight": 2
-        },
-        {
-          "word": "fragmentacion",
-          "weight": 2
-        },
-        {
-          "word": "multiplicidad del yo",
-          "weight": 2
-        },
-        {
-          "word": "libertad",
-          "weight": 2
-        },
-        {
-          "word": "expresion",
-          "weight": 2
-        },
-        {
-          "word": "inspiracion",
-          "weight": 2
-        },
-        {
-          "word": "yo",
-          "weight": 1
-        },
-        {
-          "word": "mirada",
-          "weight": 1
-        },
-        {
-          "word": "juicio",
-          "weight": 1
-        },
-        {
-          "word": "abismo",
-          "weight": 1
-        },
-        {
-          "word": "animales",
-          "weight": 1
-        },
-        {
-          "word": "palabras",
-          "weight": 1
-        },
-        {
-          "word": "silencio",
-          "weight": 1
-        },
-        {
-          "word": "dolor",
-          "weight": 1
-        },
-        {
-          "word": "resistencia",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "crisis",
+        "weight": 3
+      },
+      {
+        "word": "voz interior",
+        "weight": 3
+      },
+      {
+        "word": "lenguaje",
+        "weight": 3
+      },
+      {
+        "word": "memoria",
+        "weight": 3
+      },
+      {
+        "word": "autocritica",
+        "weight": 2
+      },
+      {
+        "word": "presion",
+        "weight": 2
+      },
+      {
+        "word": "miedo",
+        "weight": 2
+      },
+      {
+        "word": "olvido",
+        "weight": 2
+      },
+      {
+        "word": "fragmentacion",
+        "weight": 2
+      },
+      {
+        "word": "multiplicidad del yo",
+        "weight": 2
+      },
+      {
+        "word": "libertad",
+        "weight": 2
+      },
+      {
+        "word": "expresion",
+        "weight": 2
+      },
+      {
+        "word": "inspiracion",
+        "weight": 2
+      },
+      {
+        "word": "yo",
+        "weight": 1
+      },
+      {
+        "word": "mirada",
+        "weight": 1
+      },
+      {
+        "word": "juicio",
+        "weight": 1
+      },
+      {
+        "word": "abismo",
+        "weight": 1
+      },
+      {
+        "word": "animales",
+        "weight": 1
+      },
+      {
+        "word": "palabras",
+        "weight": 1
+      },
+      {
+        "word": "silencio",
+        "weight": 1
+      },
+      {
+        "word": "dolor",
+        "weight": 1
+      },
+      {
+        "word": "resistencia",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-21",
+    "month": "2025-12",
+    "file": "textos/2025-12-21.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "veo tu lágrima",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Escribir",
+      "poem_snippet": "",
+      "book_title": ""
     },
-    {
-      "date": "2025-12-21",
-      "month": "2025-12",
-      "file": "textos/2025-12-21.txt",
-      "my_poem_title": "",
-      "my_poem_snippet": "veo tu lágrima",
-      "analysis": {
-        "poet": "Violeta Villalba",
-        "poem_title": "Escribir",
-        "poem_snippet": "",
-        "book_title": ""
+    "keywords": [
+      {
+        "word": "escritura",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "escritura",
-          "weight": 3
-        },
-        {
-          "word": "dolor",
-          "weight": 3
-        },
-        {
-          "word": "autenticidad",
-          "weight": 3
-        },
-        {
-          "word": "interioridad",
-          "weight": 3
-        },
-        {
-          "word": "liberacion",
-          "weight": 3
-        },
-        {
-          "word": "cuerpo",
-          "weight": 2
-        },
-        {
-          "word": "sangre",
-          "weight": 2
-        },
-        {
-          "word": "exorcismo",
-          "weight": 2
-        },
-        {
-          "word": "ardor",
-          "weight": 2
-        },
-        {
-          "word": "catarsis",
-          "weight": 2
-        },
-        {
-          "word": "introspeccion",
-          "weight": 2
-        },
-        {
-          "word": "auto conocimiento",
-          "weight": 2
-        },
-        {
-          "word": "proceso creativo",
-          "weight": 2
-        },
-        {
-          "word": "compromiso",
-          "weight": 2
-        },
-        {
-          "word": "soledad",
-          "weight": 1
-        },
-        {
-          "word": "silencio",
-          "weight": 1
-        },
-        {
-          "word": "voz interior",
-          "weight": 1
-        },
-        {
-          "word": "fingimiento",
-          "weight": 1
-        },
-        {
-          "word": "honestidad",
-          "weight": 1
-        },
-        {
-          "word": "inutilidad",
-          "weight": 1
-        },
-        {
-          "word": "impulso",
-          "weight": 1
-        },
-        {
-          "word": "pensamiento",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "dolor",
+        "weight": 3
+      },
+      {
+        "word": "autenticidad",
+        "weight": 3
+      },
+      {
+        "word": "interioridad",
+        "weight": 3
+      },
+      {
+        "word": "liberacion",
+        "weight": 3
+      },
+      {
+        "word": "cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "sangre",
+        "weight": 2
+      },
+      {
+        "word": "exorcismo",
+        "weight": 2
+      },
+      {
+        "word": "ardor",
+        "weight": 2
+      },
+      {
+        "word": "catarsis",
+        "weight": 2
+      },
+      {
+        "word": "introspeccion",
+        "weight": 2
+      },
+      {
+        "word": "auto conocimiento",
+        "weight": 2
+      },
+      {
+        "word": "proceso creativo",
+        "weight": 2
+      },
+      {
+        "word": "compromiso",
+        "weight": 2
+      },
+      {
+        "word": "soledad",
+        "weight": 1
+      },
+      {
+        "word": "silencio",
+        "weight": 1
+      },
+      {
+        "word": "voz interior",
+        "weight": 1
+      },
+      {
+        "word": "fingimiento",
+        "weight": 1
+      },
+      {
+        "word": "honestidad",
+        "weight": 1
+      },
+      {
+        "word": "inutilidad",
+        "weight": 1
+      },
+      {
+        "word": "impulso",
+        "weight": 1
+      },
+      {
+        "word": "pensamiento",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-20",
+    "month": "2025-12",
+    "file": "textos/2025-12-20.txt",
+    "my_poem_title": "bote de byte",
+    "analysis": {
+      "poet": "Gustavo Adolfo Bécquer",
+      "poem_title": "Rima XXIII",
+      "book_title": ""
     },
-    {
-      "date": "2025-12-20",
-      "month": "2025-12",
-      "file": "textos/2025-12-20.txt",
-      "my_poem_title": "bote de byte",
-      "analysis": {
-        "poet": "Gustavo Adolfo Bécquer",
-        "poem_title": "Rima XXIII",
-        "book_title": ""
+    "keywords": [
+      {
+        "word": "amor",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "amor",
-          "weight": 3
-        },
-        {
-          "word": "transaccion",
-          "weight": 3
-        },
-        {
-          "word": "deseo",
-          "weight": 3
-        },
-        {
-          "word": "valor",
-          "weight": 3
-        },
-        {
-          "word": "afecto",
-          "weight": 3
-        },
-        {
-          "word": "intercambio",
-          "weight": 2
-        },
-        {
-          "word": "materialidad",
-          "weight": 2
-        },
-        {
-          "word": "expectativas irreales",
-          "weight": 2
-        },
-        {
-          "word": "presion emocional",
-          "weight": 2
-        },
-        {
-          "word": "negociacion",
-          "weight": 2
-        },
-        {
-          "word": "ternura",
-          "weight": 2
-        },
-        {
-          "word": "romanticismo",
-          "weight": 2
-        },
-        {
-          "word": "desequilibrio",
-          "weight": 2
-        },
-        {
-          "word": "autoestima",
-          "weight": 2
-        },
-        {
-          "word": "beso",
-          "weight": 1
-        },
-        {
-          "word": "mirada",
-          "weight": 1
-        },
-        {
-          "word": "sonrisa",
-          "weight": 1
-        },
-        {
-          "word": "precio",
-          "weight": 1
-        },
-        {
-          "word": "sacrificio",
-          "weight": 1
-        },
-        {
-          "word": "idealizacion",
-          "weight": 1
-        },
-        {
-          "word": "inseguridad",
-          "weight": 1
-        },
-        {
-          "word": "amor romantico",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "transaccion",
+        "weight": 3
+      },
+      {
+        "word": "deseo",
+        "weight": 3
+      },
+      {
+        "word": "valor",
+        "weight": 3
+      },
+      {
+        "word": "afecto",
+        "weight": 3
+      },
+      {
+        "word": "intercambio",
+        "weight": 2
+      },
+      {
+        "word": "materialidad",
+        "weight": 2
+      },
+      {
+        "word": "expectativas irreales",
+        "weight": 2
+      },
+      {
+        "word": "presion emocional",
+        "weight": 2
+      },
+      {
+        "word": "negociacion",
+        "weight": 2
+      },
+      {
+        "word": "ternura",
+        "weight": 2
+      },
+      {
+        "word": "romanticismo",
+        "weight": 2
+      },
+      {
+        "word": "desequilibrio",
+        "weight": 2
+      },
+      {
+        "word": "autoestima",
+        "weight": 2
+      },
+      {
+        "word": "beso",
+        "weight": 1
+      },
+      {
+        "word": "mirada",
+        "weight": 1
+      },
+      {
+        "word": "sonrisa",
+        "weight": 1
+      },
+      {
+        "word": "precio",
+        "weight": 1
+      },
+      {
+        "word": "sacrificio",
+        "weight": 1
+      },
+      {
+        "word": "idealizacion",
+        "weight": 1
+      },
+      {
+        "word": "inseguridad",
+        "weight": 1
+      },
+      {
+        "word": "amor romantico",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-19",
+    "month": "2025-12",
+    "file": "textos/2025-12-19.txt",
+    "my_poem_title": "autorretrato",
+    "analysis": {
+      "poet": "Alfonsina Storni",
+      "poem_title": "Hombre pequeñito",
+      "book_title": ""
     },
-    {
-      "date": "2025-12-19",
-      "month": "2025-12",
-      "file": "textos/2025-12-19.txt",
-      "my_poem_title": "autorretrato",
-      "analysis": {
-        "poet": "Alfonsina Storni",
-        "poem_title": "Hombre pequeñito",
-        "book_title": ""
+    "keywords": [
+      {
+        "word": "autorretrato",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "autorretrato",
-          "weight": 3
-        },
-        {
-          "word": "pintar",
-          "weight": 3
-        },
-        {
-          "word": "ignorar",
-          "weight": 3
-        },
-        {
-          "word": "incomprension",
-          "weight": 3
-        },
-        {
-          "word": "libertad",
-          "weight": 3
-        },
-        {
-          "word": "jaula",
-          "weight": 3
-        },
-        {
-          "word": "relacion",
-          "weight": 3
-        },
-        {
-          "word": "pequenito",
-          "weight": 3
-        },
-        {
-          "word": "metafora",
-          "weight": 2
-        },
-        {
-          "word": "encierro",
-          "weight": 2
-        },
-        {
-          "word": "poder",
-          "weight": 2
-        },
-        {
-          "word": "epistemologia",
-          "weight": 2
-        },
-        {
-          "word": "incompatibilidad",
-          "weight": 2
-        },
-        {
-          "word": "lenguaje afectivo",
-          "weight": 2
-        },
-        {
-          "word": "desconexion emocional",
-          "weight": 2
-        },
-        {
-          "word": "reconocimiento",
-          "weight": 2
-        },
-        {
-          "word": "autonomia",
-          "weight": 2
-        },
-        {
-          "word": "canario",
-          "weight": 1
-        },
-        {
-          "word": "amor",
-          "weight": 1
-        },
-        {
-          "word": "ruptura",
-          "weight": 1
-        },
-        {
-          "word": "tiempo pasado",
-          "weight": 1
-        },
-        {
-          "word": "dialogo",
-          "weight": 1
-        },
-        {
-          "word": "voz femenina",
-          "weight": 1
-        },
-        {
-          "word": "no violencia",
-          "weight": 1
-        },
-        {
-          "word": "comprension",
-          "weight": 1
-        },
-        {
-          "word": "necesidades emocionales",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "pintar",
+        "weight": 3
+      },
+      {
+        "word": "ignorar",
+        "weight": 3
+      },
+      {
+        "word": "incomprension",
+        "weight": 3
+      },
+      {
+        "word": "libertad",
+        "weight": 3
+      },
+      {
+        "word": "jaula",
+        "weight": 3
+      },
+      {
+        "word": "relacion",
+        "weight": 3
+      },
+      {
+        "word": "pequenito",
+        "weight": 3
+      },
+      {
+        "word": "metafora",
+        "weight": 2
+      },
+      {
+        "word": "encierro",
+        "weight": 2
+      },
+      {
+        "word": "poder",
+        "weight": 2
+      },
+      {
+        "word": "epistemologia",
+        "weight": 2
+      },
+      {
+        "word": "incompatibilidad",
+        "weight": 2
+      },
+      {
+        "word": "lenguaje afectivo",
+        "weight": 2
+      },
+      {
+        "word": "desconexion emocional",
+        "weight": 2
+      },
+      {
+        "word": "reconocimiento",
+        "weight": 2
+      },
+      {
+        "word": "autonomia",
+        "weight": 2
+      },
+      {
+        "word": "canario",
+        "weight": 1
+      },
+      {
+        "word": "amor",
+        "weight": 1
+      },
+      {
+        "word": "ruptura",
+        "weight": 1
+      },
+      {
+        "word": "tiempo pasado",
+        "weight": 1
+      },
+      {
+        "word": "dialogo",
+        "weight": 1
+      },
+      {
+        "word": "voz femenina",
+        "weight": 1
+      },
+      {
+        "word": "no violencia",
+        "weight": 1
+      },
+      {
+        "word": "comprension",
+        "weight": 1
+      },
+      {
+        "word": "necesidades emocionales",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-18",
+    "month": "2025-12",
+    "file": "textos/2025-12-18.txt",
+    "my_poem_title": "escribir",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "tótem",
+      "book_title": "La carne se corta"
     },
-    {
-      "date": "2025-12-18",
-      "month": "2025-12",
-      "file": "textos/2025-12-18.txt",
-      "my_poem_title": "escribir",
-      "analysis": {
-        "poet": "Soledad Castresana",
-        "poem_title": "tótem",
-        "book_title": "La carne se corta"
+    "keywords": [
+      {
+        "word": "ideas",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "ideas",
-          "weight": 3
-        },
-        {
-          "word": "escribir",
-          "weight": 3
-        },
-        {
-          "word": "nada",
-          "weight": 3
-        },
-        {
-          "word": "violencia",
-          "weight": 3
-        },
-        {
-          "word": "materialidad",
-          "weight": 3
-        },
-        {
-          "word": "deshumanizacion",
-          "weight": 3
-        },
-        {
-          "word": "animalidad",
-          "weight": 3
-        },
-        {
-          "word": "ausencia de simbolo",
-          "weight": 3
-        },
-        {
-          "word": "cuerpo",
-          "weight": 2
-        },
-        {
-          "word": "frontera humano animal",
-          "weight": 2
-        },
-        {
-          "word": "fisico",
-          "weight": 2
-        },
-        {
-          "word": "matanza",
-          "weight": 2
-        },
-        {
-          "word": "crueldad",
-          "weight": 2
-        },
-        {
-          "word": "instinto",
-          "weight": 2
-        },
-        {
-          "word": "sangre",
-          "weight": 2
-        },
-        {
-          "word": "significado",
-          "weight": 2
-        },
-        {
-          "word": "reduccion",
-          "weight": 2
-        },
-        {
-          "word": "nino",
-          "weight": 1
-        },
-        {
-          "word": "liebre",
-          "weight": 1
-        },
-        {
-          "word": "bosque",
-          "weight": 1
-        },
-        {
-          "word": "caza",
-          "weight": 1
-        },
-        {
-          "word": "golpe",
-          "weight": 1
-        },
-        {
-          "word": "piel",
-          "weight": 1
-        },
-        {
-          "word": "carne",
-          "weight": 1
-        },
-        {
-          "word": "sufrimiento",
-          "weight": 1
-        },
-        {
-          "word": "abandono",
-          "weight": 1
-        },
-        {
-          "word": "indiferencia",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "escribir",
+        "weight": 3
+      },
+      {
+        "word": "nada",
+        "weight": 3
+      },
+      {
+        "word": "violencia",
+        "weight": 3
+      },
+      {
+        "word": "materialidad",
+        "weight": 3
+      },
+      {
+        "word": "deshumanizacion",
+        "weight": 3
+      },
+      {
+        "word": "animalidad",
+        "weight": 3
+      },
+      {
+        "word": "ausencia de simbolo",
+        "weight": 3
+      },
+      {
+        "word": "cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "frontera humano animal",
+        "weight": 2
+      },
+      {
+        "word": "fisico",
+        "weight": 2
+      },
+      {
+        "word": "matanza",
+        "weight": 2
+      },
+      {
+        "word": "crueldad",
+        "weight": 2
+      },
+      {
+        "word": "instinto",
+        "weight": 2
+      },
+      {
+        "word": "sangre",
+        "weight": 2
+      },
+      {
+        "word": "significado",
+        "weight": 2
+      },
+      {
+        "word": "reduccion",
+        "weight": 2
+      },
+      {
+        "word": "nino",
+        "weight": 1
+      },
+      {
+        "word": "liebre",
+        "weight": 1
+      },
+      {
+        "word": "bosque",
+        "weight": 1
+      },
+      {
+        "word": "caza",
+        "weight": 1
+      },
+      {
+        "word": "golpe",
+        "weight": 1
+      },
+      {
+        "word": "piel",
+        "weight": 1
+      },
+      {
+        "word": "carne",
+        "weight": 1
+      },
+      {
+        "word": "sufrimiento",
+        "weight": 1
+      },
+      {
+        "word": "abandono",
+        "weight": 1
+      },
+      {
+        "word": "indiferencia",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-17",
+    "month": "2025-12",
+    "file": "textos/2025-12-17.txt",
+    "my_poem_title": "follar",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "la suerte del que come",
+      "book_title": "La carne se corta"
     },
-    {
-      "date": "2025-12-17",
-      "month": "2025-12",
-      "file": "textos/2025-12-17.txt",
-      "my_poem_title": "follar",
-      "analysis": {
-        "poet": "Soledad Castresana",
-        "poem_title": "la suerte del que come",
-        "book_title": "La carne se corta"
+    "keywords": [
+      {
+        "word": "follar",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "follar",
-          "weight": 3
-        },
-        {
-          "word": "condón",
-          "weight": 3
-        },
-        {
-          "word": "pelota",
-          "weight": 3
-        },
-        {
-          "word": "lanzo",
-          "weight": 3
-        },
-        {
-          "word": "jerarquia",
-          "weight": 3
-        },
-        {
-          "word": "poder",
-          "weight": 3
-        },
-        {
-          "word": "suerte",
-          "weight": 3
-        },
-        {
-          "word": "ignorancia",
-          "weight": 3
-        },
-        {
-          "word": "destino",
-          "weight": 3
-        },
-        {
-          "word": "muerte",
-          "weight": 2
-        },
-        {
-          "word": "violencia",
-          "weight": 2
-        },
-        {
-          "word": "subordinacion",
-          "weight": 2
-        },
-        {
-          "word": "control",
-          "weight": 2
-        },
-        {
-          "word": "dependencia",
-          "weight": 2
-        },
-        {
-          "word": "resistencia",
-          "weight": 2
-        },
-        {
-          "word": "opresion",
-          "weight": 2
-        },
-        {
-          "word": "azar",
-          "weight": 2
-        },
-        {
-          "word": "pesimismo",
-          "weight": 2
-        },
-        {
-          "word": "animal",
-          "weight": 1
-        },
-        {
-          "word": "pollo",
-          "weight": 1
-        },
-        {
-          "word": "perro",
-          "weight": 1
-        },
-        {
-          "word": "amo",
-          "weight": 1
-        },
-        {
-          "word": "comida",
-          "weight": 1
-        },
-        {
-          "word": "instinto",
-          "weight": 1
-        },
-        {
-          "word": "supervivencia",
-          "weight": 1
-        },
-        {
-          "word": "cuerpo",
-          "weight": 1
-        },
-        {
-          "word": "jerarquia social",
-          "weight": 1
-        },
-        {
-          "word": "arrogancia",
-          "weight": 1
-        },
-        {
-          "word": "condicion",
-          "weight": 1
-        },
-        {
-          "word": "sumision",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "condón",
+        "weight": 3
+      },
+      {
+        "word": "pelota",
+        "weight": 3
+      },
+      {
+        "word": "lanzo",
+        "weight": 3
+      },
+      {
+        "word": "jerarquia",
+        "weight": 3
+      },
+      {
+        "word": "poder",
+        "weight": 3
+      },
+      {
+        "word": "suerte",
+        "weight": 3
+      },
+      {
+        "word": "ignorancia",
+        "weight": 3
+      },
+      {
+        "word": "destino",
+        "weight": 3
+      },
+      {
+        "word": "muerte",
+        "weight": 2
+      },
+      {
+        "word": "violencia",
+        "weight": 2
+      },
+      {
+        "word": "subordinacion",
+        "weight": 2
+      },
+      {
+        "word": "control",
+        "weight": 2
+      },
+      {
+        "word": "dependencia",
+        "weight": 2
+      },
+      {
+        "word": "resistencia",
+        "weight": 2
+      },
+      {
+        "word": "opresion",
+        "weight": 2
+      },
+      {
+        "word": "azar",
+        "weight": 2
+      },
+      {
+        "word": "pesimismo",
+        "weight": 2
+      },
+      {
+        "word": "animal",
+        "weight": 1
+      },
+      {
+        "word": "pollo",
+        "weight": 1
+      },
+      {
+        "word": "perro",
+        "weight": 1
+      },
+      {
+        "word": "amo",
+        "weight": 1
+      },
+      {
+        "word": "comida",
+        "weight": 1
+      },
+      {
+        "word": "instinto",
+        "weight": 1
+      },
+      {
+        "word": "supervivencia",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "jerarquia social",
+        "weight": 1
+      },
+      {
+        "word": "arrogancia",
+        "weight": 1
+      },
+      {
+        "word": "condicion",
+        "weight": 1
+      },
+      {
+        "word": "sumision",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-16",
+    "month": "2025-12",
+    "file": "textos/2025-12-16.txt",
+    "my_poem_snippet": "de mi mano cae cae cae",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "un entierro",
+      "book_title": "La carne se corta"
     },
-    {
-      "date": "2025-12-16",
-      "month": "2025-12",
-      "file": "textos/2025-12-16.txt",
-      "my_poem_snippet": "de mi mano cae cae cae",
-      "analysis": {
-        "poet": "Soledad Castresana",
-        "poem_title": "un entierro",
-        "book_title": "La carne se corta"
+    "keywords": [
+      {
+        "word": "vaso",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "vaso",
-          "weight": 3
-        },
-        {
-          "word": "cae",
-          "weight": 3
-        },
-        {
-          "word": "garganta",
-          "weight": 3
-        },
-        {
-          "word": "boca",
-          "weight": 3
-        },
-        {
-          "word": "muerte",
-          "weight": 3
-        },
-        {
-          "word": "duelo",
-          "weight": 3
-        },
-        {
-          "word": "juego",
-          "weight": 3
-        },
-        {
-          "word": "normalizacion",
-          "weight": 3
-        },
-        {
-          "word": "olvido",
-          "weight": 3
-        },
-        {
-          "word": "infancia",
-          "weight": 2
-        },
-        {
-          "word": "comunidad",
-          "weight": 2
-        },
-        {
-          "word": "violencia",
-          "weight": 2
-        },
-        {
-          "word": "ritual",
-          "weight": 2
-        },
-        {
-          "word": "entierro",
-          "weight": 2
-        },
-        {
-          "word": "responsabilidad",
-          "weight": 2
-        },
-        {
-          "word": "pobreza",
-          "weight": 2
-        },
-        {
-          "word": "frontera",
-          "weight": 2
-        },
-        {
-          "word": "indiferencia",
-          "weight": 2
-        },
-        {
-          "word": "animal",
-          "weight": 1
-        },
-        {
-          "word": "aves",
-          "weight": 1
-        },
-        {
-          "word": "gallinero",
-          "weight": 1
-        },
-        {
-          "word": "capilla",
-          "weight": 1
-        },
-        {
-          "word": "cruces",
-          "weight": 1
-        },
-        {
-          "word": "juego simbolico",
-          "weight": 1
-        },
-        {
-          "word": "cuerpo",
-          "weight": 1
-        },
-        {
-          "word": "memoria",
-          "weight": 1
-        },
-        {
-          "word": "aprendizaje",
-          "weight": 1
-        },
-        {
-          "word": "humanidad",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "cae",
+        "weight": 3
+      },
+      {
+        "word": "garganta",
+        "weight": 3
+      },
+      {
+        "word": "boca",
+        "weight": 3
+      },
+      {
+        "word": "muerte",
+        "weight": 3
+      },
+      {
+        "word": "duelo",
+        "weight": 3
+      },
+      {
+        "word": "juego",
+        "weight": 3
+      },
+      {
+        "word": "normalizacion",
+        "weight": 3
+      },
+      {
+        "word": "olvido",
+        "weight": 3
+      },
+      {
+        "word": "infancia",
+        "weight": 2
+      },
+      {
+        "word": "comunidad",
+        "weight": 2
+      },
+      {
+        "word": "violencia",
+        "weight": 2
+      },
+      {
+        "word": "ritual",
+        "weight": 2
+      },
+      {
+        "word": "entierro",
+        "weight": 2
+      },
+      {
+        "word": "responsabilidad",
+        "weight": 2
+      },
+      {
+        "word": "pobreza",
+        "weight": 2
+      },
+      {
+        "word": "frontera",
+        "weight": 2
+      },
+      {
+        "word": "indiferencia",
+        "weight": 2
+      },
+      {
+        "word": "animal",
+        "weight": 1
+      },
+      {
+        "word": "aves",
+        "weight": 1
+      },
+      {
+        "word": "gallinero",
+        "weight": 1
+      },
+      {
+        "word": "capilla",
+        "weight": 1
+      },
+      {
+        "word": "cruces",
+        "weight": 1
+      },
+      {
+        "word": "juego simbolico",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "memoria",
+        "weight": 1
+      },
+      {
+        "word": "aprendizaje",
+        "weight": 1
+      },
+      {
+        "word": "humanidad",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-15",
+    "month": "2025-12",
+    "file": "textos/2025-12-15.txt",
+    "my_poem_title": "qué hay para ver en el bosque?",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "trampa para cazar caballos",
+      "book_title": "La carne se corta"
     },
-    {
-      "date": "2025-12-15",
-      "month": "2025-12",
-      "file": "textos/2025-12-15.txt",
-      "my_poem_title": "qué hay para ver en el bosque?",
-      "analysis": {
-        "poet": "Soledad Castresana",
-        "poem_title": "trampa para cazar caballos",
-        "book_title": "La carne se corta"
+    "keywords": [
+      {
+        "word": "bosque",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "bosque",
-          "weight": 3
-        },
-        {
-          "word": "peso",
-          "weight": 3
-        },
-        {
-          "word": "agua",
-          "weight": 3
-        },
-        {
-          "word": "blanc",
-          "weight": 3
-        },
-        {
-          "word": "azul",
-          "weight": 3
-        },
-        {
-          "word": "lluvia",
-          "weight": 3
-        },
-        {
-          "word": "esconderse",
-          "weight": 3
-        },
-        {
-          "word": "curva",
-          "weight": 3
-        },
-        {
-          "word": "muerte",
-          "weight": 3
-        },
-        {
-          "word": "indiferencia",
-          "weight": 3
-        },
-        {
-          "word": "violencia",
-          "weight": 3
-        },
-        {
-          "word": "deshumanizacion",
-          "weight": 3
-        },
-        {
-          "word": "vida sin sentido",
-          "weight": 3
-        },
-        {
-          "word": "animal",
-          "weight": 2
-        },
-        {
-          "word": "caballo",
-          "weight": 2
-        },
-        {
-          "word": "comunidad",
-          "weight": 2
-        },
-        {
-          "word": "distanciamiento",
-          "weight": 2
-        },
-        {
-          "word": "crueldad",
-          "weight": 2
-        },
-        {
-          "word": "utilidad",
-          "weight": 2
-        },
-        {
-          "word": "trampa",
-          "weight": 2
-        },
-        {
-          "word": "veneno",
-          "weight": 2
-        },
-        {
-          "word": "enfermedad",
-          "weight": 2
-        },
-        {
-          "word": "campo",
-          "weight": 1
-        },
-        {
-          "word": "bosque",
-          "weight": 1
-        },
-        {
-          "word": "lluvia",
-          "weight": 1
-        },
-        {
-          "word": "fuego",
-          "weight": 1
-        },
-        {
-          "word": "contagio",
-          "weight": 1
-        },
-        {
-          "word": "cuerpo",
-          "weight": 1
-        },
-        {
-          "word": "grotesco",
-          "weight": 1
-        },
-        {
-          "word": "ironía",
-          "weight": 1
-        },
-        {
-          "word": "pensar",
-          "weight": 1
-        },
-        {
-          "word": "sentir",
-          "weight": 1
-        },
-        {
-          "word": "explotacion",
-          "weight": 1
-        }
-      ]
+      {
+        "word": "peso",
+        "weight": 3
+      },
+      {
+        "word": "agua",
+        "weight": 3
+      },
+      {
+        "word": "blanc",
+        "weight": 3
+      },
+      {
+        "word": "azul",
+        "weight": 3
+      },
+      {
+        "word": "lluvia",
+        "weight": 3
+      },
+      {
+        "word": "esconderse",
+        "weight": 3
+      },
+      {
+        "word": "curva",
+        "weight": 3
+      },
+      {
+        "word": "muerte",
+        "weight": 3
+      },
+      {
+        "word": "indiferencia",
+        "weight": 3
+      },
+      {
+        "word": "violencia",
+        "weight": 3
+      },
+      {
+        "word": "deshumanizacion",
+        "weight": 3
+      },
+      {
+        "word": "vida sin sentido",
+        "weight": 3
+      },
+      {
+        "word": "animal",
+        "weight": 2
+      },
+      {
+        "word": "caballo",
+        "weight": 2
+      },
+      {
+        "word": "comunidad",
+        "weight": 2
+      },
+      {
+        "word": "distanciamiento",
+        "weight": 2
+      },
+      {
+        "word": "crueldad",
+        "weight": 2
+      },
+      {
+        "word": "utilidad",
+        "weight": 2
+      },
+      {
+        "word": "trampa",
+        "weight": 2
+      },
+      {
+        "word": "veneno",
+        "weight": 2
+      },
+      {
+        "word": "enfermedad",
+        "weight": 2
+      },
+      {
+        "word": "campo",
+        "weight": 1
+      },
+      {
+        "word": "bosque",
+        "weight": 1
+      },
+      {
+        "word": "lluvia",
+        "weight": 1
+      },
+      {
+        "word": "fuego",
+        "weight": 1
+      },
+      {
+        "word": "contagio",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "grotesco",
+        "weight": 1
+      },
+      {
+        "word": "ironía",
+        "weight": 1
+      },
+      {
+        "word": "pensar",
+        "weight": 1
+      },
+      {
+        "word": "sentir",
+        "weight": 1
+      },
+      {
+        "word": "explotacion",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "date": "2025-12-14",
+    "month": "2025-12",
+    "file": "textos/2025-12-14.txt",
+    "my_poem_snippet": "ayer te di el agua del pozo",
+    "analysis": {
+      "poet": "Soledad Castresana",
+      "poem_title": "charco en calma",
+      "book_title": "La carne se corta"
     },
-    {
-      "date": "2025-12-14",
-      "month": "2025-12",
-      "file": "textos/2025-12-14.txt",
-      "my_poem_snippet": "ayer te di el agua del pozo",
-      "analysis": {
-        "poet": "Soledad Castresana",
-        "poem_title": "charco en calma",
-        "book_title": "La carne se corta"
+    "keywords": [
+      {
+        "word": "pozo",
+        "weight": 3
       },
-      "keywords": [
-        {
-          "word": "pozo",
-          "weight": 3
-        },
-        {
-          "word": "cubo",
-          "weight": 3
-        },
-        {
-          "word": "seco",
-          "weight": 3
-        },
-        {
-          "word": "temer",
-          "weight": 3
-        },
-        {
-          "word": "dominacion",
-          "weight": 3
-        },
-        {
-          "word": "violencia",
-          "weight": 3
-        },
-        {
-          "word": "deshumanizacion",
-          "weight": 3
-        },
-        {
-          "word": "resistencia",
-          "weight": 3
-        },
-        {
-          "word": "indiferencia",
-          "weight": 3
-        },
-        {
-          "word": "naturaleza",
-          "weight": 2
-        },
-        {
-          "word": "cuerpo",
-          "weight": 2
-        },
-        {
-          "word": "sexualidad",
-          "weight": 2
-        },
-        {
-          "word": "agresion",
-          "weight": 2
-        },
-        {
-          "word": "miedo",
-          "weight": 2
-        },
-        {
-          "word": "poder",
-          "weight": 2
-        },
-        {
-          "word": "objetificacion",
-          "weight": 2
-        },
-        {
-          "word": "violencia simbolica",
-          "weight": 2
-        },
-        {
-          "word": "confusion",
-          "weight": 2
-        },
-        {
-          "word": "animal",
-          "weight": 1
-        },
-        {
-          "word": "mujer",
-          "weight": 1
-        },
-        {
-          "word": "yegua",
-          "weight": 1
-        },
-        {
-          "word": "barro",
-          "weight": 1
-        },
-        {
-          "word": "charco",
-          "weight": 1
-        },
-        {
-          "word": "rebenque",
-          "weight": 1
-        },
-        {
-          "word": "bosque",
-          "weight": 1
-        },
-        {
-          "word": "violencia rural",
-          "weight": 1
-        },
-        {
-          "word": "frontera",
-          "weight": 1
-        },
-        {
-          "word": "cosificacion",
-          "weight": 1
-        }
-      ]
-    }
-  ]
-}
+      {
+        "word": "cubo",
+        "weight": 3
+      },
+      {
+        "word": "seco",
+        "weight": 3
+      },
+      {
+        "word": "temer",
+        "weight": 3
+      },
+      {
+        "word": "dominacion",
+        "weight": 3
+      },
+      {
+        "word": "violencia",
+        "weight": 3
+      },
+      {
+        "word": "deshumanizacion",
+        "weight": 3
+      },
+      {
+        "word": "resistencia",
+        "weight": 3
+      },
+      {
+        "word": "indiferencia",
+        "weight": 3
+      },
+      {
+        "word": "naturaleza",
+        "weight": 2
+      },
+      {
+        "word": "cuerpo",
+        "weight": 2
+      },
+      {
+        "word": "sexualidad",
+        "weight": 2
+      },
+      {
+        "word": "agresion",
+        "weight": 2
+      },
+      {
+        "word": "miedo",
+        "weight": 2
+      },
+      {
+        "word": "poder",
+        "weight": 2
+      },
+      {
+        "word": "objetificacion",
+        "weight": 2
+      },
+      {
+        "word": "violencia simbolica",
+        "weight": 2
+      },
+      {
+        "word": "confusion",
+        "weight": 2
+      },
+      {
+        "word": "animal",
+        "weight": 1
+      },
+      {
+        "word": "mujer",
+        "weight": 1
+      },
+      {
+        "word": "yegua",
+        "weight": 1
+      },
+      {
+        "word": "barro",
+        "weight": 1
+      },
+      {
+        "word": "charco",
+        "weight": 1
+      },
+      {
+        "word": "rebenque",
+        "weight": 1
+      },
+      {
+        "word": "bosque",
+        "weight": 1
+      },
+      {
+        "word": "violencia rural",
+        "weight": 1
+      },
+      {
+        "word": "frontera",
+        "weight": 1
+      },
+      {
+        "word": "cosificacion",
+        "weight": 1
+      }
+    ]
+  }
+]

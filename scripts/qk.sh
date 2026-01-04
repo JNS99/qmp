@@ -10,34 +10,55 @@ fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+cd "$ROOT_DIR"
 
-IN_FILE="${ROOT_DIR}/textos/${DATE}.txt"
-OUT_FILE="${ROOT_DIR}/scripts/pending_keywords.txt"
-PY_SCRIPT="${ROOT_DIR}/scripts/gen_keywords.py"
+IN_FILE="textos/${DATE}.txt"
+GEN="scripts/gen_keywords.py"
+OUT_ACTIVE="scripts/pending_keywords.txt"
+TMP_OUT="/tmp/qmp_keywords_${DATE}.json"
 
-BACKUP_DIR="${ROOT_DIR}/scripts/keywords_backups"
-BACKUP_PATH="${BACKUP_DIR}/${DATE}.json"
-
-if [[ ! -f "${IN_FILE}" ]]; then
-  echo "[qk] No existe: ${IN_FILE}" >&2
+if [[ ! -f "$IN_FILE" ]]; then
+  echo "[qk] No encuentro ${IN_FILE}" >&2
   exit 1
 fi
-
-if [[ ! -f "${PY_SCRIPT}" ]]; then
-  echo "[qk] No existe: ${PY_SCRIPT}" >&2
+if [[ ! -f "$GEN" ]]; then
+  echo "[qk] No encuentro ${GEN}" >&2
   exit 1
 fi
-
 if [[ -z "${OPENAI_API_KEY:-}" ]]; then
   echo "[qk] Falta OPENAI_API_KEY en el entorno." >&2
-  echo "     Ejemplo: export OPENAI_API_KEY='...'" >&2
   exit 1
 fi
 
-python3 "${PY_SCRIPT}" "${IN_FILE}" "${OUT_FILE}"
+# Generate keywords payload (expected: {"keywords":[...]} or [...] etc.)
+TMP_GEN="$(mktemp)"
+python3 "$GEN" "$IN_FILE" "$TMP_GEN"
 
-mkdir -p "${BACKUP_DIR}"
-cp "${OUT_FILE}" "${BACKUP_PATH}"
+# Wrap with date into scripts/pending_keywords.txt
+python3 - "$DATE" "$TMP_GEN" "$OUT_ACTIVE" <<'PY'
+import json, sys, pathlib
 
-echo "[qk] Revisa/edita: ${OUT_FILE}"
-echo "[qk] Backup: ${BACKUP_PATH}"
+date = sys.argv[1]
+src = pathlib.Path(sys.argv[2]).read_text(encoding="utf-8").strip()
+out = pathlib.Path(sys.argv[3])
+
+# accept array or object
+data = json.loads(src)
+if isinstance(data, dict) and "keywords" in data:
+    kws = data["keywords"]
+elif isinstance(data, list):
+    kws = data
+else:
+    raise SystemExit("gen_keywords.py output format not recognized")
+
+payload = {"date": date, "keywords": kws}
+out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+PY
+
+rm -f "$TMP_GEN"
+
+# Copy to /tmp view
+cp "$OUT_ACTIVE" "$TMP_OUT"
+
+echo "[qk] OK: ${OUT_ACTIVE}"
+echo "[qk] Vista: ${TMP_OUT}"

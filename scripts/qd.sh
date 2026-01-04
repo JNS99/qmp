@@ -1,59 +1,30 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -e
 
-# Quick daily setup:
-# - create textos/YYYY-MM-DD.txt from template if missing
-# - open that txt + scripts/pending_keywords.txt in your editor
+DATE="$1"
+if [[ -z "$DATE" ]]; then
+  echo "Uso: qd YYYY-MM-DD"
+  exit 1
+fi
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-cd "$REPO_ROOT"
+REPO="$(cd "$(dirname "$0")/.." && pwd)"
+TXT="$REPO/textos/$DATE.txt"
+TEMPLATE="$REPO/textos/templateTEXT.txt"
+ARCHIVO="$REPO/archivo.json"
+PENDING="$REPO/scripts/pending_keywords.txt"
 
-DATE="${1:-$(date +%F)}"
-TXT="textos/${DATE}.txt"
-TEMPLATE="textos/templateTEXT.txt"
-KW="scripts/pending_keywords.txt"
-
-# Create daily txt if missing
+# crear txt si no existe
 if [[ ! -f "$TXT" ]]; then
-  if [[ ! -f "$TEMPLATE" ]]; then
-    echo "Error: no encuentro plantilla $TEMPLATE"
-    exit 1
-  fi
   cp "$TEMPLATE" "$TXT"
-  echo "OK: creado $TXT desde plantilla"
-else
-  echo "OK: ya existe $TXT"
 fi
 
-# Ensure keywords file exists (don’t overwrite)
-if [[ ! -f "$KW" ]]; then
-  : > "$KW"
-  echo "OK: creado $KW"
+# si la entrada existe, restaurar keywords reales
+if jq -e --arg d "$DATE" '.entries[]? | select(.date==$d)' "$ARCHIVO" > /dev/null; then
+  jq --arg d "$DATE" '
+    .entries[] | select(.date==$d) | {keywords: .keywords}
+  ' "$ARCHIVO" > "$PENDING"
 fi
 
-# Choose editor command:
-# Sublime: "subl"
-# VS Code: "code"
-EDITOR_CMD="${EDITOR_CMD:-subl}"
-
-FILES=("$TXT" "$KW")
-
-EXISTS="$(python3 - "$DATE" <<'PY'
-import json, sys
-date = sys.argv[1]
-try:
-    data = json.load(open("archivo.json", "r", encoding="utf-8"))
-    print("1" if any(e.get("date") == date for e in data) else "0")
-except Exception:
-    print("0")
-PY
-)"
-
-if [[ "$EXISTS" == "1" ]]; then
-  FILES+=("archivo.json")
-fi
-
-
-"$EDITOR_CMD" "${FILES[@]}"
-
+# abrir editor (Sublime)
+EDITOR_CMD="${EDITOR_CMD:-${EDITOR:-subl}}"
+"$EDITOR_CMD" -a "$ARCHIVO" "$PENDING" "$TXT"
