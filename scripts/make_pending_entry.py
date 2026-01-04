@@ -60,6 +60,11 @@ def first_nonempty_line(s: str) -> str:
             return t
     return ""
 
+
+def snippet_if_no_title(title: str, section_text: str) -> str:
+    """Return snippet only when title is empty; else return empty string."""
+    return "" if (title or "").strip() else first_nonempty_line(section_text)
+
 def month_from_date(d: str) -> str:
     return d[:7]
 
@@ -90,11 +95,11 @@ def main() -> None:
         "month": month_from_date(date),
         "file": f"textos/{date}.txt",
         "my_poem_title": meta.get("my_poem_title", "").strip(),
-        "my_poem_snippet": first_nonempty_line(sections.get("POEMA", "")),
+        "my_poem_snippet": snippet_if_no_title(meta.get("my_poem_title", ""), sections.get("POEMA", "")),
         "analysis": {
             "poet": meta.get("poet", "").strip(),
             "poem_title": meta.get("poem_title", "").strip(),
-            "poem_snippet": first_nonempty_line(sections.get("POEMA_CITADO", "")),
+            "poem_snippet": snippet_if_no_title(meta.get("poem_title", ""), sections.get("POEMA_CITADO", "")),
             "book_title": meta.get("book_title", "").strip(),
         },
         # keywords are filled/kept in merge step

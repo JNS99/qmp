@@ -354,8 +354,16 @@
   },
   {
     "date": "2026-01-02",
-    "title": "FECHA: 2026-01-02",
-    "poem": "MY_POEM_TITLE: \nPOETA: Alfonsina Storni \nPOEM_TITLE: A Horacio Quiroga\nBOOK_TITLE: Poemas\n# POEMA\nes la misma montaña de mierda\npero la pala se vuelve más pequeña\ncon cada palabra no dicha\ncada orgasmo priorizado\n# POEMA_CITADO\nMorir como tú, Horacio, en tus cabales,\ny así como en tus cuentos, no está mal;\nun rayo a tiempo y se acabó la feria…\nAllá dirán.\nNo se vive en la selva impunemente,\nni cara al Paraná.\nBien por tu mano firme, gran Horacio…\nAllá dirán.\n“Nos hiere cada hora –queda escrito–,\nnos mata al final”.\nUnos minutos menos… ¿quién te acusa?\nAllá dirán.\nMás pudre el miedo, Horacio, que la muerte\nque a las espaldas va.\nBebiste bien, que luego sonreías…\nAllá dirán.\nSé que la mano obrera te estrecharon,\nmas no, sí, Alguno, o simplemente, Pan,\nque no es de fuertes renegar de su obra…\n(Más que tú mismo es fuerte quien dirá).\n# TEXTO\nEl poema presenta una visión de una muerte con dignidad; aunque el narrador tiene ideas pesimistas, anima a Horacio a enfrentarse sin miedo a la muerte. Además, el narrador sugiere, con el uso del futuro (“dirán”, “dirá”), que su muerte respetable será una manera de ser recordado por la gente.",
+    "month": "2026-01",
+    "file": "textos/2026-01-02.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "es la misma montaña de mierda",
+    "analysis": {
+      "poet": "Alfonsina Storni",
+      "poem_title": "A Horacio Quiroga",
+      "poem_snippet": "",
+      "book_title": "Poemas"
+    },
     "keywords": [
       {
         "word": "acumulacion de compromisos",
