@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-01-05",
+    "month": "2026-01",
+    "file": "textos/2026-01-05.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "dónde estás escondido?",
+    "analysis": {
+      "poet": "Raúl Gómez Jattin",
+      "poem_title": "Un político",
+      "poem_snippet": "",
+      "book_title": "Amanecer en el Valle del Sinú"
+    },
+    "keywords": [
+      {
+        "word": "ausencia",
+        "weight": 3
+      },
+      {
+        "word": "sombra",
+        "weight": 3
+      },
+      {
+        "word": "ocultamiento",
+        "weight": 3
+      },
+      {
+        "word": "anhelo",
+        "weight": 3
+      },
+      {
+        "word": "reencuentro",
+        "weight": 3
+      },
+      {
+        "word": "presencia ausente",
+        "weight": 3
+      },
+      {
+        "word": "fantasma",
+        "weight": 3
+      },
+      {
+        "word": "olvido",
+        "weight": 3
+      },
+      {
+        "word": "imitacion",
+        "weight": 2
+      },
+      {
+        "word": "hacer sombra",
+        "weight": 2
+      },
+      {
+        "word": "desvanecimiento",
+        "weight": 2
+      },
+      {
+        "word": "desaparicion",
+        "weight": 2
+      },
+      {
+        "word": "soledad",
+        "weight": 2
+      },
+      {
+        "word": "provinciano",
+        "weight": 2
+      },
+      {
+        "word": "poder aparente",
+        "weight": 2
+      },
+      {
+        "word": "performatividad",
+        "weight": 2
+      },
+      {
+        "word": "imitador",
+        "weight": 2
+      },
+      {
+        "word": "distancia emocional",
+        "weight": 2
+      },
+      {
+        "word": "escritorio",
+        "weight": 1
+      },
+      {
+        "word": "palabra ardiente",
+        "weight": 1
+      },
+      {
+        "word": "piel",
+        "weight": 1
+      },
+      {
+        "word": "joven",
+        "weight": 1
+      },
+      {
+        "word": "escritor",
+        "weight": 1
+      },
+      {
+        "word": "manias",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-04",
     "month": "2026-01",
     "file": "textos/2026-01-04.txt",

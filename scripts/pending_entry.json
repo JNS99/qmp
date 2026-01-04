@@ -1,4 +1,15 @@
 {
+  "date": "2026-01-05",
+  "month": "2026-01",
+  "file": "textos/2026-01-05.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "dónde estás escondido?",
+  "analysis": {
+    "poet": "Raúl Gómez Jattin",
+    "poem_title": "Un político",
+    "poem_snippet": "",
+    "book_title": "Amanecer en el Valle del Sinú"
+  },
   "keywords": [
     {
       "word": "ausencia",

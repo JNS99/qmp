@@ -1,0 +1,37 @@
+FECHA: 2026-01-05
+MY_POEM_TITLE: 
+POETA: Raúl Gómez Jattin
+POEM_TITLE: Un político
+BOOK_TITLE: Amanecer en el Valle del Sinú
+
+# POEMA
+
+dónde estás escondido?
+solo veo tu sombra
+cuando te tenga de nuevo
+olvido la ausencia 
+
+# POEMA_CITADO
+
+Hoy es la obediente sombra
+de un escritor provinciano
+Lo imita en sus maniás
+en su soledad en su trabajo
+Qué extraño
+Aquel revoltoso joven
+(Nos conocimos en el Externado)
+haciendo sombra
+cuando era el que llevaba la palabra ardiente
+
+Sus amigos de política
+lo vieron esfumarse plácidamente
+detrás de un escritorio
+
+Ah negro corderuelo
+Bajo la piel del quebrantainstituciones
+cuántas ilusiones de poder te hacías
+Cuántas
+
+# TEXTO
+
+Tal vez proyectando poder y tal vez siguiéndolo sin tenerlo, el joven político descrito en **Un político** alterna entre una fuerza performativa y una impotencia sin rostro. El hablante nos expone a un joven y “revoltoso” político, capaz de “hacer sombras” cuando pronuncia un discurso. No obstante, fuera del discurso, baja al nivel de lo solitario y provinciano, imitándolo como si no tuviera una identidad propia; el poder mostrado en su palabra “se esfuma” y se ve reducido a una sombra. Propongo que el poema sugiere que el poder puede parecer convincente para el público aunque esté hueco a los ojos del narrador. Me parece que el narrador conoce bien estas deficiencias y, por ello, puede ver a través de la ilusión de poder.
