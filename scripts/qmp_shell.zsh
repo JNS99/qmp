@@ -1,14 +1,3 @@
-# ---------- Date validation ----------
-is_valid_date() {
-  local d="$1"
-
-  # formato básico YYYY-MM-DD
-  [[ "$d" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || return 1
-
-  # validación real (macOS)
-  date -j -f "%Y-%m-%d" "$d" "+%Y-%m-%d" >/dev/null 2>&1 || return 1
-  return 0
-}
 
 # =========================
 #  QMP — shortcuts & flow
@@ -38,36 +27,15 @@ _qmp_check() {
 }
 
 # Preparar día (crear/abrir txt desde template)
-qd() {
-  local date="${1:-$(date +%F)}"
-  if ! is_valid_date "$date"; then
-    echo "❌ Fecha inválida: $date"
-    return 1
-  fi
-  "$QMP_REPO/scripts/qd.sh" "$date"
-}
+qd() {"$QMP_REPO/scripts/qd.sh" "$date"}
 
 # Keywords (OpenAI)
-qk() {
-  local date="${1:-$(date +%F)}"
-  if ! is_valid_date "$date"; then
-    echo "❌ Fecha inválida: $date"
-    return 1
-  fi
-  "$QMP_REPO/scripts/qk.sh" "$date"
-}
+qk() {"$QMP_REPO/scripts/qk.sh" "$date"}
 
 # qk + dry-run
 qdk() {
-  local date="${1:-$(date +%F)}"
-  if ! is_valid_date "$date"; then
-    echo "❌ Fecha inválida: $date"
-    return 1
-  fi
-
   echo "▶️ Generando palabras clave (qk $date)…"
   qk "$date" || { echo "❌ Error en qk. Aborto."; return 1; }
-
   echo ""
   echo "▶️ Dry run (q --dry-run $date)…"
   q --dry-run "$date"
@@ -95,13 +63,7 @@ q() {
     echo "Uso: q [--dry-run] YYYY-MM-DD [mensaje opcional]"
     return 2
   fi
-
-  if ! is_valid_date "$date"; then
-    echo "❌ Fecha inválida: $date"
-    echo "Formato esperado: YYYY-MM-DD (ej: 2025-12-27)"
-    return 1
-  fi
-
+  
   local txt="$QMP_REPO/textos/${date}.txt"
   "$QMP_REPO/scripts/qmp_publish.sh" $dry "$txt" "$msg"
 }
