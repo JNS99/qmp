@@ -6,10 +6,17 @@ BOOK_TITLE: La carne se corta
 
 # POEMA
 
-dónde estás escondido?
-solo veo tu sombra
-cuando te tenga de nuevo
-olvido la ausencia 
+hay que tocarte
+abrirte y escucharte
+
+	una curva que se dibuja
+	para exponer
+	lo mal de lo bueno
+
+hay que hablar contigo
+
+		pero sigo dibujando tus curvas
+		sin añadir las mías
 
 
 # POEMA_CITADO
@@ -86,4 +93,17 @@ en la mano de una niña de ocho años
 
 # TEXTO
 
-no tengo esto por el momento
+Una hoja fina corta el cuero de un animal, todavía vivo, mientras se mueve y resiste. El hombre que corta se concentra; no se detiene, para lograr el corte perfecto. Sintiendo repugnancia, el narrador no puede imaginar cómo alguien puede aguantar tranquilamente la escena, y el resto de **amanecer** nos explica por qué: el ser humano puede aguantar porque puede elegir en qué centrarse; no es que ignore la crueldad, sino que puede mirarla y vivir con ella al gestionarla.
+
+El narrador oscila entre tres voces: una voz descriptiva (p. ej., “el cuero es duro”, “mientras tanto el agua”), una normativa (“hay que…”), y una introspectiva (“¿quién puede?”). Empieza con la voz normativa, diciendo: “hay que revolver la sangre”. Es una norma sin sujeto; no es “tengo que” o “tiene que”, sino un “hay” global, como si la norma fuera aceptada sin lugar a dudas. Ese “hay” es algo a lo que la comunidad no presta atención y acepta implícitamente.
+
+El narrador, en contraste con el que corta, mira la escena con repulsión, pensando: “¿quién puede soportar sin cagarse?”. Para el hablante, es inconcebible que alguien pueda experimentar este momento sin repugnancia; no obstante, el cortador parece sacar un orgullo y un placer casi sexual al controlar con precisión al animal (“como si midiera su miembro”). Entonces, ¿por qué la comunidad no tiene el mismo impulso que el narrador? Creo que vemos tres imágenes que lo explican.
+
+La primera es “el filo”/“la sierra”, presentados en la décima estrofa. El filo puede transformar el cerdo en una mariposa; “la sierra divide”, nos dice. El filo es el juicio del humano y aquí vemos que el humano tiene la capacidad de dividir el mundo en dos: lo útil y lo no útil. Lo no útil (las vísceras y caldos, por ejemplo) se ignora fácilmente por la comunidad, como si la comunidad fuera ciega (“catarata”).
+
+Vemos el contraste entre los animales y los humanos. Para los animales, es indistinguible la diferencia entre “lo fresco” y “lo digerido”; para los humanos, existe la distinción entre lo sucio y lo limpio (“hay que lavar las tripas… borrar los restos”). Los humanos ven y entienden lo que es útil para ellos y lo que no lo es.
+
+Al final, vemos a una niña sosteniendo la cabeza del cerdo (“el cerebro de un cerdo cabe en la mano de una niña”). Creo que la palabra “cabe” es la más importante: sugiere una armonía en la imagen. El poema muestra que, incluso a una edad muy temprana, se aprende no solo a ignorar lo grotesco, sino a vivir en armonía con ello.
+
+El hablante tiene aprensión al principio, pero, a través de su descripción de la escena, comprendemos el proceso de normalización. El narrador plantea que la característica única del humano es la capacidad de focalizar y elegir. Aquí, los humanos eligen vivir en presencia de la crueldad, pero no dejar que los afecte. Es una visión muy trágica: el poema muestra que el humano sabe lo malo de lo bueno, pero no es molestado por lo malo.
+	
