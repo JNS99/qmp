@@ -1,24 +1,16 @@
 {
-  "date": "2026-01-04",
+  "date": "2026-01-01",
   "keywords": [
     {
-      "word": "test",
+      "word": "visibilidad",
       "weight": 3
     },
     {
-      "word": "decaimiento",
+      "word": "amor",
       "weight": 3
     },
     {
-      "word": "retorno a la tierra",
-      "weight": 3
-    },
-    {
-      "word": "desaparicion",
-      "weight": 3
-    },
-    {
-      "word": "incertidumbre",
+      "word": "identidad",
       "weight": 3
     },
     {
@@ -26,75 +18,75 @@
       "weight": 3
     },
     {
-      "word": "atencion y proximidad",
+      "word": "cuerpo",
       "weight": 3
     },
     {
-      "word": "evaporacion de la imagen",
+      "word": "norma",
       "weight": 2
     },
     {
-      "word": "dilucion en la niebla",
+      "word": "anormalidad",
       "weight": 2
     },
     {
-      "word": "perdida de contorno",
+      "word": "genero",
       "weight": 2
     },
     {
-      "word": "cegada por el acercamiento",
+      "word": "deseo",
       "weight": 2
     },
     {
-      "word": "certeza que se deshace",
+      "word": "finito",
       "weight": 2
     },
     {
-      "word": "metamorfosis material",
+      "word": "exposicion",
       "weight": 2
     },
     {
-      "word": "erosion de lo visible",
+      "word": "diferencia",
       "weight": 2
     },
     {
-      "word": "fumar como desaparicion",
+      "word": "convocatoria",
       "weight": 2
     },
     {
-      "word": "hojas",
+      "word": "copo de nieve",
       "weight": 1
     },
     {
-      "word": "tierra",
+      "word": "derretimiento",
       "weight": 1
     },
     {
-      "word": "niebla",
+      "word": "invierno",
       "weight": 1
     },
     {
-      "word": "arboles",
+      "word": "carreta",
       "weight": 1
     },
     {
-      "word": "marron",
+      "word": "lado",
       "weight": 1
     },
     {
-      "word": "arrugas",
+      "word": "mano",
       "weight": 1
     },
     {
-      "word": "bruma",
+      "word": "respiracion",
       "weight": 1
     },
     {
-      "word": "ruta desierta",
+      "word": "boca",
       "weight": 1
     },
     {
-      "word": "luz indecisa",
+      "word": "fantasia",
       "weight": 1
     }
   ]
