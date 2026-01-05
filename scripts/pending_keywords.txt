@@ -1,104 +1,100 @@
 {
-  "date": "2026-01-06",
+  "date": "2026-01-01",
   "keywords": [
     {
-      "word": "apertura",
+      "word": "fragilidad",
       "weight": 3
     },
     {
-      "word": "escucha",
+      "word": "transitoriedad",
       "weight": 3
     },
     {
-      "word": "exposicion",
+      "word": "visibilidad",
       "weight": 3
     },
     {
-      "word": "intimidad",
+      "word": "invisibilidad",
       "weight": 3
     },
     {
-      "word": "complicidad",
+      "word": "transformacion",
       "weight": 3
     },
     {
-      "word": "franqueza",
+      "word": "vulnerabilidad",
       "weight": 3
     },
     {
-      "word": "paradoja",
+      "word": "derretimiento",
       "weight": 3
     },
     {
-      "word": "responsabilidad emocional",
+      "word": "deformacion",
       "weight": 3
     },
     {
-      "word": "reconocimiento",
-      "weight": 3
-    },
-    {
-      "word": "tocar",
+      "word": "derretimiento rapido",
       "weight": 2
     },
     {
-      "word": "abrir",
+      "word": "derretimiento lento",
       "weight": 2
     },
     {
-      "word": "hablar",
+      "word": "caida",
       "weight": 2
     },
     {
-      "word": "dibujar curvas",
+      "word": "deslizamiento",
       "weight": 2
     },
     {
-      "word": "no interferir",
+      "word": "acompanamiento",
       "weight": 2
     },
     {
-      "word": "retenimiento",
+      "word": "cubricion lateral",
       "weight": 2
     },
     {
-      "word": "distancia",
+      "word": "apilamiento",
       "weight": 2
     },
     {
-      "word": "silencio activo",
+      "word": "colision",
       "weight": 2
     },
     {
-      "word": "observacion atenta",
+      "word": "ocultamiento",
       "weight": 2
     },
     {
-      "word": "focalizacion",
+      "word": "cambio de estado",
       "weight": 2
     },
     {
-      "word": "gestion afectiva",
-      "weight": 2
-    },
-    {
-      "word": "curva",
+      "word": "copo de nieve",
       "weight": 1
     },
     {
-      "word": "trazo",
+      "word": "gorro de invierno",
       "weight": 1
     },
     {
-      "word": "voz",
+      "word": "carreta",
       "weight": 1
     },
     {
-      "word": "palabra",
+      "word": "lado",
       "weight": 1
     },
     {
-      "word": "contorno",
+      "word": "superficie",
+      "weight": 1
+    },
+    {
+      "word": "gota",
       "weight": 1
     }
   ]

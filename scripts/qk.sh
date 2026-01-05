@@ -1,6 +1,20 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# encontrar la raíz del repo
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+# python del proyecto
+PYTHON="$REPO_ROOT/.venv/bin/python"
+
+if [ ! -x "$PYTHON" ]; then
+  echo "❌ No existe .venv. Crea el entorno primero:"
+  echo "   python3 -m venv .venv"
+  echo "   pip install -r requirements.txt"
+  exit 1
+fi
+
+
 DATE="${1:-}"
 if [[ -z "$DATE" ]]; then
   echo "Uso: qk YYYY-MM-DD" >&2
@@ -35,10 +49,12 @@ fi
 
 # 1) generar keywords (a temp)
 TMP_GEN="$(mktemp)"
-python3 "$GEN" "$IN_FILE" "$TMP_GEN"
+"$PYTHON" "$GEN" "$IN_FILE" "$TMP_GEN"
+
 
 # 2) envolver con date y validar no-vacío (a temp final)
-python3 - "$DATE" "$TMP_GEN" "$TMP_OUT" <<'PY'
+"$PYTHON" - "$DATE" "$TMP_GEN" "$TMP_OUT" <<'PY'
+
 import json, sys, pathlib
 
 date = sys.argv[1]
