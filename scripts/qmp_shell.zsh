@@ -14,10 +14,28 @@ is_valid_date() {
 #  QMP — shortcuts & flow
 # =========================
 
-# Ajusta una sola vez acá
-export QMP_REPO="${QMP_REPO:-$HOME/Desktop/qmp}"
+export OPENAI_MODEL="${OPENAI_MODEL:-gpt-5-mini}"
+export OPENAI_REASONING="${OPENAI_REASONING:-low}"
 
-alias qmp='cd "$QMP_REPO"'
+
+# --- QMP repo path (Mac vs Codespaces) ---
+if [ -n "${CODESPACES:-}" ]; then
+  export QMP_REPO="${QMP_REPO:-/workspaces/qmp}"
+else
+  export QMP_REPO="${QMP_REPO:-$HOME/Desktop/qmp}"
+fi
+
+qmp() {
+  cd "$QMP_REPO" || { echo "❌ No encuentro QMP_REPO: $QMP_REPO" >&2; return 1; }
+}
+
+_qmp_check() {
+  if [ -z "${QMP_REPO:-}" ] || [ ! -d "$QMP_REPO/scripts" ]; then
+    echo "❌ QMP_REPO no está bien configurado: ${QMP_REPO:-<vacío>}" >&2
+    echo "   (esperaba ver: $QMP_REPO/scripts)" >&2
+    return 1
+  fi
+}
 
 # Preparar día (crear/abrir txt desde template)
 qd() {
