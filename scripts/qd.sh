@@ -17,7 +17,10 @@ REPO="$(cd "${SCRIPT_DIR}/.." && pwd)"
 TXT="$REPO/textos/${DATE}.txt"
 TEMPLATE="$REPO/textos/templateTEXT.txt"
 ARCHIVO="$REPO/archivo.json"
+
+CURRENT="$REPO/scripts/current_keywords.txt"
 PENDING="$REPO/scripts/pending_keywords.txt"
+
 PULL="$REPO/scripts/pull_keywords.py"
 
 # crear txt si no existe
@@ -29,11 +32,28 @@ if [[ ! -f "$TXT" ]]; then
   cp "$TEMPLATE" "$TXT"
 fi
 
-# restaurar pending_keywords.txt desde archivo.json SI la entrada existe
-# (sin jq: archivo.json puede ser array root o {entries:[...]})
+# Regenerar current_keywords desde archivo.json (snapshot).
+# Si no existe entry, current queda vacío (pero con date).
 if [[ -f "$ARCHIVO" && -f "$PULL" ]]; then
-  # si no existe la entrada, pull_keywords.py falla y qd sigue (NO toca pending)
-  python3 "$PULL" "$DATE" "$PENDING" >/dev/null 2>&1 || true
+  if python3 "$PULL" "$DATE" "$CURRENT" >/dev/null 2>&1; then
+    :
+  else
+    # entry no existe => current vacío para simplicidad
+    cat > "$CURRENT" <<EOF
+{
+  "date": "$DATE",
+  "keywords": []
+}
+EOF
+  fi
+else
+  # fallback mínimo
+  cat > "$CURRENT" <<EOF
+{
+  "date": "$DATE",
+  "keywords": []
+}
+EOF
 fi
 
 # elegir editor
@@ -50,11 +70,11 @@ else
   exit 1
 fi
 
-# abrir archivos (orden: txt primero)
+# abrir (IMPORTANTE: pending se abre pero NO se toca)
 if [[ "${CMD[0]}" == "subl" ]]; then
-  "${CMD[@]}" -a "$TXT" "$PENDING" "$ARCHIVO"
+  "${CMD[@]}" -a "$TXT" "$CURRENT" "$PENDING" "$ARCHIVO"
 elif [[ "${CMD[0]}" == "code" ]]; then
-  "${CMD[@]}" -r "$TXT" "$PENDING" "$ARCHIVO"
+  "${CMD[@]}" -r "$TXT" "$CURRENT" "$PENDING" "$ARCHIVO"
 else
-  "${CMD[@]}" "$TXT" "$PENDING" "$ARCHIVO"
+  "${CMD[@]}" "$TXT" "$CURRENT" "$PENDING" "$ARCHIVO"
 fi

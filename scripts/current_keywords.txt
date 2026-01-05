@@ -1,0 +1,101 @@
+{
+  "date": "2026-01-06",
+  "keywords": [
+    {
+      "word": "ausencia",
+      "weight": 3
+    },
+    {
+      "word": "sombra",
+      "weight": 3
+    },
+    {
+      "word": "presencia",
+      "weight": 3
+    },
+    {
+      "word": "olvido",
+      "weight": 3
+    },
+    {
+      "word": "deseo",
+      "weight": 3
+    },
+    {
+      "word": "busqueda",
+      "weight": 3
+    },
+    {
+      "word": "reencuentro",
+      "weight": 3
+    },
+    {
+      "word": "esconderse",
+      "weight": 2
+    },
+    {
+      "word": "espera",
+      "weight": 2
+    },
+    {
+      "word": "retorno",
+      "weight": 2
+    },
+    {
+      "word": "distancia",
+      "weight": 2
+    },
+    {
+      "word": "anhelo",
+      "weight": 2
+    },
+    {
+      "word": "memoria",
+      "weight": 2
+    },
+    {
+      "word": "incertidumbre",
+      "weight": 2
+    },
+    {
+      "word": "tension",
+      "weight": 2
+    },
+    {
+      "word": "silencio",
+      "weight": 2
+    },
+    {
+      "word": "mirada",
+      "weight": 2
+    },
+    {
+      "word": "ansiedad",
+      "weight": 2
+    },
+    {
+      "word": "escondite",
+      "weight": 1
+    },
+    {
+      "word": "rastros",
+      "weight": 1
+    },
+    {
+      "word": "huellas",
+      "weight": 1
+    },
+    {
+      "word": "eco",
+      "weight": 1
+    },
+    {
+      "word": "silueta",
+      "weight": 1
+    },
+    {
+      "word": "vacio",
+      "weight": 1
+    }
+  ]
+}

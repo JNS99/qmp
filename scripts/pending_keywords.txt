@@ -1,100 +1,104 @@
 {
-  "date": "2026-01-04",
+  "date": "2026-01-06",
   "keywords": [
     {
-      "word": "test",
+      "word": "apertura",
       "weight": 3
     },
     {
-      "word": "decaimiento",
+      "word": "escucha",
       "weight": 3
     },
     {
-      "word": "retorno a la tierra",
+      "word": "exposicion",
       "weight": 3
     },
     {
-      "word": "desaparicion",
+      "word": "intimidad",
       "weight": 3
     },
     {
-      "word": "incertidumbre",
+      "word": "complicidad",
       "weight": 3
     },
     {
-      "word": "transformacion",
+      "word": "franqueza",
       "weight": 3
     },
     {
-      "word": "atencion y proximidad",
+      "word": "paradoja",
       "weight": 3
     },
     {
-      "word": "evaporacion de la imagen",
+      "word": "responsabilidad emocional",
+      "weight": 3
+    },
+    {
+      "word": "reconocimiento",
+      "weight": 3
+    },
+    {
+      "word": "tocar",
       "weight": 2
     },
     {
-      "word": "dilucion en la niebla",
+      "word": "abrir",
       "weight": 2
     },
     {
-      "word": "perdida de contorno",
+      "word": "hablar",
       "weight": 2
     },
     {
-      "word": "cegada por el acercamiento",
+      "word": "dibujar curvas",
       "weight": 2
     },
     {
-      "word": "certeza que se deshace",
+      "word": "no interferir",
       "weight": 2
     },
     {
-      "word": "metamorfosis material",
+      "word": "retenimiento",
       "weight": 2
     },
     {
-      "word": "erosion de lo visible",
+      "word": "distancia",
       "weight": 2
     },
     {
-      "word": "fumar como desaparicion",
+      "word": "silencio activo",
       "weight": 2
     },
     {
-      "word": "hojas",
+      "word": "observacion atenta",
+      "weight": 2
+    },
+    {
+      "word": "focalizacion",
+      "weight": 2
+    },
+    {
+      "word": "gestion afectiva",
+      "weight": 2
+    },
+    {
+      "word": "curva",
       "weight": 1
     },
     {
-      "word": "tierra",
+      "word": "trazo",
       "weight": 1
     },
     {
-      "word": "niebla",
+      "word": "voz",
       "weight": 1
     },
     {
-      "word": "arboles",
+      "word": "palabra",
       "weight": 1
     },
     {
-      "word": "marron",
-      "weight": 1
-    },
-    {
-      "word": "arrugas",
-      "weight": 1
-    },
-    {
-      "word": "bruma",
-      "weight": 1
-    },
-    {
-      "word": "ruta desierta",
-      "weight": 1
-    },
-    {
-      "word": "luz indecisa",
+      "word": "contorno",
       "weight": 1
     }
   ]
