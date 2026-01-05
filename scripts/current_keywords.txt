@@ -1,100 +1,100 @@
 {
-  "date": "2026-01-06",
+  "date": "2026-01-04",
   "keywords": [
     {
-      "word": "ausencia",
+      "word": "test",
       "weight": 3
     },
     {
-      "word": "sombra",
+      "word": "decaimiento",
       "weight": 3
     },
     {
-      "word": "presencia",
+      "word": "retorno a la tierra",
       "weight": 3
     },
     {
-      "word": "olvido",
+      "word": "desaparicion",
       "weight": 3
-    },
-    {
-      "word": "deseo",
-      "weight": 3
-    },
-    {
-      "word": "busqueda",
-      "weight": 3
-    },
-    {
-      "word": "reencuentro",
-      "weight": 3
-    },
-    {
-      "word": "esconderse",
-      "weight": 2
-    },
-    {
-      "word": "espera",
-      "weight": 2
-    },
-    {
-      "word": "retorno",
-      "weight": 2
-    },
-    {
-      "word": "distancia",
-      "weight": 2
-    },
-    {
-      "word": "anhelo",
-      "weight": 2
-    },
-    {
-      "word": "memoria",
-      "weight": 2
     },
     {
       "word": "incertidumbre",
+      "weight": 3
+    },
+    {
+      "word": "transformacion",
+      "weight": 3
+    },
+    {
+      "word": "atencion y proximidad",
+      "weight": 3
+    },
+    {
+      "word": "evaporacion de la imagen",
       "weight": 2
     },
     {
-      "word": "tension",
+      "word": "dilucion en la niebla",
       "weight": 2
     },
     {
-      "word": "silencio",
+      "word": "perdida de contorno",
       "weight": 2
     },
     {
-      "word": "mirada",
+      "word": "cegada por el acercamiento",
       "weight": 2
     },
     {
-      "word": "ansiedad",
+      "word": "certeza que se deshace",
       "weight": 2
     },
     {
-      "word": "escondite",
+      "word": "metamorfosis material",
+      "weight": 2
+    },
+    {
+      "word": "erosion de lo visible",
+      "weight": 2
+    },
+    {
+      "word": "fumar como desaparicion",
+      "weight": 2
+    },
+    {
+      "word": "hojas",
       "weight": 1
     },
     {
-      "word": "rastros",
+      "word": "tierra",
       "weight": 1
     },
     {
-      "word": "huellas",
+      "word": "niebla",
       "weight": 1
     },
     {
-      "word": "eco",
+      "word": "arboles",
       "weight": 1
     },
     {
-      "word": "silueta",
+      "word": "marron",
       "weight": 1
     },
     {
-      "word": "vacio",
+      "word": "arrugas",
+      "weight": 1
+    },
+    {
+      "word": "bruma",
+      "weight": 1
+    },
+    {
+      "word": "ruta desierta",
+      "weight": 1
+    },
+    {
+      "word": "luz indecisa",
       "weight": 1
     }
   ]
