@@ -21,18 +21,19 @@ confirm_yn() {
 [[ -n "${QMP_REPO:-}" ]] || die "QMP_REPO no está definido. ¿sourceaste qmp_shell.zsh?"
 cd "$QMP_REPO" || die "No puedo entrar a QMP_REPO=$QMP_REPO"
 
-PYTHON="$QMP_REPO/.venv/bin/python"
+PYTHON="${QMP_PY:-$QMP_REPO/.venv/bin/python}"
 [[ -x "$PYTHON" ]] || die "No existe Python del proyecto: $PYTHON"
 
-ARCHIVO="archivo.json"
-MERGE="scripts/merge_pending.py"
-VALID="scripts/validate_entry.py"
-PENDING_KW="scripts/pending_keywords.txt"
-PENDING_ENTRY="scripts/pending_entry.json"
+ARCHIVO="${ARCHIVO_JSON:-$QMP_REPO/archivo.json}"
+MERGE="${QMP_SCRIPTS:-$QMP_REPO/scripts}/merge_pending.py"
+VALID="${QMP_SCRIPTS:-$QMP_REPO/scripts}/validate_entry.py"
+PENDING_KW="${PENDING_KW:-${QMP_STATE:-${QMP_SCRIPTS:-$QMP_REPO/scripts}}/pending_keywords.txt}"
+PENDING_ENTRY="${PENDING_ENTRY:-${QMP_STATE:-${QMP_SCRIPTS:-$QMP_REPO/scripts}}/pending_entry.json}"
 
 [[ -f "$ARCHIVO" ]] || die "Falta $ARCHIVO"
 [[ -f "$MERGE" ]] || die "Falta $MERGE"
 [[ -f "$VALID" ]] || die "Falta $VALID"
+
 
 # --- args (0/1 date) ---
 DRY=0
@@ -59,11 +60,14 @@ done
 
 # If no DATE: use next_date (max + 1) with confirmation
 if [[ -z "$DATE" ]]; then
-  DATE="$("$PYTHON" - <<'PY' 2>/dev/null
-import json
+  DATE="$("$PYTHON" - "$ARCHIVO" <<'PY' 2>/dev/null
+import json, sys
 from datetime import date, timedelta
-data = json.load(open("archivo.json", encoding="utf-8"))
+
+archivo = sys.argv[1]
+data = json.load(open(archivo, encoding="utf-8"))
 entries = data["entries"] if isinstance(data, dict) and isinstance(data.get("entries"), list) else data
+
 if not isinstance(entries, list): raise SystemExit(1)
 dates = sorted({e.get("date","") for e in entries if isinstance(e, dict) and e.get("date")})
 if not dates: raise SystemExit(1)
@@ -86,7 +90,8 @@ then
   die "Fecha inválida (no existe): $DATE"
 fi
 
-TXT="textos/${DATE}.txt"
+TXT="${QMP_TEXTOS:-$QMP_REPO/textos}/${DATE}.txt"
+
 [[ -f "$TXT" ]] || die "No existe $TXT (usa qd primero)"
 
 # --- Foolproof 1: validate txt strict (same as qk rules) ---
