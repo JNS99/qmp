@@ -1,6 +1,13 @@
 // =========================
 //  Utilidades (compartidas)
 // =========================
+
+function txtPathFromDate(dateStr) {
+  const y = dateStr.slice(0, 4);
+  const m = dateStr.slice(5, 7);
+  return `/textos/${y}/${m}/${dateStr}.txt`;
+}
+
 function escapeHtml(s) {
   return (s || '')
   .replaceAll('&', '&amp;')
@@ -279,7 +286,7 @@ function renderPoemWithTitleFromJson(poemText, titleFromJson) {
 
 
 async function loadTodayEntry() {
-  const index = await fetch('/archivo.json').then(r => r.json());
+  const index = await fetch('/textos/archivo.json').then(r => r.json());
 
   const today = getTodayISO();
   const byDateAsc = [...index].sort((a, b) => a.date.localeCompare(b.date));
@@ -301,7 +308,7 @@ async function loadTodayEntry() {
     return;
   }
 
-  const raw = await fetch('/' + String(chosen.file).replace(/^\/+/, '')).then(r => r.text());
+  const raw = await fetch(txtPathFromDate(chosen.date)).then(r => r.text());
   const parsed = parseEntry(raw);
 
   const myTitle = (chosen.my_poem_title || '').trim(); // del JSON
@@ -337,7 +344,7 @@ async function loadPastEntry() {
   const pageDate = document.getElementById('pageDate');
   if (pageDate) pageDate.textContent = formatDate(date);
 
-  const index = await fetch('/archivo.json').then(r => r.json());
+  const index = await fetch('/textos/archivo.json').then(r => r.json());
   const chosen = index.find(e => e.date === date);
 
   if (!chosen) {
@@ -345,7 +352,7 @@ async function loadPastEntry() {
     return;
   }
 
-  const raw = await fetch('/' + String(chosen.file).replace(/^\/+/, '')).then(r => r.text());
+  const raw = await fetch(txtPathFromDate(chosen.date)).then(r => r.text());
   const parsed = parseEntry(raw);
 
   const host = document.getElementById('poem');

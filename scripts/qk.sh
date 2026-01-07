@@ -5,6 +5,22 @@ setopt pipefail
 
 die() { print -u2 -- "[qk] $*"; exit 1; }
 
+txt_path_for_date() {
+  local d="$1"
+  local y="${d[1,4]}"
+  local m="${d[6,7]}"
+
+  local p_new="${QMP_TEXTOS}/${y}/${m}/${d}.txt"
+  local p_old="${QMP_TEXTOS}/${d}.txt"
+
+  if [[ -f "$p_new" ]]; then
+    print -r -- "$p_new"
+  else
+    print -r -- "$p_old"
+  fi
+}
+
+
 confirm_yn() {
   local prompt="$1"
   local ans
@@ -70,7 +86,7 @@ print((date(y,m,d) + timedelta(days=1)).isoformat())
 PY
 )" || die "archivo.json no tiene entradas. Usa: qk YYYY-MM-DD"
 
-  IN_FILE="${QMP_TEXTOS:-$QMP_REPO/textos}/${NEXT_DATE}.txt"
+  IN_FILE="$(txt_path_for_date "$NEXT_DATE")"
   [[ -f "$IN_FILE" ]] || die "No encuentro ${IN_FILE}. (Usa qd primero)"
   confirm_yn "¿Generar palabras clave para ${NEXT_DATE}?" || exit 0
   DATE="$NEXT_DATE"
@@ -91,7 +107,7 @@ then
   die "Fecha inválida (no existe): $DATE"
 fi
 
-IN_FILE="${QMP_TEXTOS:-$QMP_REPO/textos}/${DATE}.txt"
+IN_FILE="$(txt_path_for_date "$DATE")"
 [[ -f "$IN_FILE" ]] || die "No encuentro ${IN_FILE}. (Usa qd primero)"
 
 # --- validate txt structure/content + date matches filename ---

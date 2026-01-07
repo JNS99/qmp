@@ -17,6 +17,23 @@ setopt pipefail
 # -------------------------
 die() { print -u2 -- "[qd] $*"; exit 1; }
 
+txt_path_for_date() {
+  local d="$1"
+  local y="${d[1,4]}"
+  local m="${d[6,7]}"
+
+  local p_new="${QMP_TEXTOS}/${y}/${m}/${d}.txt"
+  local p_old="${QMP_TEXTOS}/${d}.txt"
+
+  if [[ -f "$p_new" ]]; then
+    print -r -- "$p_new"
+  else
+    print -r -- "$p_old"
+  fi
+}
+
+
+
 confirm_yn() {
   # Default = NO (Enter -> no)
   local prompt="$1"
@@ -156,11 +173,10 @@ fi
 # -------------------------
 # Paths for this date
 # -------------------------
-local TXT="${QMP_TEXTOS:-$QMP_REPO/textos}/${DATE}.txt"
+local TXT="$(txt_path_for_date "$DATE")"
 local CURRENT="${CURRENT_KW:-${QMP_STATE:-${QMP_SCRIPTS:-$QMP_REPO/scripts}}/current_keywords.txt}"
 local PENDING="${PENDING_KW:-${QMP_STATE:-${QMP_SCRIPTS:-$QMP_REPO/scripts}}/pending_keywords.txt}"
 
-# Ensure txt exists
 # Ensure txt exists
 if [[ ! -f "$TXT" ]]; then
   cp "$TEMPLATE" "$TXT"
@@ -182,7 +198,7 @@ fi
 
 
 # Regenerate current (snapshot). NEVER touch pending.
-if ! "$PYTHON" "$PULL" "$DATE" "$CURRENT" >/dev/null 2>&1; then
+if ! QMP_ARCHIVO_JSON="$ARCHIVO" "$PYTHON" "$PULL" "$DATE" "$CURRENT" >/dev/null 2>&1; then
   cat > "$CURRENT" <<EOF
 {
   "date": "$DATE",
@@ -190,6 +206,8 @@ if ! "$PYTHON" "$PULL" "$DATE" "$CURRENT" >/dev/null 2>&1; then
 }
 EOF
 fi
+
+
 
 # -------------------------
 # Open files (TXT focused)

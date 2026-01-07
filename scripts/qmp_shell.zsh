@@ -15,25 +15,27 @@ else
 fi
 
 # --- QMP paths (single source of truth) ---
-# NOTE: Por ahora, "data" vive en la raíz. Más adelante lo moveremos a /data
-export QMP_SCRIPTS="${QMP_SCRIPTS:-$QMP_REPO/scripts}"
-export QMP_DATA="${QMP_DATA:-$QMP_REPO}"
-export QMP_TEXTOS="${QMP_TEXTOS:-$QMP_DATA/textos}"
+export QMP_SCRIPTS="$QMP_REPO/scripts"
 
-# NOTE: Por ahora, "state" vive dentro de scripts/. Más adelante lo moveremos a /state
-export QMP_STATE="${QMP_STATE:-$QMP_SCRIPTS}"
+# NOTE: Por ahora, "data" vive en la raíz. Más adelante lo moveremos a /data
+export QMP_DATA="$QMP_REPO"
+export QMP_TEXTOS="$QMP_DATA/textos"
+
+# NOTE: Ahora "state" vive en /state
+export QMP_STATE="$QMP_REPO/state"
 
 # Python del proyecto (evita diferencias Mac/Codespaces)
-export QMP_PY="${QMP_PY:-$QMP_REPO/.venv/bin/python}"
+export QMP_PY="$QMP_REPO/.venv/bin/python"
 
 # --- Named files/dirs ---
-export ARCHIVO_JSON="${ARCHIVO_JSON:-$QMP_DATA/archivo.json}"
-export PUBLISH_LOG="${PUBLISH_LOG:-$QMP_REPO/logs/publish_log.jsonl}"
+export ARCHIVO_JSON="$QMP_TEXTOS/archivo.json"
+export PUBLISH_LOG="$QMP_REPO/logs/publish_log.jsonl"
 
-export CURRENT_KW="${CURRENT_KW:-$QMP_STATE/current_keywords.txt}"
-export PENDING_KW="${PENDING_KW:-$QMP_STATE/pending_keywords.txt}"
-export PENDING_ENTRY="${PENDING_ENTRY:-$QMP_STATE/pending_entry.json}"
-export KEYWORDS_BACKUPS_DIR="${KEYWORDS_BACKUPS_DIR:-$QMP_STATE/keywords_backups}"
+export CURRENT_KW="$QMP_STATE/current_keywords.txt"
+export PENDING_KW="$QMP_STATE/pending_keywords.txt"
+export PENDING_ENTRY="$QMP_STATE/pending_entry.json"
+export KEYWORDS_BACKUPS_DIR="$QMP_STATE/keywords_backups"
+
 
 
 qmp() {

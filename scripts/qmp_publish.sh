@@ -5,6 +5,23 @@ setopt pipefail
 
 die() { print -u2 -- "[q] $*"; exit 1; }
 
+txt_path_for_date() {
+  local d="$1"
+  local y="${d[1,4]}"
+  local m="${d[6,7]}"
+
+  local p_new="${QMP_TEXTOS}/${y}/${m}/${d}.txt"
+  local p_old="${QMP_TEXTOS}/${d}.txt"
+
+  if [[ -f "$p_new" ]]; then
+    print -r -- "$p_new"
+  else
+    print -r -- "$p_old"
+  fi
+}
+
+
+
 confirm_yn() {
   local prompt="$1"
   local ans
@@ -90,7 +107,7 @@ then
   die "Fecha inválida (no existe): $DATE"
 fi
 
-TXT="${QMP_TEXTOS:-$QMP_REPO/textos}/${DATE}.txt"
+TXT="$(txt_path_for_date "$DATE")"
 
 [[ -f "$TXT" ]] || die "No existe $TXT (usa qd primero)"
 
