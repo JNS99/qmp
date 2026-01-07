@@ -1,104 +1,92 @@
 {
-  "date": "2026-01-07",
+  "date": "2026-01-08",
   "keywords": [
     {
-      "word": "vacio",
+      "word": "apatia",
       "weight": 3
     },
     {
-      "word": "llenar la vida",
+      "word": "incredulidad",
       "weight": 3
     },
     {
-      "word": "paciencia",
+      "word": "simulacion afectiva",
       "weight": 3
     },
     {
-      "word": "expectativa",
+      "word": "desconexion emocional",
       "weight": 3
     },
     {
-      "word": "desilusion",
+      "word": "inercia corporal",
       "weight": 3
     },
     {
-      "word": "potencial",
+      "word": "gemido",
       "weight": 3
     },
     {
-      "word": "autonomia emocional",
+      "word": "voz performativa",
       "weight": 3
     },
     {
-      "word": "aceptacion",
+      "word": "distanciamiento",
       "weight": 3
     },
     {
-      "word": "esperar para abrir",
+      "word": "sarcasmo",
       "weight": 2
     },
     {
-      "word": "apertura",
+      "word": "ocultamiento",
       "weight": 2
     },
     {
-      "word": "revelacion",
+      "word": "arrepentimiento",
       "weight": 2
     },
     {
-      "word": "sorpresa negativa",
+      "word": "culpa",
       "weight": 2
     },
     {
-      "word": "calma activa",
+      "word": "fracaso parental",
       "weight": 2
     },
     {
-      "word": "resiliencia",
+      "word": "placeres insensibles",
       "weight": 2
     },
     {
-      "word": "consumo online",
+      "word": "corrupcion de los ninos",
       "weight": 2
     },
     {
-      "word": "paquete recibido",
+      "word": "espectaculo",
       "weight": 2
     },
     {
-      "word": "tiempo transcurrido",
+      "word": "complacencia",
       "weight": 2
     },
     {
-      "word": "ausencia percibida",
+      "word": "alivio fingido",
       "weight": 2
     },
     {
-      "word": "paquete",
+      "word": "estar acostado",
       "weight": 1
     },
     {
-      "word": "internet",
-      "weight": 1
-    },
-    {
-      "word": "dias",
-      "weight": 1
-    },
-    {
-      "word": "caja",
-      "weight": 1
-    },
-    {
-      "word": "manos",
-      "weight": 1
-    },
-    {
-      "word": "pantalla",
+      "word": "oh repetido",
       "weight": 1
     },
     {
       "word": "silencio",
+      "weight": 1
+    },
+    {
+      "word": "distancia fisica",
       "weight": 1
     }
   ]

@@ -21,12 +21,12 @@ confirm_yn() {
 [[ -n "${QMP_REPO:-}" ]] || die "QMP_REPO no está definido. ¿sourceaste qmp_shell.zsh?"
 cd "$QMP_REPO" || die "No puedo entrar a QMP_REPO=$QMP_REPO"
 
-PYTHON="$QMP_REPO/.venv/bin/python"
+PYTHON="${QMP_PY:-$QMP_REPO/.venv/bin/python}"
 [[ -x "$PYTHON" ]] || die "No existe Python del proyecto: $PYTHON (crea .venv en este entorno)"
+ARCHIVO="${ARCHIVO_JSON:-$QMP_REPO/archivo.json}"
+GEN="${QMP_SCRIPTS:-$QMP_REPO/scripts}/gen_keywords.py"
+OUT_ACTIVE="${PENDING_KW:-${QMP_STATE:-${QMP_SCRIPTS:-$QMP_REPO/scripts}}/pending_keywords.txt}"
 
-ARCHIVO="archivo.json"
-GEN="scripts/gen_keywords.py"
-OUT_ACTIVE="scripts/pending_keywords.txt"
 
 [[ -f "$ARCHIVO" ]] || die "Falta $ARCHIVO"
 [[ -f "$GEN" ]] || die "Falta $GEN"
@@ -44,12 +44,20 @@ fi
 
 # --- compute next_date if needed ---
 if [[ -z "$DATE" ]]; then
-  NEXT_DATE="$("$PYTHON" - <<'PY' 2>/dev/null
-import json
+  NEXT_DATE="$("$PYTHON" - "$ARCHIVO" <<'PY' 2>/dev/null
+import json, sys
 from datetime import date, timedelta
 
-data = json.load(open("archivo.json", encoding="utf-8"))
-entries = data["entries"] if isinstance(data, dict) and isinstance(data.get("entries"), list) else data
+archivo = sys.argv[1]
+data = json.load(open(archivo, encoding="utf-8"))
+
+# Soporta ambos formatos:
+# - nuevo: raíz = lista
+# - viejo: { "entries": [...] }
+entries = data
+if isinstance(data, dict) and isinstance(data.get("entries"), list):
+    entries = data["entries"]
+
 if not isinstance(entries, list):
     raise SystemExit(1)
 
@@ -62,7 +70,7 @@ print((date(y,m,d) + timedelta(days=1)).isoformat())
 PY
 )" || die "archivo.json no tiene entradas. Usa: qk YYYY-MM-DD"
 
-  IN_FILE="textos/${NEXT_DATE}.txt"
+  IN_FILE="${QMP_TEXTOS:-$QMP_REPO/textos}/${NEXT_DATE}.txt"
   [[ -f "$IN_FILE" ]] || die "No encuentro ${IN_FILE}. (Usa qd primero)"
   confirm_yn "¿Generar palabras clave para ${NEXT_DATE}?" || exit 0
   DATE="$NEXT_DATE"
@@ -83,7 +91,7 @@ then
   die "Fecha inválida (no existe): $DATE"
 fi
 
-IN_FILE="textos/${DATE}.txt"
+IN_FILE="${QMP_TEXTOS:-$QMP_REPO/textos}/${DATE}.txt"
 [[ -f "$IN_FILE" ]] || die "No encuentro ${IN_FILE}. (Usa qd primero)"
 
 # --- validate txt structure/content + date matches filename ---
