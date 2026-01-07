@@ -1,0 +1,46 @@
+FECHA: 2026-01-08
+MY_POEM_TITLE:
+POETA: Raúl Gómez Jattin
+POEM_TITLE: La herencia del placer
+BOOK_TITLE: Amanecer en el Valle del Sinú
+
+# POEMA
+
+OH OH OH
+
+gimes
+
+pero no te creo
+
+porque solo estoy acostado como
+
+OH
+
+
+# POEMA_CITADO
+
+¿Y mis hijos?
+Ya están corrompidos
+Ah bueno
+Corrompimos al niño y corrompimos a la niña
+Por separado y luego juntos ¡Qué espectáculo!
+Buenas noticias dices
+¿Han preguntado por mí?
+Sólo al principio
+El placer los ha vuelto insensibles
+Dígales que me alegro por ellos
+
+
+# TEXTO
+
+Aparentemente con un tono alegre, el narrador nos comparte el crecimiento de sus niños y el distanciamiento resultante. Por su falta de detalles, hay muchas interpretaciones; una de ellas es que el narrador adopta un tono sarcástico para disimular el dolor provocado por ese distanciamiento.
+
+Me parece que el narrador dice tres frases positivas: “Ah bueno” (aunque no es necesariamente el narrador quien lo dice), “Qué espectáculo” y “me alegro”. Aunque parecen positivas, las interpreto como sarcásticas, porque vemos, en la línea “¿Han preguntado por mí?”, que el narrador tiene un interés en la vida de sus niños distanciados, pero que este interés no es recíproco. Entonces, ¿es realmente “bueno” o un “espectáculo” a los ojos del narrador? Creo que no.
+
+Además, el uso de “Corrompimos” en lugar de “Corrompí” expone una falta de responsabilidad en el narrador, como si quisiera compartir la culpa. Esta palabra presenta, además, indicios de una tristeza relacionada con el crecimiento de los niños.
+
+Al final, dice: “Dígales que me alegro por ellos”. Este enunciado puede esconder arrepentimiento cuando consideramos la línea precedente: “El placer los ha vuelto insensibles”. ¿Insensibles a qué? Una idea posible es que los niños ya buscan el placer en lugar de ocuparse de la pena; así, cuando el narrador dice “me alegro”, puede ser porque no quiere mostrar la tristeza que siente, sabiendo que a sus niños ya no les importa. (Esto no se basa directamente en el poema, pero una hipótesis es que, para el padre, hay más probabilidad de reencuentro si parece feliz en lugar de triste).
+
+Además, el estilo de escritura merece ser debatido. Sabemos que se trata de una conversación con al menos dos personas (“dices”, “¿Han preguntado?... Sólo al principio”), e interpreto al narrador como el padre, pero lo demás queda poco claro: no sabemos quién es el interlocutor, quién dice qué, ni cuál es la relación entre el interlocutor y los niños. Es decir, el escritor no nos da precisión, sino solo una idea vaga de lo que ocurre. *Es el estilo de alguien a quien no le importa dar estructura ni claridad.* Es solo una especulación, pero me hace pensar que esta falta de cuidado también existe en su estilo de crianza y puede ser otra razón para el distanciamiento.
+
+El poema es corto y poco preciso; sin embargo, lo leo como el resultado trágico de un estilo de crianza lamentable. El narrador, buscando placer como sus niños, decide encubrir su arrepentimiento por la distancia entre él y sus hijos y por su fracaso como padre.

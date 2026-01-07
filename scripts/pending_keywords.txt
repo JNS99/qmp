@@ -1,104 +1,96 @@
 {
-  "date": "2026-01-07",
+  "date": "2026-01-01",
   "keywords": [
     {
-      "word": "vacio",
+      "word": "identidad efimera",
       "weight": 3
     },
     {
-      "word": "llenar la vida",
+      "word": "transformacion de genero",
       "weight": 3
     },
     {
-      "word": "paciencia",
+      "word": "anormalidad erotica",
       "weight": 3
     },
     {
-      "word": "expectativa",
+      "word": "fantasia erotica",
       "weight": 3
     },
     {
-      "word": "desilusion",
+      "word": "convocacion al femenino",
       "weight": 3
     },
     {
-      "word": "potencial",
+      "word": "triada amorosa",
       "weight": 3
     },
     {
-      "word": "autonomia emocional",
+      "word": "limpieza de la ineptitud",
       "weight": 3
     },
     {
-      "word": "aceptacion",
+      "word": "visibilidad parcial",
       "weight": 3
     },
     {
-      "word": "esperar para abrir",
+      "word": "derretimiento desigual",
       "weight": 2
     },
     {
-      "word": "apertura",
+      "word": "caida compartida",
       "weight": 2
     },
     {
-      "word": "revelacion",
+      "word": "ocultamiento y revelacion",
       "weight": 2
     },
     {
-      "word": "sorpresa negativa",
+      "word": "masculinidad en pausa",
       "weight": 2
     },
     {
-      "word": "calma activa",
+      "word": "nombrarse en femenino",
       "weight": 2
     },
     {
-      "word": "resiliencia",
+      "word": "respiracion sincronica",
       "weight": 2
     },
     {
-      "word": "consumo online",
+      "word": "tension entre cuerpos",
       "weight": 2
     },
     {
-      "word": "paquete recibido",
+      "word": "alucinacion erotica",
       "weight": 2
     },
     {
-      "word": "tiempo transcurrido",
+      "word": "tabu y transgresion",
       "weight": 2
     },
     {
-      "word": "ausencia percibida",
+      "word": "convertirse en otra",
       "weight": 2
     },
     {
-      "word": "paquete",
+      "word": "copo de nieve",
       "weight": 1
     },
     {
-      "word": "internet",
+      "word": "gorro de invierno",
       "weight": 1
     },
     {
-      "word": "dias",
+      "word": "carreta",
       "weight": 1
     },
     {
-      "word": "caja",
+      "word": "dientes que chocan",
       "weight": 1
     },
     {
-      "word": "manos",
-      "weight": 1
-    },
-    {
-      "word": "pantalla",
-      "weight": 1
-    },
-    {
-      "word": "silencio",
+      "word": "bocas",
       "weight": 1
     }
   ]

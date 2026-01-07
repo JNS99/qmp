@@ -1,4 +1,101 @@
 {
-  "date": "2026-01-07",
-  "keywords": []
+  "date": "2026-01-08",
+  "keywords": [
+    {
+      "word": "exclamacion performativa",
+      "weight": 3
+    },
+    {
+      "word": "incredulidad",
+      "weight": 3
+    },
+    {
+      "word": "postura acostada",
+      "weight": 3
+    },
+    {
+      "word": "fingimiento",
+      "weight": 3
+    },
+    {
+      "word": "desconexion",
+      "weight": 3
+    },
+    {
+      "word": "distanciamiento",
+      "weight": 3
+    },
+    {
+      "word": "culpa",
+      "weight": 3
+    },
+    {
+      "word": "pasividad",
+      "weight": 3
+    },
+    {
+      "word": "arrepentimiento",
+      "weight": 3
+    },
+    {
+      "word": "ocultar dolor",
+      "weight": 2
+    },
+    {
+      "word": "sarcasmo como defensa",
+      "weight": 2
+    },
+    {
+      "word": "placer vs insensibilidad",
+      "weight": 2
+    },
+    {
+      "word": "corrupcion de los ninos",
+      "weight": 2
+    },
+    {
+      "word": "negacion",
+      "weight": 2
+    },
+    {
+      "word": "espectaculo",
+      "weight": 2
+    },
+    {
+      "word": "arrepentimiento encubierto",
+      "weight": 2
+    },
+    {
+      "word": "falta de contacto",
+      "weight": 2
+    },
+    {
+      "word": "desvinculacion afectiva",
+      "weight": 2
+    },
+    {
+      "word": "silencio comunicativo",
+      "weight": 2
+    },
+    {
+      "word": "oh",
+      "weight": 1
+    },
+    {
+      "word": "gemidos",
+      "weight": 1
+    },
+    {
+      "word": "ninos",
+      "weight": 1
+    },
+    {
+      "word": "placer",
+      "weight": 1
+    },
+    {
+      "word": "cama",
+      "weight": 1
+    }
+  ]
 }
