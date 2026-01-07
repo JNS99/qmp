@@ -31,59 +31,90 @@ qk()  { _qmp_check || return 1; "$QMP_REPO/scripts/qk.sh"  "$@"; }
 qkw() { _qmp_check || return 1; "$QMP_REPO/scripts/qkw.sh" "$@"; }
 q() { _qmp_check || return 1; "$QMP_REPO/scripts/qmp_publish.sh" "$@"; }
 
-
-
 qhelp() {
   cat <<'EOF'
-QMP — comandos y flujo (resumen)
+QMP — Help (CLI)
 
-Comandos principales:
-  qd [YYYY-MM-DD]
-    - Abre el contexto del día en Sublime.
-    - Crea textos/YYYY-MM-DD.txt desde template si no existe.
-    - Siempre abre: archivo.json
-    - Si la fecha ya existe en archivo.json: exporta keywords actuales a /tmp/qmp_keywords_YYYY-MM-DD.json y lo abre.
-    - Si la fecha NO existe: abre scripts/pending_keywords.txt (para preparar keywords nuevas).
+REGLAS DEL PROYECTO
+- ZSH only. No bash.
+- QMP_REPO es la única fuente de verdad del repo:
+  - Codespaces: /workspaces/qmp
+  - Mac:       $HOME/Desktop/qmp
+- Python SIEMPRE = $QMP_REPO/.venv/bin/python
 
-  qk [YYYY-MM-DD]
-    - Genera keywords vía API.
-    - Escribe scripts/pending_keywords.txt con formato:
-        {"date":"YYYY-MM-DD","keywords":[{"word":"...","weight":3},...]}
-    - Copia una vista a: /tmp/qmp_keywords_YYYY-MM-DD.json
-    - No publica.
+ARCHIVOS IMPORTANTES
+- archivo.json                      (verdad publicada; raíz = array)
+- textos/YYYY-MM-DD.txt             (fuente del día)
+- scripts/current_keywords.txt      (snapshot de keywords existentes para esa fecha)
+- scripts/pending_keywords.txt      (propuesta de keywords; se aplica solo con --kw)
 
-  q [--dry-run] YYYY-MM-DD [mensaje opcional]
-    - Publica (upsert) la entrada del día.
-    - Si pending_keywords.txt tiene date == YYYY-MM-DD:
-        aplica keywords nuevas
-      si no:
-        preserva keywords existentes (para edits de texto/metadatos).
-    - --dry-run: valida y muestra lo que haría, sin commit/push.
+COMANDOS
 
-Flujos típicos:
+qd [YYYY-MM-DD]
+- 0 args:
+  - propone la fecha siguiente (max_date + 1) desde archivo.json y pide confirmación (y/N)
+- 1 arg:
+  - valida fecha real
+  - rechaza fechas < MIN_DATE (archivo.json)
+  - si la fecha es "rara" (no existe y no es NEXT_DATE) pide confirmación (y/N)
+- crea textos/YYYY-MM-DD.txt si no existe (usa templateTEXT.txt)
+- rellena {{DATE}} si existe en el archivo (idempotente)
+- regenera scripts/current_keywords.txt desde archivo.json
+- NO toca scripts/pending_keywords.txt
+- abre: TXT + current_keywords + pending_keywords + archivo.json (con TXT en foco)
 
-1) Entrada nueva (texto + keywords)
-  qd 2026-01-06
-  qk 2026-01-06
-  q --dry-run 2026-01-06
-  q 2026-01-06
+qk [YYYY-MM-DD]
+- 0 args:
+  - usa la fecha siguiente (max_date + 1) y pide confirmación (y/N)
+  - exige que textos/<next>.txt exista (usa qd primero)
+- 1 arg:
+  - valida fecha real
+  - exige que textos/YYYY-MM-DD.txt exista
+- valida estrictamente el TXT:
+  - metadatos requeridos (keys existen): FECHA, MY_POEM_TITLE, POETA, POEM_TITLE, BOOK_TITLE
+  - FECHA coincide con la fecha y el nombre del archivo
+  - secciones existen/en orden y con contenido:
+    # POEMA, # POEMA_CITADO, # TEXTO
+- genera keywords y escribe SOLO scripts/pending_keywords.txt (escritura atómica)
+- si pending_keywords ya tiene otra fecha con keywords -> pregunta antes de sobrescribir (y/N)
 
-2) Editar texto/metadatos de una entrada existente (sin tocar keywords)
-  qd 2026-01-03
-  q --dry-run 2026-01-03
-  q 2026-01-03
+qkw YYYY-MM-DD
+- copia current_keywords -> pending_keywords para editar keywords manualmente con seguridad
+  (flujo típico: qd -> editar current_keywords -> qkw -> q --kw)
 
-3) Regenerar / editar keywords de una entrada existente
-  qk 2026-01-03
-  # (opcional) editar scripts/pending_keywords.txt o /tmp/qmp_keywords_2026-01-03.json
-  q --dry-run 2026-01-03
-  q 2026-01-03
+q [--dry-run] [--kw] [YYYY-MM-DD]
+- 0 args:
+  - usa la fecha siguiente (max_date + 1) y pide confirmación (y/N)
+- valida TXT (mismas reglas estrictas que qk)
+- normaliza SOLO metadatos + líneas vacías alrededor de headers (NO toca el contenido)
+- si --kw:
+  - exige pending_keywords.date == fecha y keywords no vacías
+- hace dry-run mostrando commit si corresponde
+- si no hay cambios de texto ni keywords -> no commit
+- commit messages (obligatorio):
+  - entrada YYYY-MM-DD — <titulo/snippet>
+  - edicion de metadatos/escritos YYYY-MM-DD — <titulo/snippet>
+  - edicion de palabras clave YYYY-MM-DD — <titulo/snippet>
+  - edicion texto + keywords YYYY-MM-DD — <titulo/snippet>
+- después de publicar con --kw: vacía scripts/pending_keywords.txt (date:"", keywords:[])
 
-Mensajes de commit (automáticos si no das uno):
-  entrada <fecha>
-  edicion de metadatos/escritos <fecha>
-  edicion de palabras clave <fecha>
-  edicion texto + keywords <fecha>
+TIPS
+- Entrada nueva típica:
+  qd
+  qk
+  q --dry-run --kw
+  q --kw
+- Editar texto sin keywords:
+  qd YYYY-MM-DD
+  q --dry-run YYYY-MM-DD
+  q YYYY-MM-DD
+- Cambiar solo keywords:
+  qd YYYY-MM-DD
+  (editar current_keywords)
+  qkw YYYY-MM-DD
+  q --dry-run --kw YYYY-MM-DD
+  q --kw YYYY-MM-DD
 
 EOF
 }
+

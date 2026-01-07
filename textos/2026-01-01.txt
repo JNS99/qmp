@@ -1,5 +1,5 @@
 FECHA: 2026-01-01
-MY_POEM_TITLE:
+MY_POEM_TITLE: 
 POETA: Luna Miguel
 POEM_TITLE: Un San Valentín con Gala y Luna
 BOOK_TITLE: Poesía Masculina
@@ -54,10 +54,8 @@ hasta convertirme
 piadosamente
 en una de ellas
 
-
 # TEXTO
 
 Utilizando una cita de Paul B. Preciado como telón de fondo, **Un San Valentín con Gala y Luna** nos presenta un diálogo interno sobre la relación entre los géneros y el amor. El narrador fantasea de forma “anormal” sobre un trío con su esposa y otra mujer. La anormalidad puede venir del tabú de tener una relación abierta, pero además proviene de una transformación interna: este amor que experimenta durante el sexo pone en pausa su masculinidad (“me convoca a nombrarme en femenino”, “puedo fantasearme chica”, “convertirme… en una de ellas”).
 
 El poema sugiere que el amor masculino, según el narrador, tiene una suciedad y una “ineptitud” percibidas que pueden limpiarse mediante el amor femenino, hasta el punto de que el narrador se imagina femenino para poder experimentar este tipo de amor; esto muestra que el narrador ve el sexo como un resultado del género y que, a través de fantasías en las que brevemente se considera femenino, puede experimentar un sexo diferente del habitual.
-

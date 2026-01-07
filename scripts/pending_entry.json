@@ -1,110 +1,114 @@
 {
-  "date": "2026-01-08",
+  "date": "2026-01-07",
   "month": "2026-01",
-  "file": "textos/2026-01-08.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "OH OH OH",
+  "file": "textos/2026-01-07.txt",
+  "my_poem_title": "se me olvidó",
+  "my_poem_snippet": "",
   "analysis": {
-    "poet": "Raúl Gómez Jattin",
-    "poem_title": "La herencia del placer",
+    "poet": "Raúl Gómez Jattin test",
+    "poem_title": "Íntimas preguntas",
     "poem_snippet": "",
     "book_title": "Amanecer en el Valle del Sinú"
   },
   "keywords": [
     {
-      "word": "arrepentimiento",
+      "word": "aceptacion",
       "weight": 3
     },
     {
-      "word": "culpa",
+      "word": "autonomia emocional",
       "weight": 3
     },
     {
-      "word": "desconexion",
+      "word": "desilusion",
       "weight": 3
     },
     {
-      "word": "distanciamiento",
+      "word": "expectativa",
       "weight": 3
     },
     {
-      "word": "exclamacion performativa",
+      "word": "llenar la vida",
       "weight": 3
     },
     {
-      "word": "fingimiento",
+      "word": "paciencia",
       "weight": 3
     },
     {
-      "word": "incredulidad",
+      "word": "potencial",
       "weight": 3
     },
     {
-      "word": "pasividad",
+      "word": "vacio",
       "weight": 3
     },
     {
-      "word": "postura acostada",
-      "weight": 3
-    },
-    {
-      "word": "arrepentimiento encubierto",
+      "word": "apertura",
       "weight": 2
     },
     {
-      "word": "corrupcion de los ninos",
+      "word": "ausencia percibida",
       "weight": 2
     },
     {
-      "word": "desvinculacion afectiva",
+      "word": "calma activa",
       "weight": 2
     },
     {
-      "word": "espectaculo",
+      "word": "consumo online",
       "weight": 2
     },
     {
-      "word": "falta de contacto",
+      "word": "esperar para abrir",
       "weight": 2
     },
     {
-      "word": "negacion",
+      "word": "paquete recibido",
       "weight": 2
     },
     {
-      "word": "ocultar dolor",
+      "word": "resiliencia",
       "weight": 2
     },
     {
-      "word": "placer vs insensibilidad",
+      "word": "revelacion",
       "weight": 2
     },
     {
-      "word": "sarcasmo como defensa",
+      "word": "sorpresa negativa",
       "weight": 2
     },
     {
-      "word": "silencio comunicativo",
+      "word": "tiempo transcurrido",
       "weight": 2
     },
     {
-      "word": "cama",
+      "word": "caja",
       "weight": 1
     },
     {
-      "word": "gemidos",
+      "word": "dias",
       "weight": 1
     },
     {
-      "word": "ninos",
+      "word": "internet",
       "weight": 1
     },
     {
-      "word": "oh",
+      "word": "manos",
       "weight": 1
     },
     {
-      "word": "placer",
+      "word": "pantalla",
+      "weight": 1
+    },
+    {
+      "word": "paquete",
+      "weight": 1
+    },
+    {
+      "word": "silencio",
       "weight": 1
     }
   ]
