@@ -1,1 +1,105 @@
-[]
+{
+  "date": "2026-01-07",
+  "keywords": [
+    {
+      "word": "vacio",
+      "weight": 3
+    },
+    {
+      "word": "llenar la vida",
+      "weight": 3
+    },
+    {
+      "word": "paciencia",
+      "weight": 3
+    },
+    {
+      "word": "expectativa",
+      "weight": 3
+    },
+    {
+      "word": "desilusion",
+      "weight": 3
+    },
+    {
+      "word": "potencial",
+      "weight": 3
+    },
+    {
+      "word": "autonomia emocional",
+      "weight": 3
+    },
+    {
+      "word": "aceptacion",
+      "weight": 3
+    },
+    {
+      "word": "esperar para abrir",
+      "weight": 2
+    },
+    {
+      "word": "apertura",
+      "weight": 2
+    },
+    {
+      "word": "revelacion",
+      "weight": 2
+    },
+    {
+      "word": "sorpresa negativa",
+      "weight": 2
+    },
+    {
+      "word": "calma activa",
+      "weight": 2
+    },
+    {
+      "word": "resiliencia",
+      "weight": 2
+    },
+    {
+      "word": "consumo online",
+      "weight": 2
+    },
+    {
+      "word": "paquete recibido",
+      "weight": 2
+    },
+    {
+      "word": "tiempo transcurrido",
+      "weight": 2
+    },
+    {
+      "word": "ausencia percibida",
+      "weight": 2
+    },
+    {
+      "word": "paquete",
+      "weight": 1
+    },
+    {
+      "word": "internet",
+      "weight": 1
+    },
+    {
+      "word": "dias",
+      "weight": 1
+    },
+    {
+      "word": "caja",
+      "weight": 1
+    },
+    {
+      "word": "manos",
+      "weight": 1
+    },
+    {
+      "word": "pantalla",
+      "weight": 1
+    },
+    {
+      "word": "silencio",
+      "weight": 1
+    }
+  ]
+}

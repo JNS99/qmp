@@ -11,39 +11,79 @@ from openai import OpenAI
 DEFAULT_INPUT_FILE = "test_file.txt"
 DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-5-mini")
 MAX_KEYWORDS = 25
-REASONING = os.getenv("OPENAI_REASONING", "low")
+REASONING = os.getenv("OPENAI_REASONING", "medium")
 MAX_TEXTO_CHARS = int(os.getenv("QMP_TEXTO_MAX_CHARS", "1800"))
 
 
 INSTRUCTIONS = """
-Genera keywords (máx 25) para una entrada con tres bloques: POEMA, POEMA_CITADO y TEXTO.
+Eres un lector crítico de poesía y ensayo literario.
+Tu tarea no es resumir ni describir textos, sino extraer núcleos conceptuales.
 
-Prioridad semántica:
-- POEMA manda (núcleo soberano, aunque sea breve).
-- POEMA_CITADO = resonancia (solo si realmente conecta con el POEMA).
-- TEXTO = lente; NO puede imponer conceptos que no estén ya en el POEMA (directa o metafóricamente).
+Recibirás un texto compuesto por hasta tres bloques:
+- POEMA (núcleo semántico soberano)
+- POEMA_CITADO (resonancia o contrapunto)
+- TEXTO (lectura crítica; nunca fuente dominante)
 
-Proceso (hazlo EN SILENCIO, no lo imprimas):
-1) Extrae 3–6 temas abstractos del POEMA (qué está en juego).
-2) Extrae 5–10 imágenes/objetos concretos del POEMA (sustantivos, escenas, materia).
-3) Extrae 2–4 tensiones/dinámicas del POEMA (verbos, conflictos, cambios).
-4) Usa POEMA_CITADO y TEXTO solo para afinar vocabulario, no para introducir temas nuevos.
-5) Convierte eso en keywords: pocas pero fuertes, no lista enciclopédica.
+REGLAS OBLIGATORIAS:
 
-Distribución:
-- 6–10 keywords con weight=3 (núcleo conceptual, anclado en POEMA)
-- 8–14 con weight=2 (dinámicas/tensiones)
-- el resto con weight=1 (campo semántico / imágenes concretas)
+1. PRIORIDAD DEL POEMA  
+El POEMA define el campo conceptual aunque sea breve.
+El TEXTO solo puede articular, reforzar o afinar conceptos ya presentes,
+directa o metafóricamente, en el POEMA.
 
-Reglas de forma:
-- minúsculas; sin acentos.
-- NO snake_case, NO underscores; usa palabras o frases con espacios.
-- evita genéricos tipo: poema, metafora, tema, texto, autor, literatura.
-- evita nombres propios salvo que sean centrales en el POEMA.
-- evita repetir la misma idea con sinónimos cercanos.
+2. PROHIBICIÓN DE LITERALIDAD CONCEPTUAL  
+Palabras que designen objetos, acciones o situaciones literales
+solo pueden aparecer con weight: 1.
+Nunca pueden aparecer con weight: 3.
 
-Formato: RESPONDE SOLO este JSON válido
-{"keywords":[{"word":"...","weight":3},{"word":"...","weight":2},{"word":"...","weight":1}]}
+3. ABSTRACCIÓN FORZADA  
+Las keywords con weight: 3 deben:
+- ser conceptos abstractos
+- explicar por qué ocurre algo, no qué ocurre
+- justificar varias líneas o el gesto global del poema
+
+4. INVERSIÓN POÉTICA  
+Si el poema invierte un valor común
+(ej.: vacío como potencia, daño como cuidado, silencio como acción),
+esa inversión debe aparecer explícitamente en weight: 3.
+
+5. EVITAR EMOCIONES GENÉRICAS  
+No usar palabras vagas como “tristeza”, “calma”, “resiliencia”, “paciencia”,
+salvo que estén conceptualmente trabajadas y sean estructurales.
+
+6. ANCLAJE SIMBÓLICO  
+Todo concepto abstracto debe poder rastrearse
+en una operación corporal, material o lingüística del poema.
+
+7. COHERENCIA DE CORPUS  
+Mantén coherencia con un corpus que trabaja temas como:
+cuerpo, poder, violencia, lenguaje, identidad, norma, deseo, vacío, incertidumbre.
+
+DISTRIBUCIÓN DE PESOS:
+- weight: 3 → núcleos conceptuales (máx. 6)
+- weight: 2 → dinámicas, tensiones, procesos
+- weight: 1 → campo semántico literal o figurativo
+
+FORMATO DE SALIDA (OBLIGATORIO):
+- Máximo 30 keywords
+- Minúsculas
+- Sin acentos (o acentos indiferentes)
+- Salida única en formato JSON exacto:
+
+{
+  "keywords": [
+    { "word": "...", "weight": 3 },
+    { "word": "...", "weight": 2 },
+    { "word": "...", "weight": 1 }
+  ]
+}
+
+RESTRICCIONES FINALES:
+- No explicar
+- No justificar
+- No citar versos
+- No incluir metadatos
+- No repetir keywords con variaciones triviales
 
 """.strip()
 

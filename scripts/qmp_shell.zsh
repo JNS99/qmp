@@ -4,7 +4,7 @@
 # =========================
 
 export OPENAI_MODEL="${OPENAI_MODEL:-gpt-5-mini}"
-export OPENAI_REASONING="${OPENAI_REASONING:-low}"
+export OPENAI_REASONING="${OPENAI_REASONING:-medium}"
 
 
 # --- QMP repo path (Mac vs Codespaces) ---
