@@ -1,3 +1,9 @@
+FECHA: 2025-12-25
+MY_POEM_TITLE: 
+POETA: Soledad Castresana
+POEM_TITLE: Tabú
+BOOK_TITLE: La carne se corta
+
 # POEMA
 
 unámonos por amor

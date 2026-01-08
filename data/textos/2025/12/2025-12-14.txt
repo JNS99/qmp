@@ -1,3 +1,9 @@
+FECHA: 2025-12-14
+MY_POEM_TITLE: 
+POETA: Soledad Castresana
+POEM_TITLE: charco en calma
+BOOK_TITLE: La carne se corta
+
 # POEMA
 
 ayer te di el agua del pozo

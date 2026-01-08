@@ -1,3 +1,9 @@
+FECHA: 2025-12-18
+MY_POEM_TITLE: escribir
+POETA: Soledad Castresana
+POEM_TITLE: tótem
+BOOK_TITLE: La carne se corta
+
 # POEMA
 
 puede ser rojo azul violeta

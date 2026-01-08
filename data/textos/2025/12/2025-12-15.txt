@@ -1,3 +1,9 @@
+FECHA: 2025-12-15
+MY_POEM_TITLE: qué hay para ver en el bosque?
+POETA: Soledad Castresana
+POEM_TITLE: trampa para cazar caballos
+BOOK_TITLE: La carne se corta
+
 # POEMA
 
 al escucharlas caer

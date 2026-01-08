@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-ARCHIVO_JSON = Path(os.environ.get("QMP_ARCHIVO_JSON", str(REPO_ROOT / "archivo.json")))
+ARCHIVO_JSON = Path(os.environ.get("QMP_ARCHIVO_JSON", str(REPO_ROOT / "data" / "archivo.json")))
 
 def load_entries():
     data = json.loads(ARCHIVO_JSON.read_text(encoding="utf-8"))

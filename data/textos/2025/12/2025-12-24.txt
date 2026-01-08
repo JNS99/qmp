@@ -1,3 +1,9 @@
+FECHA: 2025-12-24
+MY_POEM_TITLE: crecer
+POETA: Porfirio Barba-Jacob
+POEM_TITLE: Segunda canción sin motivo
+BOOK_TITLE: 
+
 # POEMA
 
 estoy de pie en la arena

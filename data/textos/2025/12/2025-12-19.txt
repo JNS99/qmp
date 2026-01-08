@@ -1,3 +1,9 @@
+FECHA: 2025-12-19
+MY_POEM_TITLE: autorretrato
+POETA: Alfonsina Storni
+POEM_TITLE: Hombre pequeñito
+BOOK_TITLE: 
+
 # POEMA
 
 en el día

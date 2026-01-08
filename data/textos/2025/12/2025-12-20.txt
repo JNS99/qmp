@@ -1,3 +1,9 @@
+FECHA: 2025-12-20
+MY_POEM_TITLE: bote de byte
+POETA: Gustavo Adolfo Bécquer
+POEM_TITLE: Rima XXIII
+BOOK_TITLE: 
+
 # POEMA
 
 bote de byte bote de byte
