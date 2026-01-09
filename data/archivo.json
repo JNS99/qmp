@@ -1,5 +1,108 @@
 [
   {
+    "date": "2026-01-10",
+    "month": "2026-01",
+    "file": "textos/2026-01-10.txt",
+    "my_poem_title": "puente",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Luna Miguel",
+      "poem_title": "INTERROGATORIO ANTE LA PUERTA DE LOS CELOS (I)",
+      "poem_snippet": "",
+      "book_title": "Poesía Masculina"
+    },
+    "keywords": [
+      {
+        "word": "elevacion",
+        "weight": 3
+      },
+      {
+        "word": "interseccion",
+        "weight": 3
+      },
+      {
+        "word": "microagencia",
+        "weight": 3
+      },
+      {
+        "word": "posesion",
+        "weight": 3
+      },
+      {
+        "word": "umbral",
+        "weight": 3
+      },
+      {
+        "word": "apertura",
+        "weight": 2
+      },
+      {
+        "word": "asimetria",
+        "weight": 2
+      },
+      {
+        "word": "exposicion",
+        "weight": 2
+      },
+      {
+        "word": "interrogacion",
+        "weight": 2
+      },
+      {
+        "word": "pluralidad",
+        "weight": 2
+      },
+      {
+        "word": "retirada",
+        "weight": 2
+      },
+      {
+        "word": "alma",
+        "weight": 1
+      },
+      {
+        "word": "celos",
+        "weight": 1
+      },
+      {
+        "word": "cielo",
+        "weight": 1
+      },
+      {
+        "word": "cruje",
+        "weight": 1
+      },
+      {
+        "word": "dedo",
+        "weight": 1
+      },
+      {
+        "word": "esposa",
+        "weight": 1
+      },
+      {
+        "word": "manos",
+        "weight": 1
+      },
+      {
+        "word": "ojos",
+        "weight": 1
+      },
+      {
+        "word": "pequeno",
+        "weight": 1
+      },
+      {
+        "word": "puente",
+        "weight": 1
+      },
+      {
+        "word": "puerta",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-09",
     "month": "2026-01",
     "file": "textos/2026-01-09.txt",

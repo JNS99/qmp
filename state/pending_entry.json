@@ -1,54 +1,42 @@
 {
-  "date": "2026-01-01",
+  "date": "2026-01-10",
   "month": "2026-01",
-  "file": "textos/2026-01-01.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "o es un copo de nieve",
+  "file": "textos/2026-01-10.txt",
+  "my_poem_title": "puente",
+  "my_poem_snippet": "",
   "analysis": {
     "poet": "Luna Miguel",
-    "poem_title": "UN SAN VALENTÍN CON GALA Y LUNA",
+    "poem_title": "INTERROGATORIO ANTE LA PUERTA DE LOS CELOS (I)",
     "poem_snippet": "",
     "book_title": "Poesía Masculina"
   },
   "keywords": [
     {
-      "word": "visibilidad",
+      "word": "elevacion",
       "weight": 3
     },
     {
-      "word": "amor",
+      "word": "interseccion",
       "weight": 3
     },
     {
-      "word": "identidad",
+      "word": "microagencia",
       "weight": 3
     },
     {
-      "word": "transformacion",
+      "word": "posesion",
       "weight": 3
     },
     {
-      "word": "cuerpo",
+      "word": "umbral",
       "weight": 3
     },
     {
-      "word": "norma",
+      "word": "apertura",
       "weight": 2
     },
     {
-      "word": "anormalidad",
-      "weight": 2
-    },
-    {
-      "word": "genero",
-      "weight": 2
-    },
-    {
-      "word": "deseo",
-      "weight": 2
-    },
-    {
-      "word": "finito",
+      "word": "asimetria",
       "weight": 2
     },
     {
@@ -56,47 +44,59 @@
       "weight": 2
     },
     {
-      "word": "diferencia",
+      "word": "interrogacion",
       "weight": 2
     },
     {
-      "word": "convocatoria",
+      "word": "pluralidad",
       "weight": 2
     },
     {
-      "word": "copo de nieve",
+      "word": "retirada",
+      "weight": 2
+    },
+    {
+      "word": "alma",
       "weight": 1
     },
     {
-      "word": "derretimiento",
+      "word": "celos",
       "weight": 1
     },
     {
-      "word": "invierno",
+      "word": "cielo",
       "weight": 1
     },
     {
-      "word": "carreta",
+      "word": "cruje",
       "weight": 1
     },
     {
-      "word": "lado",
+      "word": "dedo",
       "weight": 1
     },
     {
-      "word": "mano",
+      "word": "esposa",
       "weight": 1
     },
     {
-      "word": "respiracion",
+      "word": "manos",
       "weight": 1
     },
     {
-      "word": "boca",
+      "word": "ojos",
       "weight": 1
     },
     {
-      "word": "fantasia",
+      "word": "pequeno",
+      "weight": 1
+    },
+    {
+      "word": "puente",
+      "weight": 1
+    },
+    {
+      "word": "puerta",
       "weight": 1
     }
   ]
