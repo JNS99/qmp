@@ -1,7 +1,7 @@
 FECHA: 2026-01-01
 MY_POEM_TITLE: 
 POETA: Luna Miguel
-POEM_TITLE: Un San Valentín con Gala y Luna
+POEM_TITLE: UN SAN VALENTÍN CON GALA Y LUNA
 BOOK_TITLE: Poesía Masculina
 
 # POEMA
