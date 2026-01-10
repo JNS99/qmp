@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-01-11",
+    "month": "2026-01",
+    "file": "textos/2026-01-11.txt",
+    "my_poem_title": "instantánea",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Luna Miguel",
+      "poem_title": "INTERROGATORIO ANTE LA PUERTA DE LOS CELOS (II)",
+      "poem_snippet": "",
+      "book_title": "Poesía Masculina"
+    },
+    "keywords": [
+      {
+        "word": "ausencia como imagen",
+        "weight": 3
+      },
+      {
+        "word": "huella patriarcal",
+        "weight": 3
+      },
+      {
+        "word": "lenguaje colonizador",
+        "weight": 3
+      },
+      {
+        "word": "suspension temporal",
+        "weight": 3
+      },
+      {
+        "word": "violencia interiorizada",
+        "weight": 3
+      },
+      {
+        "word": "metafora como herramienta de poder",
+        "weight": 2
+      },
+      {
+        "word": "negacion performativa",
+        "weight": 2
+      },
+      {
+        "word": "plegaria corporal",
+        "weight": 2
+      },
+      {
+        "word": "relocalizacion del dolor",
+        "weight": 2
+      },
+      {
+        "word": "tension entre fijacion y perdida",
+        "weight": 2
+      },
+      {
+        "word": "caballos",
+        "weight": 1
+      },
+      {
+        "word": "celos",
+        "weight": 1
+      },
+      {
+        "word": "congelado",
+        "weight": 1
+      },
+      {
+        "word": "cuerda",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "desmembramiento",
+        "weight": 1
+      },
+      {
+        "word": "foto",
+        "weight": 1
+      },
+      {
+        "word": "hueso",
+        "weight": 1
+      },
+      {
+        "word": "luna",
+        "weight": 1
+      },
+      {
+        "word": "momento",
+        "weight": 1
+      },
+      {
+        "word": "quieto",
+        "weight": 1
+      },
+      {
+        "word": "tendones",
+        "weight": 1
+      },
+      {
+        "word": "tobillo",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-10",
     "month": "2026-01",
     "file": "textos/2026-01-10.txt",
