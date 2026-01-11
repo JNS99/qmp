@@ -1,92 +1,96 @@
 {
-  "date": "2026-01-01",
+  "date": "2026-01-11",
   "keywords": [
     {
-      "word": "visibilidad",
+      "word": "ausencia como imagen",
       "weight": 3
     },
     {
-      "word": "amor",
+      "word": "huella patriarcal",
       "weight": 3
     },
     {
-      "word": "identidad",
+      "word": "lenguaje colonizador",
       "weight": 3
     },
     {
-      "word": "transformacion",
+      "word": "suspension temporal",
       "weight": 3
+    },
+    {
+      "word": "violencia interiorizada",
+      "weight": 3
+    },
+    {
+      "word": "metafora como herramienta de poder",
+      "weight": 2
+    },
+    {
+      "word": "negacion performativa",
+      "weight": 2
+    },
+    {
+      "word": "plegaria corporal",
+      "weight": 2
+    },
+    {
+      "word": "relocalizacion del dolor",
+      "weight": 2
+    },
+    {
+      "word": "tension entre fijacion y perdida",
+      "weight": 2
+    },
+    {
+      "word": "caballos",
+      "weight": 1
+    },
+    {
+      "word": "celos",
+      "weight": 1
+    },
+    {
+      "word": "congelado",
+      "weight": 1
+    },
+    {
+      "word": "cuerda",
+      "weight": 1
     },
     {
       "word": "cuerpo",
-      "weight": 3
-    },
-    {
-      "word": "norma",
-      "weight": 2
-    },
-    {
-      "word": "anormalidad",
-      "weight": 2
-    },
-    {
-      "word": "genero",
-      "weight": 2
-    },
-    {
-      "word": "deseo",
-      "weight": 2
-    },
-    {
-      "word": "finito",
-      "weight": 2
-    },
-    {
-      "word": "exposicion",
-      "weight": 2
-    },
-    {
-      "word": "diferencia",
-      "weight": 2
-    },
-    {
-      "word": "convocatoria",
-      "weight": 2
-    },
-    {
-      "word": "copo de nieve",
       "weight": 1
     },
     {
-      "word": "derretimiento",
+      "word": "desmembramiento",
       "weight": 1
     },
     {
-      "word": "invierno",
+      "word": "foto",
       "weight": 1
     },
     {
-      "word": "carreta",
+      "word": "hueso",
       "weight": 1
     },
     {
-      "word": "lado",
+      "word": "luna",
       "weight": 1
     },
     {
-      "word": "mano",
+      "word": "momento",
       "weight": 1
     },
     {
-      "word": "respiracion",
+      "word": "quieto",
       "weight": 1
     },
     {
-      "word": "boca",
+      "word": "tendones",
       "weight": 1
     },
     {
-      "word": "fantasia",
+      "word": "tobillo",
       "weight": 1
     }
   ]

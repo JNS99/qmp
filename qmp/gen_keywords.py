@@ -65,7 +65,7 @@ DISTRIBUCIÓN DE PESOS:
 - weight: 1 → campo semántico literal o figurativo
 
 FORMATO DE SALIDA (OBLIGATORIO):
-- Máximo 30 keywords
+- Máximo 30 keywords, mínimo 10
 - Minúsculas
 - Sin acentos (o acentos indiferentes)
 - Salida única en formato JSON exacto:
@@ -250,7 +250,7 @@ def main() -> int:
     resp = client.responses.create(
         model=DEFAULT_MODEL,
         reasoning={"effort": REASONING},
-        max_output_tokens=1500,
+        max_output_tokens=3000,
         input=[
             {"role": "system", "content": "Responde SOLO con JSON válido según el schema. Sin explicaciones."},
             {"role": "user", "content": INSTRUCTIONS + "\n\n---\n\nTEXTO COMPLETO:\n" + text},
