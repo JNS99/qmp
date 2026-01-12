@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-01-12",
+    "month": "2026-01",
+    "file": "textos/2026-01-12.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "me dije",
+    "analysis": {
+      "poet": "Luna Miguel",
+      "poem_title": "INTERROGATORIO ANTE LA PUERTA DE LOS CELOS (III)",
+      "poem_snippet": "",
+      "book_title": "Poesía Masculina"
+    },
+    "keywords": [
+      {
+        "word": "choque cultura-cuerpo",
+        "weight": 3
+      },
+      {
+        "word": "materialidad",
+        "weight": 3
+      },
+      {
+        "word": "precariedad",
+        "weight": 3
+      },
+      {
+        "word": "proteccion invertida",
+        "weight": 3
+      },
+      {
+        "word": "reconocimiento fraterno",
+        "weight": 3
+      },
+      {
+        "word": "suspension",
+        "weight": 3
+      },
+      {
+        "word": "coro cultural",
+        "weight": 2
+      },
+      {
+        "word": "corporalizacion",
+        "weight": 2
+      },
+      {
+        "word": "estetica de la suspension",
+        "weight": 2
+      },
+      {
+        "word": "metamorfosis material",
+        "weight": 2
+      },
+      {
+        "word": "somatizacion",
+        "weight": 2
+      },
+      {
+        "word": "tension pertenencia-competencia",
+        "weight": 2
+      },
+      {
+        "word": "angel",
+        "weight": 1
+      },
+      {
+        "word": "apetito",
+        "weight": 1
+      },
+      {
+        "word": "cama",
+        "weight": 1
+      },
+      {
+        "word": "celos",
+        "weight": 1
+      },
+      {
+        "word": "coro",
+        "weight": 1
+      },
+      {
+        "word": "frio",
+        "weight": 1
+      },
+      {
+        "word": "juicio moral",
+        "weight": 1
+      },
+      {
+        "word": "maleza",
+        "weight": 1
+      },
+      {
+        "word": "manta",
+        "weight": 1
+      },
+      {
+        "word": "masculinidad",
+        "weight": 1
+      },
+      {
+        "word": "papel",
+        "weight": 1
+      },
+      {
+        "word": "techo",
+        "weight": 1
+      },
+      {
+        "word": "temblor",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-11",
     "month": "2026-01",
     "file": "textos/2026-01-11.txt",

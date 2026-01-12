@@ -1,10 +1,23 @@
 FECHA: 2026-01-12
-MY_POEM_TITLE:
+MY_POEM_TITLE: 
 POETA: Luna Miguel
 POEM_TITLE: INTERROGATORIO ANTE LA PUERTA DE LOS CELOS (III)
 BOOK_TITLE: Poesía Masculina
 
 # POEMA
+
+me dije
+acostarme en la cama
+me dije
+mirar al techo
+
+simplemente 
+no estaba al tanto
+
+hasta que el papel
+se convirtió en una manta
+y me desperté en el frío
+temblando
 
 # POEMA_CITADO
 
@@ -20,7 +33,6 @@ y que ningún ángel entone
 la pregunta correcta
 –¿podrías tú
 ser mi hermano?
-
 
 # TEXTO
 

@@ -1,58 +1,74 @@
 {
-  "date": "2026-01-11",
+  "date": "2026-01-12",
   "month": "2026-01",
-  "file": "textos/2026-01-11.txt",
-  "my_poem_title": "instantánea",
-  "my_poem_snippet": "",
+  "file": "textos/2026-01-12.txt",
+  "my_poem_title": "",
+  "my_poem_snippet": "me dije",
   "analysis": {
     "poet": "Luna Miguel",
-    "poem_title": "INTERROGATORIO ANTE LA PUERTA DE LOS CELOS (II)",
+    "poem_title": "INTERROGATORIO ANTE LA PUERTA DE LOS CELOS (III)",
     "poem_snippet": "",
     "book_title": "Poesía Masculina"
   },
   "keywords": [
     {
-      "word": "ausencia como imagen",
+      "word": "choque cultura-cuerpo",
       "weight": 3
     },
     {
-      "word": "huella patriarcal",
+      "word": "materialidad",
       "weight": 3
     },
     {
-      "word": "lenguaje colonizador",
+      "word": "precariedad",
       "weight": 3
     },
     {
-      "word": "suspension temporal",
+      "word": "proteccion invertida",
       "weight": 3
     },
     {
-      "word": "violencia interiorizada",
+      "word": "reconocimiento fraterno",
       "weight": 3
     },
     {
-      "word": "metafora como herramienta de poder",
+      "word": "suspension",
+      "weight": 3
+    },
+    {
+      "word": "coro cultural",
       "weight": 2
     },
     {
-      "word": "negacion performativa",
+      "word": "corporalizacion",
       "weight": 2
     },
     {
-      "word": "plegaria corporal",
+      "word": "estetica de la suspension",
       "weight": 2
     },
     {
-      "word": "relocalizacion del dolor",
+      "word": "metamorfosis material",
       "weight": 2
     },
     {
-      "word": "tension entre fijacion y perdida",
+      "word": "somatizacion",
       "weight": 2
     },
     {
-      "word": "caballos",
+      "word": "tension pertenencia-competencia",
+      "weight": 2
+    },
+    {
+      "word": "angel",
+      "weight": 1
+    },
+    {
+      "word": "apetito",
+      "weight": 1
+    },
+    {
+      "word": "cama",
       "weight": 1
     },
     {
@@ -60,47 +76,39 @@
       "weight": 1
     },
     {
-      "word": "congelado",
+      "word": "coro",
       "weight": 1
     },
     {
-      "word": "cuerda",
+      "word": "frio",
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "juicio moral",
       "weight": 1
     },
     {
-      "word": "desmembramiento",
+      "word": "maleza",
       "weight": 1
     },
     {
-      "word": "foto",
+      "word": "manta",
       "weight": 1
     },
     {
-      "word": "hueso",
+      "word": "masculinidad",
       "weight": 1
     },
     {
-      "word": "luna",
+      "word": "papel",
       "weight": 1
     },
     {
-      "word": "momento",
+      "word": "techo",
       "weight": 1
     },
     {
-      "word": "quieto",
-      "weight": 1
-    },
-    {
-      "word": "tendones",
-      "weight": 1
-    },
-    {
-      "word": "tobillo",
+      "word": "temblor",
       "weight": 1
     }
   ]
