@@ -1,0 +1,85 @@
+FECHA: 2026-01-16
+MY_POEM_TITLE: 
+POETA: Ida Vitale
+POEM_TITLE: La Noche, esta morada
+BOOK_TITLE: Poesía Reunida
+
+# POEMA
+
+solo |un tenedor
+|un cuchillo
+|un plato
+para comer la congelada
+pizza de pepperoni,
+cuidadosamente 
+elegida de su museo
+de comidas;
+el pollo a la naranja
+los tacos de carne
+las ricas pizzas,
+siempre ahí para añadir
+emoción
+
+los deja descongelar
+en el mostrador de la 
+cocina del estudio
+
+un fin rápido en
+el microondas
+tiene un juez en
+que no cree
+
+# POEMA_CITADO
+
+*e il naufragar m’é dolce in questo mare.*
+Leopardi
+
+LA noche, esta morada.
+donde el hombre se encuentra
+y está solo,
+a punto de morir y comenzar
+a andar en aires otros.
+
+El mundo va a perder nubes, caballos, 
+vacila,
+	se asombra,
+			se deshace,
+cae como en los bordes del deseo
+pero ya sin milagro.
+Despacio la esperanza
+viste su piel de olvido.
+No veo más allá
+de un nombre que he llamado 
+letra a beso a caricia
+a rosa abierta a vuelo ciego a llanto.
+
+Y como todo está deposeído,
+todo con el pie justo
+para tocar en tierra oscura,
+el cielo vuelto un hueco sin voz
+y sin orillas,
+ya no soy yo la pobre,
+medida entre morales, melancólicos aires,
+cuerpo cegado de luz o simple lágrima.
+Lo que este mar, esta crecida sombra
+va perdiendo,
+viene a salvarse en mí,
+nube siempre,
+		caballo azul,
+				eterno cielo.
+
+# TEXTO
+
+La muerte es una experiencia singular, un fin que tiene implicaciones más allá del muerto. En **La noche, esta morada** vemos a un hombre derivando hasta la muerte, su mundo desenlazándose, entrando en “aires otros”; no hay un milagro para salvarlo; el fin es una evidencia.
+
+El hablante mira esta pérdida; ve cómo el tacto se reduce a la memoria (“No veo más allá / de un nombre que he llamado / letra a beso a caricia”); se siente llenarse con el “naufragar” del muerto.
+
+A mis ojos, el poema sugiere que, como en un naufragar, no hay salvación para los moribundos; la muerte es un proceso inexorable que sigue una progresión determinada (*va* en “El mundo va a perder”, por ejemplo); la vida tiene fronteras (“bordes del deseo”, “olvido”, “medida entre mortales”, visión / ciego…), pero la muerte es el borrado de fronteras (“sin orillas”); la muerte ocurre en el mar de otra gente, donde las memorias pueden existir fuera del tiempo (“nube siempre”, “eterno cielo”).
+
+Lo que describe el hablante no es imprevisible: aquí constata el principio de una progresión ineludible de la muerte. Dice “comenzar a andar”, como si pudiera anticipar la continuación de este traslado a un nuevo estado; dice “El mundo va a perder nubes”, como si, aunque no se vea ahora, pudiera augurar lo que pasará; dice “cae”, implicando un proceso unidireccional, no reversible y *determinístico*; dice “sin milagro”, como si ya pudiera adivinar la falta de una salvación física; dice “está deposeído”, implicando una pérdida *completa*. El hablante describe el proceso con lucidez, capaz de nombrar lo desagradable.
+
+Podemos notar una progresión en el narrador respecto de su reacción ante este proceso. Nos dice “ya no soy yo la pobre, / medida entre mortales”, implicando que en el pasado se pensó como “una pobre”. Pero es la razón por la cual se pensó así lo que resulta interesante: a mis ojos, fue el miedo a este proceso lo que contribuyó a ese sentimiento (“cuerpo cegado de luz o simple lágrima”, en particular, muestra una aversión a la muerte). Ahora el narrador *sabe y acepta* lo que ve, algo que también se percibe en la expresión “el pie justo”.
+
+Además, el narrador se ve como un depósito de lo que se va (“viene a salvarse en mí”). Lo interpreto como una preservación de quien está por morir en la memoria del hablante; el narrador reconoce la falta de una salvación física y la posibilidad de una salvación memorial y atemporal.
+
+Aquí, el narrador puede mirar de cerca el proceso. Puede apreciar el camino, pensando finalmente que el sujeto va a tocar la muerte “con el pie justo”. Quizás el tema más amplio es que aclimatarse a la muerte es mejor que ser sorprendido por ella, porque existe la posibilidad de aceptarla e intentar preservar la vida en la mente; se abre así la oportunidad de una cierta salvación.

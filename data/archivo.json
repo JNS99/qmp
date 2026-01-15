@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-01-16",
+    "month": "2026-01",
+    "file": "textos/2026-01-16.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "solo |un tenedor",
+    "analysis": {
+      "poet": "Ida Vitale",
+      "poem_title": "La Noche, esta morada",
+      "poem_snippet": "",
+      "book_title": "Poesía Reunida"
+    },
+    "keywords": [
+      {
+        "word": "banalizacion del fin",
+        "weight": 3
+      },
+      {
+        "word": "desautorizacion",
+        "weight": 3
+      },
+      {
+        "word": "musealizacion",
+        "weight": 3
+      },
+      {
+        "word": "revalorizacion de lo banal",
+        "weight": 3
+      },
+      {
+        "word": "ritualizacion",
+        "weight": 3
+      },
+      {
+        "word": "suspension temporal",
+        "weight": 3
+      },
+      {
+        "word": "archivo del gusto",
+        "weight": 2
+      },
+      {
+        "word": "desposesion",
+        "weight": 2
+      },
+      {
+        "word": "economia de la rapidez",
+        "weight": 2
+      },
+      {
+        "word": "espera activa",
+        "weight": 2
+      },
+      {
+        "word": "estetica del consumo",
+        "weight": 2
+      },
+      {
+        "word": "seleccion intencionada",
+        "weight": 2
+      },
+      {
+        "word": "tension cuidado prisa",
+        "weight": 2
+      },
+      {
+        "word": "cocina",
+        "weight": 1
+      },
+      {
+        "word": "cuchillo",
+        "weight": 1
+      },
+      {
+        "word": "juez",
+        "weight": 1
+      },
+      {
+        "word": "microondas",
+        "weight": 1
+      },
+      {
+        "word": "mostrador",
+        "weight": 1
+      },
+      {
+        "word": "museo de comidas",
+        "weight": 1
+      },
+      {
+        "word": "pizza congelada",
+        "weight": 1
+      },
+      {
+        "word": "plato",
+        "weight": 1
+      },
+      {
+        "word": "pollo a la naranja",
+        "weight": 1
+      },
+      {
+        "word": "tacos de carne",
+        "weight": 1
+      },
+      {
+        "word": "tenedor",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-15",
     "month": "2026-01",
     "file": "textos/2026-01-15.txt",
