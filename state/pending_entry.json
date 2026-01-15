@@ -1,110 +1,114 @@
 {
-  "date": "2026-01-16",
+  "date": "2026-01-15",
   "month": "2026-01",
-  "file": "textos/2026-01-16.txt",
-  "my_poem_title": "",
-  "my_poem_snippet": "solo |un tenedor",
+  "file": "textos/2026-01-15.txt",
+  "my_poem_title": "el tren",
+  "my_poem_snippet": "",
   "analysis": {
-    "poet": "Ida Vitale",
-    "poem_title": "La Noche, esta morada",
+    "poet": "Cristina Maya",
+    "poem_title": "Deseo",
     "poem_snippet": "",
-    "book_title": "Poesía Reunida"
+    "book_title": ""
   },
   "keywords": [
     {
-      "word": "banalizacion del fin",
+      "word": "activacion",
       "weight": 3
     },
     {
-      "word": "desautorizacion",
+      "word": "impulso",
       "weight": 3
     },
     {
-      "word": "musealizacion",
+      "word": "involuntariedad",
       "weight": 3
     },
     {
-      "word": "revalorizacion de lo banal",
+      "word": "potencia-del-vacio",
       "weight": 3
     },
     {
-      "word": "ritualizacion",
+      "word": "transformacion",
       "weight": 3
     },
     {
-      "word": "suspension temporal",
+      "word": "umbral",
       "weight": 3
     },
     {
-      "word": "archivo del gusto",
+      "word": "choque-somatico",
       "weight": 2
     },
     {
-      "word": "desposesion",
+      "word": "contraste-silencio-accion",
       "weight": 2
     },
     {
-      "word": "economia de la rapidez",
+      "word": "germinacion-del-deseo",
       "weight": 2
     },
     {
-      "word": "espera activa",
+      "word": "limite-reposo-acto",
       "weight": 2
     },
     {
-      "word": "estetica del consumo",
+      "word": "puesta-en-obra",
       "weight": 2
     },
     {
-      "word": "seleccion intencionada",
+      "word": "rito-de-paso",
       "weight": 2
     },
     {
-      "word": "tension cuidado prisa",
+      "word": "transicion-liminal",
       "weight": 2
     },
     {
-      "word": "cocina",
+      "word": "amanecer",
       "weight": 1
     },
     {
-      "word": "cuchillo",
+      "word": "bajo",
       "weight": 1
     },
     {
-      "word": "juez",
+      "word": "camino",
       "weight": 1
     },
     {
-      "word": "microondas",
+      "word": "fuente",
       "weight": 1
     },
     {
-      "word": "mostrador",
+      "word": "luz",
       "weight": 1
     },
     {
-      "word": "museo de comidas",
+      "word": "movimiento",
       "weight": 1
     },
     {
-      "word": "pizza congelada",
+      "word": "parado",
       "weight": 1
     },
     {
-      "word": "plato",
+      "word": "preocupacion",
       "weight": 1
     },
     {
-      "word": "pollo a la naranja",
+      "word": "rio",
       "weight": 1
     },
     {
-      "word": "tacos de carne",
+      "word": "sacuda",
       "weight": 1
     },
     {
-      "word": "tenedor",
+      "word": "sueno",
+      "weight": 1
+    },
+    {
+      "word": "tierra-humeda",
       "weight": 1
     }
   ]

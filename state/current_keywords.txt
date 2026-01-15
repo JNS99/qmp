@@ -1,96 +1,104 @@
 {
-  "date": "2026-01-11",
+  "date": "2026-01-15",
   "keywords": [
     {
-      "word": "ausencia como imagen",
+      "word": "activacion",
       "weight": 3
     },
     {
-      "word": "huella patriarcal",
+      "word": "impulso",
       "weight": 3
     },
     {
-      "word": "lenguaje colonizador",
+      "word": "involuntariedad",
       "weight": 3
     },
     {
-      "word": "suspension temporal",
+      "word": "potencia-del-vacio",
       "weight": 3
     },
     {
-      "word": "violencia interiorizada",
+      "word": "transformacion",
       "weight": 3
     },
     {
-      "word": "metafora como herramienta de poder",
+      "word": "umbral",
+      "weight": 3
+    },
+    {
+      "word": "choque-somatico",
       "weight": 2
     },
     {
-      "word": "negacion performativa",
+      "word": "contraste-silencio-accion",
       "weight": 2
     },
     {
-      "word": "plegaria corporal",
+      "word": "germinacion-del-deseo",
       "weight": 2
     },
     {
-      "word": "relocalizacion del dolor",
+      "word": "limite-reposo-acto",
       "weight": 2
     },
     {
-      "word": "tension entre fijacion y perdida",
+      "word": "puesta-en-obra",
       "weight": 2
     },
     {
-      "word": "caballos",
+      "word": "rito-de-paso",
+      "weight": 2
+    },
+    {
+      "word": "transicion-liminal",
+      "weight": 2
+    },
+    {
+      "word": "amanecer",
       "weight": 1
     },
     {
-      "word": "celos",
+      "word": "bajo",
       "weight": 1
     },
     {
-      "word": "congelado",
+      "word": "camino",
       "weight": 1
     },
     {
-      "word": "cuerda",
+      "word": "fuente",
       "weight": 1
     },
     {
-      "word": "cuerpo",
+      "word": "luz",
       "weight": 1
     },
     {
-      "word": "desmembramiento",
+      "word": "movimiento",
       "weight": 1
     },
     {
-      "word": "foto",
+      "word": "parado",
       "weight": 1
     },
     {
-      "word": "hueso",
+      "word": "preocupacion",
       "weight": 1
     },
     {
-      "word": "luna",
+      "word": "rio",
       "weight": 1
     },
     {
-      "word": "momento",
+      "word": "sacuda",
       "weight": 1
     },
     {
-      "word": "quieto",
+      "word": "sueno",
       "weight": 1
     },
     {
-      "word": "tendones",
-      "weight": 1
-    },
-    {
-      "word": "tobillo",
+      "word": "tierra-humeda",
       "weight": 1
     }
   ]
