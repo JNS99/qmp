@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-01-17",
+    "month": "2026-01",
+    "file": "textos/2026-01-17.txt",
+    "my_poem_title": "no entiendo todo",
+    "my_poem_snippet": "",
+    "analysis": {
+      "poet": "Raúl Gómez Jattin",
+      "poem_title": "Retrato",
+      "poem_snippet": "",
+      "book_title": "Amanecer en el Valle del Sinú"
+    },
+    "keywords": [
+      {
+        "word": "dependencia de lo externo",
+        "weight": 3
+      },
+      {
+        "word": "encierro como cuidado",
+        "weight": 3
+      },
+      {
+        "word": "habitar como resistencia",
+        "weight": 3
+      },
+      {
+        "word": "negacion del acceso",
+        "weight": 3
+      },
+      {
+        "word": "ritual de contencion",
+        "weight": 3
+      },
+      {
+        "word": "transitoriedad del afecto",
+        "weight": 3
+      },
+      {
+        "word": "anticipacion condicionada",
+        "weight": 2
+      },
+      {
+        "word": "automatizacion del gesto",
+        "weight": 2
+      },
+      {
+        "word": "condicionalidad linguistica",
+        "weight": 2
+      },
+      {
+        "word": "fragilidad estructural",
+        "weight": 2
+      },
+      {
+        "word": "humor como elision",
+        "weight": 2
+      },
+      {
+        "word": "privacidad como limite",
+        "weight": 2
+      },
+      {
+        "word": "caja",
+        "weight": 1
+      },
+      {
+        "word": "colapso",
+        "weight": 1
+      },
+      {
+        "word": "escritor",
+        "weight": 1
+      },
+      {
+        "word": "gesto",
+        "weight": 1
+      },
+      {
+        "word": "hierba",
+        "weight": 1
+      },
+      {
+        "word": "juego",
+        "weight": 1
+      },
+      {
+        "word": "lector",
+        "weight": 1
+      },
+      {
+        "word": "momento",
+        "weight": 1
+      },
+      {
+        "word": "no",
+        "weight": 1
+      },
+      {
+        "word": "palabra",
+        "weight": 1
+      },
+      {
+        "word": "pavimento",
+        "weight": 1
+      },
+      {
+        "word": "prision",
+        "weight": 1
+      },
+      {
+        "word": "sentimiento",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-16",
     "month": "2026-01",
     "file": "textos/2026-01-16.txt",

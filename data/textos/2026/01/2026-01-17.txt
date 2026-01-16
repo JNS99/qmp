@@ -1,10 +1,27 @@
 FECHA: 2026-01-17
-MY_POEM_TITLE:
+MY_POEM_TITLE: no entiendo todo
 POETA: Raúl Gómez Jattin
 POEM_TITLE: Retrato
 BOOK_TITLE: Amanecer en el Valle del Sinú
 
 # POEMA
+
+pongo una caja
+en otra caja
+en otra caja
+
+es divertido
+
+es divertido divertirse
+
+¿y si no viene otra caja?
+¿o si colapsa?
+
+es solo un momento 
+que pienso en ello;
+otra viene;
+el sentimiento pasa
+como todo pasará
 
 # POEMA_CITADO
 
@@ -16,7 +33,6 @@ Poemas amargos
 Poemas simples y soñados
 crecidos como crece la hierba
 entre el pavimento de las calles
-
 
 # TEXTO
 
