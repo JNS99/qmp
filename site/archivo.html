@@ -75,7 +75,9 @@
     const noResultsFound = document.getElementById('noEntry');
 
     let entries = [];
+    let archiveData = [];
     const currentMonth = getCurrentMonth();
+
 
     function escapeHtml(s) {
       return (s || '')
@@ -106,7 +108,7 @@
     .then(data => {
         // 1) Crear lista de escritos
       const today = getTodayISO();
-      const archiveData = data.filter(e => e.date < today); // hasta ayer
+      archiveData = data.filter(e => e.date < today); // hasta ayer
       archiveData.forEach(entry => {
         // Archivo muestra SOLO hasta ayer (excluye hoy y excluye futuro)
         if (entry.date >= today) return;
@@ -238,6 +240,41 @@
           authorFilter.appendChild(opt);
         });
       }
+
+      function dataForSelectedMonth() {
+        const month = monthFilter.value;
+
+        if (month === 'todo') return archiveData;
+        if (!month) return archiveData.filter(e => (e.month || '') === currentMonth);
+        return archiveData.filter(e => (e.month || '') === month);
+      }
+
+      function refreshAuthorOptions() {
+        const prev = authorFilter.value;
+
+  // reset (mantiene el placeholder)
+        authorFilter.innerHTML = '<option value="">Todos los autores</option>';
+
+        const subset = dataForSelectedMonth();
+        const authors = Array.from(new Set(
+          subset.map(e => e.analysis?.poet).filter(Boolean)
+          )).sort((a, b) => a.localeCompare(b, 'es'));
+
+        authors.forEach(name => {
+          const opt = document.createElement('option');
+          opt.value = name;
+          opt.textContent = name;
+          authorFilter.appendChild(opt);
+        });
+
+  // conservar selección si todavía es válida; si no, limpiarla
+        authorFilter.value = (prev && authors.includes(prev)) ? prev : '';
+      }
+
+      function refreshDependentFilters() {
+        refreshAuthorOptions();
+      }
+
 
       function monthLabel(ym) {
         const [y, m] = ym.split('-');
@@ -376,7 +413,11 @@
 
 
 
-      monthFilter.addEventListener('change', filterEntries);
+      monthFilter.addEventListener('change', () => {
+        refreshDependentFilters();
+        filterEntries();
+      });
+
       authorFilter.addEventListener('change', filterEntries);
       keywordFilter.addEventListener('input', filterEntries);
     </script>
