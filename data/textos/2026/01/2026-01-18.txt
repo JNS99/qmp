@@ -1,0 +1,28 @@
+FECHA: 2026-01-18
+MY_POEM_TITLE: 
+POETA: Violeta Villalba
+POEM_TITLE: 
+BOOK_TITLE: Prisión Voluntaria
+
+# POEMA
+
+antes:
+no hay nadie como tú
+	luego:
+	nos vemos
+		ahora:
+		tú eres como cualquier otro
+		no hay nadie en mi
+
+# POEMA_CITADO
+
+La sombra cabalgó por la pared
+sobre un hilo
+de un lado la araña
+del otro, el gato
+
+# TEXTO
+
+Es un poema que merece una interpretación y no un análisis… pero no tengo ideas. La sombra puede ser una acción vacía, no real. Acá hace una acción poderosa, cabalgar, pero se encuentra en una precariedad (hilo) entre dos opciones: arañarse o un gato. En vista de su acción de cabalgar, esas opciones parecen insignificantes en relación con lo que puede hacer la sombra: un rasguño no es más que una molestia para alguien fuerte; un gato no tiene gran significado para un caballo.
+
+Quizás el hablante quiere decir que él tiene que mostrarse, pero no deja de depender de algo débil (un hilo), como si mostrarse no tuviera una base sólida. Y acá hay dos opciones, ninguna de las cuales está bien, pero que al mismo tiempo no son tan malas. ¿Quiere decir que mostrarse y no hacer es ponerse en una situación precaria donde las consecuencias no son tan profundas?

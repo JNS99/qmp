@@ -1,5 +1,104 @@
 [
   {
+    "date": "2026-01-18",
+    "month": "2026-01",
+    "file": "textos/2026-01-18.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "antes:",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "",
+      "poem_snippet": "La sombra cabalgó por la pared",
+      "book_title": "Prisión Voluntaria"
+    },
+    "keywords": [
+      {
+        "word": "ausencia como agencia",
+        "weight": 3
+      },
+      {
+        "word": "performatividad del saludo",
+        "weight": 3
+      },
+      {
+        "word": "precariedad como soporte",
+        "weight": 3
+      },
+      {
+        "word": "singularidad revertida",
+        "weight": 3
+      },
+      {
+        "word": "vaciamiento como potencia",
+        "weight": 3
+      },
+      {
+        "word": "visibilidad sin sustento",
+        "weight": 3
+      },
+      {
+        "word": "dependencia simbolica",
+        "weight": 2
+      },
+      {
+        "word": "economia de pequenas consecuencias",
+        "weight": 2
+      },
+      {
+        "word": "fragmentacion del yo",
+        "weight": 2
+      },
+      {
+        "word": "gesto performativo vacio",
+        "weight": 2
+      },
+      {
+        "word": "opciones binarias performativas",
+        "weight": 2
+      },
+      {
+        "word": "representacion corporal desplazada",
+        "weight": 2
+      },
+      {
+        "word": "temporalidad escalonada",
+        "weight": 2
+      },
+      {
+        "word": "voz dirigida",
+        "weight": 2
+      },
+      {
+        "word": "ahora",
+        "weight": 1
+      },
+      {
+        "word": "antes",
+        "weight": 1
+      },
+      {
+        "word": "arana",
+        "weight": 1
+      },
+      {
+        "word": "gato",
+        "weight": 1
+      },
+      {
+        "word": "hilo",
+        "weight": 1
+      },
+      {
+        "word": "luego",
+        "weight": 1
+      },
+      {
+        "word": "tu",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-17",
     "month": "2026-01",
     "file": "textos/2026-01-17.txt",
