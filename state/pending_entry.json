@@ -1,98 +1,110 @@
 {
-  "date": "2026-01-18",
+  "date": "2026-01-19",
   "month": "2026-01",
-  "file": "textos/2026-01-18.txt",
+  "file": "textos/2026-01-19.txt",
   "my_poem_title": "",
-  "my_poem_snippet": "antes:",
+  "my_poem_snippet": "las palabras ya no pertenecen al escritor",
   "analysis": {
     "poet": "Violeta Villalba",
-    "poem_title": "",
-    "poem_snippet": "La sombra cabalgó por la pared",
-    "book_title": "Prisión Voluntaria"
+    "poem_title": "Matutina",
+    "poem_snippet": "",
+    "book_title": "Fragmentaria"
   },
   "keywords": [
     {
-      "word": "ausencia como agencia",
+      "word": "apropiacion",
       "weight": 3
     },
     {
-      "word": "performatividad del saludo",
+      "word": "desposesion",
       "weight": 3
     },
     {
-      "word": "precariedad como soporte",
+      "word": "inversion de autoria",
       "weight": 3
     },
     {
-      "word": "singularidad revertida",
+      "word": "invisibilizacion",
       "weight": 3
     },
     {
-      "word": "vaciamiento como potencia",
+      "word": "performatividad linguistica",
       "weight": 3
     },
     {
-      "word": "visibilidad sin sustento",
+      "word": "transferencia de autoria",
       "weight": 3
     },
     {
-      "word": "dependencia simbolica",
+      "word": "actuacion interpretativa",
       "weight": 2
     },
     {
-      "word": "economia de pequenas consecuencias",
+      "word": "confusion ficcion-hecho",
       "weight": 2
     },
     {
-      "word": "fragmentacion del yo",
+      "word": "continuidad imaginativa",
       "weight": 2
     },
     {
-      "word": "gesto performativo vacio",
+      "word": "desplazamiento de agencia",
       "weight": 2
     },
     {
-      "word": "opciones binarias performativas",
+      "word": "desplazamiento de sentido",
       "weight": 2
     },
     {
-      "word": "representacion corporal desplazada",
-      "weight": 2
-    },
-    {
-      "word": "temporalidad escalonada",
-      "weight": 2
-    },
-    {
-      "word": "voz dirigida",
-      "weight": 2
-    },
-    {
-      "word": "ahora",
+      "word": "azotea",
       "weight": 1
     },
     {
-      "word": "antes",
+      "word": "camisa",
       "weight": 1
     },
     {
-      "word": "arana",
+      "word": "cuerpo",
       "weight": 1
     },
     {
-      "word": "gato",
+      "word": "dueno",
       "weight": 1
     },
     {
-      "word": "hilo",
+      "word": "escritor",
       "weight": 1
     },
     {
-      "word": "luego",
+      "word": "escritura",
       "weight": 1
     },
     {
-      "word": "tu",
+      "word": "muerte",
+      "weight": 1
+    },
+    {
+      "word": "palabras",
+      "weight": 1
+    },
+    {
+      "word": "pantalones",
+      "weight": 1
+    },
+    {
+      "word": "pertenecen",
+      "weight": 1
+    },
+    {
+      "word": "poema",
+      "weight": 1
+    },
+    {
+      "word": "ropa",
+      "weight": 1
+    },
+    {
+      "word": "viento",
       "weight": 1
     }
   ]

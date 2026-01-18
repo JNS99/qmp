@@ -1,5 +1,116 @@
 [
   {
+    "date": "2026-01-19",
+    "month": "2026-01",
+    "file": "textos/2026-01-19.txt",
+    "my_poem_title": "",
+    "my_poem_snippet": "las palabras ya no pertenecen al escritor",
+    "analysis": {
+      "poet": "Violeta Villalba",
+      "poem_title": "Matutina",
+      "poem_snippet": "",
+      "book_title": "Fragmentaria"
+    },
+    "keywords": [
+      {
+        "word": "apropiacion",
+        "weight": 3
+      },
+      {
+        "word": "desposesion",
+        "weight": 3
+      },
+      {
+        "word": "inversion de autoria",
+        "weight": 3
+      },
+      {
+        "word": "invisibilizacion",
+        "weight": 3
+      },
+      {
+        "word": "performatividad linguistica",
+        "weight": 3
+      },
+      {
+        "word": "transferencia de autoria",
+        "weight": 3
+      },
+      {
+        "word": "actuacion interpretativa",
+        "weight": 2
+      },
+      {
+        "word": "confusion ficcion-hecho",
+        "weight": 2
+      },
+      {
+        "word": "continuidad imaginativa",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento de agencia",
+        "weight": 2
+      },
+      {
+        "word": "desplazamiento de sentido",
+        "weight": 2
+      },
+      {
+        "word": "azotea",
+        "weight": 1
+      },
+      {
+        "word": "camisa",
+        "weight": 1
+      },
+      {
+        "word": "cuerpo",
+        "weight": 1
+      },
+      {
+        "word": "dueno",
+        "weight": 1
+      },
+      {
+        "word": "escritor",
+        "weight": 1
+      },
+      {
+        "word": "escritura",
+        "weight": 1
+      },
+      {
+        "word": "muerte",
+        "weight": 1
+      },
+      {
+        "word": "palabras",
+        "weight": 1
+      },
+      {
+        "word": "pantalones",
+        "weight": 1
+      },
+      {
+        "word": "pertenecen",
+        "weight": 1
+      },
+      {
+        "word": "poema",
+        "weight": 1
+      },
+      {
+        "word": "ropa",
+        "weight": 1
+      },
+      {
+        "word": "viento",
+        "weight": 1
+      }
+    ]
+  },
+  {
     "date": "2026-01-18",
     "month": "2026-01",
     "file": "textos/2026-01-18.txt",
